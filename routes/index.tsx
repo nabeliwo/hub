@@ -1,3 +1,3 @@
 export default function IndexPage() {
-  return <div>index</div>;
+  return <div className="mt-4">index</div>;
 }
