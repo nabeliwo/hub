@@ -1,11 +1,13 @@
-import {
-  basename,
-  extname,
-  parse,
-  resolve,
-} from "https://deno.land/std@0.217.0/path/mod.ts";
+/// <reference no-default-lib="true" />
+/// <reference lib="dom" />
+/// <reference lib="dom.iterable" />
+/// <reference lib="dom.asynciterable" />
+/// <reference lib="deno.ns" />
 
-console.log(extname("public/index.html"));
-console.log(basename("public/index.html"));
-console.log(parse("public/index.html"));
-console.log(resolve("public/index.html"));
+import "$std/dotenv/load.ts";
+
+import { start } from "$fresh/server.ts";
+import manifest from "./fresh.gen.ts";
+import config from "./fresh.config.ts";
+
+await start(manifest, config);
