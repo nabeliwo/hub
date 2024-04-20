@@ -9,6 +9,7 @@
   "parser": "@typescript-eslint/parser",
   "plugins": ["@typescript-eslint"],
   "rules": {
+    "object-shorthand": "error",
     "@typescript-eslint/consistent-type-imports": [
       "error",
       {
@@ -25,8 +26,26 @@
         "argsIgnorePattern": "^_"
       }
     ],
-    "object-shorthand": "error",
-    "tailwindcss/no-custom-classname": "off",
+    "import/no-duplicates": "error",
+    "import/no-useless-path-segments": "error",
+    "import/order": [
+      "error",
+      {
+        "groups": ["builtin", "external", "parent", "sibling", "index", "object", "type"],
+        "pathGroups": [
+          {
+            "pattern": "@/**",
+            "group": "parent",
+            "position": "before"
+          }
+        ],
+        "alphabetize": {
+          "order": "asc"
+        },
+        "newlines-between": "always"
+      }
+    ],
+    "@next/next/no-img-element": "off",
     "react/jsx-curly-brace-presence": "error",
     "react/self-closing-comp": [
       "error",
@@ -35,6 +54,6 @@
         "html": false
       }
     ],
-    "@next/next/no-img-element": "off"
+    "tailwindcss/no-custom-classname": "off"
   }
 }
