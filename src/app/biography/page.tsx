@@ -2,12 +2,12 @@ import { PostWrapper } from '@/components/model/post/PostWrapper'
 import { Heading } from '@/components/ui/Heading'
 import { getSingleMd } from '@/utils/markdown'
 
-export default async function Mission() {
-  const { content } = await getSingleMd('content/profile/mission.md')
+export default async function Biography() {
+  const { content } = await getSingleMd('content/profile/biography.md')
 
   return (
     <>
-      <Heading>Mission</Heading>
+      <Heading>Biography</Heading>
 
       <div className="mt-8">
         <PostWrapper>

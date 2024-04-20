@@ -1,5 +1,5 @@
 export const path = {
-  home: '/',
+  aboutMe: '/',
   mission: '/mission',
   philosophy: '/philosophy',
   biography: '/biography',
@@ -16,7 +16,7 @@ export const navigationMap = [
     items: [
       {
         label: 'About Me',
-        path: path.home,
+        path: path.aboutMe,
       },
       {
         label: 'Mission',

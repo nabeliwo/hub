@@ -6,12 +6,12 @@ const config: Config = {
   ],
   theme: {
     fontFamily: {
-      body: ['Iner', 'M PLUS 1p', 'system-ui', 'sans-serif'],
+      body: ['Iner', "'M PLUS 1p\'", 'system-ui', 'sans-serif'],
     },
     colors: {
-      transparent: "transparent",
+      transparent: 'transparent',
       white: '#fff',
-      grey: "#f2f5f7",
+      grey: '#f2f5f7',
       black: '#222',
       blue: '#2286FF',
       'blue-light': '#64aaff',

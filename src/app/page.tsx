@@ -1,21 +1,25 @@
+import { PostWrapper } from '@/components/model/post/PostWrapper'
 import { Heading } from '@/components/ui/Heading'
 import { NabeliwoIcon } from '@/components/ui/icon/NabeliwoIcon'
+import { getSingleMd } from '@/utils/markdown'
 
-export default function AboutMe() {
+export default async function AboutMe() {
+  const { content } = await getSingleMd('content/profile/aboutMe.md')
+
   return (
     <>
       <Heading>About Me</Heading>
 
-      <div className="my-8">
-        <p className="flex gap-2 text-xl">
-          Hi, I&apos;m nabeliwo
-          <NabeliwoIcon />
-        </p>
+      <p className="mt-4 flex gap-2 text-xl md:mt-8">
+        Hi, I&apos;m nabeliwo
+        <NabeliwoIcon />
+      </p>
 
-        <p>Software engineer, YouTuber, and a bit more.</p>
+      <div className="mt-8">
+        <PostWrapper>
+          <div dangerouslySetInnerHTML={{ __html: content }} />
+        </PostWrapper>
       </div>
-
-      <div>hoge</div>
     </>
   )
 }

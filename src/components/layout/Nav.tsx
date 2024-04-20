@@ -3,6 +3,7 @@
 import { usePathname } from 'next/navigation'
 
 import { navigationMap } from '@/constants/path'
+import { matchNavItem } from '@/utils/helper'
 
 import { TextLink } from '../ui/TextLink'
 import { BarsIcon } from '../ui/icon/Bars'
@@ -16,7 +17,9 @@ export function Nav() {
       <ul>
         {menu.items.map((item) => (
           <li key={`${menu.category}-${item.label}`} className="relative pl-4">
-            {pathname === item.path && <span className="absolute left-0 top-2 h-4 w-1 bg-blue" />}
+            {matchNavItem(item.path, pathname) && (
+              <span className="absolute left-0 top-2 h-4 w-1 bg-blue" />
+            )}
 
             <TextLink href={item.path}>{item.label}</TextLink>
           </li>
@@ -36,13 +39,13 @@ export function Nav() {
 
       <nav className="fixed right-4 top-4 z-10 md:hidden">
         <details>
-          <summary className="list-none">
-            <div className="inline-flex size-8 items-center justify-center rounded bg-blue">
+          <summary className="list-none text-right">
+            <div className="inline-flex size-8 items-center justify-center bg-blue">
               <BarsIcon />
             </div>
           </summary>
 
-          <div className="space-y-8 bg-white px-6 py-4 shadow-2xl">{items}</div>
+          <div className="space-y-4 bg-white px-6 py-4 shadow-2xl">{items}</div>
         </details>
       </nav>
     </>

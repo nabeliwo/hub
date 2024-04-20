@@ -1,8 +1,6 @@
-import { Footer } from '@/components/layout/Footer'
 import { Header } from '@/components/layout/Header'
 import { Nav } from '@/components/layout/Nav'
 import { profile } from '@/constants/meta'
-import { path } from '@/constants/path'
 
 import type { Metadata } from 'next'
 import type { PropsWithChildren } from 'react'
@@ -29,15 +27,13 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: PropsWithChildren) {
   return (
     <html lang="ja">
-      <body className="p-4 font-body leading-8 tracking-wide text-black md:p-12">
-        <Header title={profile.siteName} description={profile.description} href={path.home} />
+      <body className="p-4 pb-12 font-body leading-8 tracking-wide text-black md:p-12">
+        <Header />
 
         <div className="mt-6 flex gap-12 md:mt-12">
           <Nav />
-          <main>{children}</main>
+          <main className="max-w-xl">{children}</main>
         </div>
-
-        <Footer />
       </body>
     </html>
   )

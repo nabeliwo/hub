@@ -1,20 +1,28 @@
-type Props = {
-  title: string
-  description: string
-  href: string
-}
+'use client'
 
-export function Header({ title, description, href }: Props) {
+import { usePathname } from 'next/navigation'
+
+import { getHeaderInfo } from '@/utils/helper'
+
+export function Header() {
+  const pathname = usePathname()
+  const info = getHeaderInfo(pathname)
+
   return (
     <header>
       <a
-        href={href}
+        href={info.url}
         className="mb-4 inline-block bg-blue px-4 text-white hover:bg-blue-light md:mb-2"
       >
-        {title}
+        {info.title}
       </a>
 
-      <p className="text-sm leading-4 md:pl-4 md:text-base md:leading-8">{description}</p>
+      <p className="hidden md:block">{info.description}</p>
+
+      <details className="bg-grey px-4 text-sm md:hidden">
+        <summary>The {info.title} is...</summary>
+        <p>{info.description}</p>
+      </details>
     </header>
   )
 }
