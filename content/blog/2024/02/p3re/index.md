@@ -4,7 +4,7 @@ description: 'ペルソナ3 リロードをクリアしたので感想です。'
 date: '2024-02-17'
 category: 'game'
 tags: ["ps5"]
-image: /images/post/2024/02/p3re.jpg
+image: "/images/blog/thumbnails/2024/02/p3re.jpg"
 ---
 
 [ペルソナ３ リロード](https://p3re.jp/)というゲームをクリアしたので感想を書きます。  

@@ -4,7 +4,7 @@ description: "引越してから半年以上経ってますが今更工事進捗
 date: "2022-08-15"
 category: "house"
 tags: []
-image: "/images/post/2022/08/my-home-13/thumbnail.jpg"
+image: "/images/blog/thumbnails/2022/08/my-home-13.jpg"
 ---
 
 前回マイホーム記事を書いたのが2ヵ月前なので、もう完全にこのシリーズを終えた気になっていたのですが、実は外構工事は中途半端な状態で引っ越しをしていました。  

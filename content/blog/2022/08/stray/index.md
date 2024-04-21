@@ -4,7 +4,7 @@ description: "廃れた精神が潤っていくのがわかるゲームでした
 date: "2022-08-12"
 category: "game"
 tags: ["ps4"]
-image: "/images/post/2022/08/stray/thumbnail.jpg"
+image: "/images/blog/thumbnails/2022/08/stray.jpg"
 ---
 
 巷で話題の最高に癒される猫ゲー『[Stray](https://store.steampowered.com/app/1332010/Stray/?l=japanese)』をクリアしたので感想を書いてみる。

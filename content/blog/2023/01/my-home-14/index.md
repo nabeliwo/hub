@@ -4,7 +4,7 @@ description: "防草シートと砂利を敷いた話をします。"
 date: "2023-01-16"
 category: "house"
 tags: []
-image: "/images/post/2023/01/my-home-14/thumbnail.jpg"
+image: "/images/blog/thumbnails/2023/01/my-home-14.jpg"
 ---
 
 早いものでこの家に引っ越してきてそろそろ1年が経とうとしています。  
