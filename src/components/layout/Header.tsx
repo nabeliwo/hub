@@ -17,7 +17,7 @@ export function Header() {
         {info.title}
       </a>
 
-      <p className="hidden md:block">{info.description}</p>
+      <p className="hidden pl-4 md:block">{info.description}</p>
 
       <details className="bg-grey px-4 text-sm md:hidden">
         <summary>The {info.title} is...</summary>

@@ -32,7 +32,7 @@ export default function RootLayout({ children }: PropsWithChildren) {
 
         <div className="mt-6 flex gap-12 md:mt-12">
           <Nav />
-          <main className="max-w-xl">{children}</main>
+          <main className="max-w-2xl">{children}</main>
         </div>
       </body>
     </html>
