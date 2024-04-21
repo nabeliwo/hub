@@ -1,10 +1,10 @@
 ---
-title: "2017春アニメの期待値を並べてみた"
-description: "2017年の春アニメの見るやつリストと期待値表。"
-date: "2017-04-06"
-category: "anime"
+title: '2017春アニメの期待値を並べてみた'
+description: '2017年の春アニメの見るやつリストと期待値表。'
+date: '2017-04-06'
+category: 'anime'
 tags: []
-image: ""
+image: ''
 ---
 
 2017年春アニメの自分的な期待値をまとめてみました。  
@@ -12,28 +12,27 @@ image: ""
 
 5段階評価してます。そんな感じで以下まとめです。
 
-
-| 作品                      | 期待値                             |
-|:--------------------------|:-----------------------------------|
-| 冴えない彼女の育て方♭      | :star: :star: :star: :star: :star: |
-| サクラダリセット           | :star: :star: |
-| サクラクエスト             | :star: :star: :star: :star: :star: |
-| エロマンガ先生             | :star: :star: :star: :star: :star: |
-| 進撃の巨人 Season2         | :star: :star: :star: :star: :star: |
-| ソード・オラトリア ダンジョンに出会いを求めるのは間違っているだろうか外伝 | :star: :star: :star: |
-| ゼロから始める魔法の書      | :star: :star: |
-| クロックワーク・プラネット   | :star: |
-| ひなこのーと                | :star: :star: :star: :star: |
-| つぐもも                   | :star: :star: |
-| 武装少女マキャヴェリズム     | :star: :star: :star: :star: |
-| 恋愛暴君                   | :star: |
-| ロクでなし魔術講師と禁忌教典 | :star: :star: :star: |
-| アリスと蔵六                | :star: :star: :star: |
-| 正解するカド                | :star: :star: |
-| アトム ザ・ビギニング        | :star: :star: :star: :star: |
-| フレームアームズ・ガール     | :star: |
-| 笑ゥせぇるすまん NEW        | :star: :star: :star: :star: |
-| 終末なにしてますか？忙しいですか？救ってもらっていいですか？ | :star: |
+| 作品                                                                      | 期待値                             |
+| :------------------------------------------------------------------------ | :--------------------------------- |
+| 冴えない彼女の育て方♭                                                     | :star: :star: :star: :star: :star: |
+| サクラダリセット                                                          | :star: :star:                      |
+| サクラクエスト                                                            | :star: :star: :star: :star: :star: |
+| エロマンガ先生                                                            | :star: :star: :star: :star: :star: |
+| 進撃の巨人 Season2                                                        | :star: :star: :star: :star: :star: |
+| ソード・オラトリア ダンジョンに出会いを求めるのは間違っているだろうか外伝 | :star: :star: :star:               |
+| ゼロから始める魔法の書                                                    | :star: :star:                      |
+| クロックワーク・プラネット                                                | :star:                             |
+| ひなこのーと                                                              | :star: :star: :star: :star:        |
+| つぐもも                                                                  | :star: :star:                      |
+| 武装少女マキャヴェリズム                                                  | :star: :star: :star: :star:        |
+| 恋愛暴君                                                                  | :star:                             |
+| ロクでなし魔術講師と禁忌教典                                              | :star: :star: :star:               |
+| アリスと蔵六                                                              | :star: :star: :star:               |
+| 正解するカド                                                              | :star: :star:                      |
+| アトム ザ・ビギニング                                                     | :star: :star: :star: :star:        |
+| フレームアームズ・ガール                                                  | :star:                             |
+| 笑ゥせぇるすまん NEW                                                      | :star: :star: :star: :star:        |
+| 終末なにしてますか？忙しいですか？救ってもらっていいですか？              | :star:                             |
 
 こんな感じ。  
 一応ここに載せたやつは最低でも全部3話までは見ていこうと思っております。  

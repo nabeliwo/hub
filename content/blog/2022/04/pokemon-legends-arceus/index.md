@@ -1,10 +1,10 @@
 ---
-title: "Pokémon LEGENDS アルセウス"
-description: "アルセウスをクリアしたので感想。"
-date: "2022-04-29"
-category: "game"
-tags: ["pokemon", "switch"]
-image: ""
+title: 'Pokémon LEGENDS アルセウス'
+description: 'アルセウスをクリアしたので感想。'
+date: '2022-04-29'
+category: 'game'
+tags: ['pokemon', 'switch']
+image: ''
 ---
 
 『Pokémon LEGENDS アルセウス』を全クリした。  

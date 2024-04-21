@@ -1,10 +1,10 @@
 ---
-title: "HTC VIVE Pro と VIVE トラッカーx3でフルトラッキングをする"
-description: "新しく VIVE トラッカーを3つ買ったので初めてのフルトラッキングをしてみた。"
-date: "2020-03-16"
-category: "vr"
+title: 'HTC VIVE Pro と VIVE トラッカーx3でフルトラッキングをする'
+description: '新しく VIVE トラッカーを3つ買ったので初めてのフルトラッキングをしてみた。'
+date: '2020-03-16'
+category: 'vr'
 tags: []
-image: ""
+image: ''
 ---
 
 ## VIVE トラッカーを買った

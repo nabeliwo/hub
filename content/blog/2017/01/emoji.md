@@ -1,10 +1,10 @@
 ---
-title: "絵文字対応しました"
-description: "このブログで絵文字が使えるようになったよ、というご報告。"
-date: "2017-01-11"
-category: "diary"
-tags: ["hugo"]
-image: ""
+title: '絵文字対応しました'
+description: 'このブログで絵文字が使えるようになったよ、というご報告。'
+date: '2017-01-11'
+category: 'diary'
+tags: ['hugo']
+image: ''
 ---
 
 絵文字対応しました:beer: めでたい:smile::tada:

@@ -10,10 +10,7 @@ export function Header() {
 
   return (
     <header>
-      <a
-        href={info.url}
-        className="mb-4 inline-block bg-blue px-4 text-white hover:bg-blue-light md:mb-2"
-      >
+      <a href={info.url} className="mb-4 inline-block bg-blue px-4 text-white hover:bg-blue-light md:mb-2">
         {info.title}
       </a>
 

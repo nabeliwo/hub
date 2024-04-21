@@ -1,10 +1,10 @@
 ---
-title: "React のホバー時のスタイル変更を簡単にレスポンシブ対応させる"
-description: "要素にホバーした際のスタイル変更のめんどいあれこれを React で簡単にやっちゃう話です。"
-date: "2018-05-13"
-category: "tech"
-tags: ["js", "css", "react"]
-image: ""
+title: 'React のホバー時のスタイル変更を簡単にレスポンシブ対応させる'
+description: '要素にホバーした際のスタイル変更のめんどいあれこれを React で簡単にやっちゃう話です。'
+date: '2018-05-13'
+category: 'tech'
+tags: ['js', 'css', 'react']
+image: ''
 ---
 
 要素にホバーした時にスタイルを変更するやり方ってどうやるのって聞かれたら普通に `:hover` っていう擬似クラスに対してスタイルあててそれで終わり簡単でしょみたいな話になるわけですね。
@@ -16,7 +16,7 @@ image: ""
 じゃあ今までどうしてたかっていうとわざわざこの対応のために JavaScript を書いてた。  
 ユーザーエージェントを見て、 PC だった場合は `mouseEnter` 時に `.hover` というクラスを与えて `mouseLeave` 時にそれを外す。スマホだった場合は `touchStart` 時にクラスを与えて `touchEnd` 時にそれを外す。  
 この処理を与えたい要素に対して `.js-hover` みたいなクラスを与えてその要素を取得して一括で処理とかしてた。  
-そうすると CSS は `.hover` に対してスタイルをあてるだけで良いので CSS はシンプルに保てる。みたいな。  
+そうすると CSS は `.hover` に対してスタイルをあてるだけで良いので CSS はシンプルに保てる。みたいな。
 
 それが昔のやり方。ここまでが前提。
 
@@ -35,7 +35,7 @@ image: ""
 というわけで作ってみた。
 
 ```js
-const hoverProvider = WrappedComponent => {
+const hoverProvider = (WrappedComponent) => {
   return class HoverProviderComponent extends React.Component {
     constructor(props) {
       super(props)
@@ -45,28 +45,28 @@ const hoverProvider = WrappedComponent => {
       }
     }
 
-    onMouseEnter = e => {
+    onMouseEnter = (e) => {
       const { onMouseEnter } = this.props
       if (onMouseEnter) onMouseEnter(e)
       if (isTouchDevice) return
       this.setState({ isHover: true })
     }
 
-    onMouseLeave = e => {
+    onMouseLeave = (e) => {
       const { onMouseLeave } = this.props
       if (onMouseLeave) onMouseLeave(e)
       if (isTouchDevice) return
       this.setState({ isHover: false })
     }
 
-    onTouchStart = e => {
+    onTouchStart = (e) => {
       const { onTouchStart } = this.props
       if (onTouchStart) onTouchStart(e)
       if (isMouseDevice) return
       this.setState({ isHover: true })
     }
 
-    onTouchEnd = e => {
+    onTouchEnd = (e) => {
       const { onTouchEnd } = this.props
       if (onTouchEnd) onTouchEnd(e)
       if (isMouseDevice) return
@@ -99,7 +99,11 @@ const hoverProvider = WrappedComponent => {
 で、この関数の使い方はこう。
 
 ```js
-const Link = hoverProvider(<a href="" className="link">リンク</a>)
+const Link = hoverProvider(
+  <a href="" className="link">
+    リンク
+  </a>,
+)
 ```
 
 ホバー時のスタイル変更の処理を与えたい要素を `hoverProvider` に渡すとレスポンシブ対応された `.hover` クラスの着脱機能を持ったコンポーネントが返される。  

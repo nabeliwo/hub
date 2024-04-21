@@ -1,10 +1,10 @@
 ---
-title: "#1 Web Components とは何か"
-description: "共通コンポーネントライブラリで Web Components を使う可能性を模索するシリーズを始めようと思います。"
-date: "2021-02-07"
-category: "tech"
-tags: ["js", "web-components"]
-image: ""
+title: '#1 Web Components とは何か'
+description: '共通コンポーネントライブラリで Web Components を使う可能性を模索するシリーズを始めようと思います。'
+date: '2021-02-07'
+category: 'tech'
+tags: ['js', 'web-components']
+image: ''
 ---
 
 この記事は僕が所属している会社で開発している [SmartHR UI](https://github.com/kufu/smarthr-ui) という React コンポーネントライブラリの未来を見据えて考えたことを綴った社内向けの記事に加筆修正をしてこのブログに持ってきたものになります。  

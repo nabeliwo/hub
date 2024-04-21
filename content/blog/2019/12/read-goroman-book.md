@@ -1,10 +1,10 @@
 ---
-title: "『ミライのつくり方2020―2045 僕がVRに賭けるわけ』を読んだ"
-description: "GOROman さんの本を読んだのでその簡単な感想。"
-date: "2019-12-28"
-category: "book"
+title: '『ミライのつくり方2020―2045 僕がVRに賭けるわけ』を読んだ'
+description: 'GOROman さんの本を読んだのでその簡単な感想。'
+date: '2019-12-28'
+category: 'book'
 tags: []
-image: ""
+image: ''
 ---
 
 最近は VR に興味津々なので色んな VR ゲームをやったり VR に関わる技術に手を出したりしている。  

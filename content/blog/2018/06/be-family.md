@@ -1,8 +1,8 @@
 ---
-title: "夫になりました。そして父になりました。"
-description: "入籍と出産報告です。"
-date: "2018-06-20"
-category: "diary"
+title: '夫になりました。そして父になりました。'
+description: '入籍と出産報告です。'
+date: '2018-06-20'
+category: 'diary'
 tags: []
 ---
 
@@ -41,6 +41,5 @@ tags: []
 最後に例のリストを載せておきます。  
 というかこのエントリはこのリストを見てもらうために存在するものだったりする。  
 [nabeliwo のウィッシュリスト](https://www.amazon.co.jp/hz/wishlist/ls/21PSWIV5KYH61?&sort=default)
-
 
 今後とも家族共々 nabeliwo をどうぞよろしくお願いします :man::woman::baby::cat::rabbit:

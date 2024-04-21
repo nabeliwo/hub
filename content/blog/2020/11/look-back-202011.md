@@ -1,10 +1,10 @@
 ---
-title: "2020年11月振り返り"
-description: "2020年11月のやったことやお気持ちを振り返ります。"
-date: "2020-11-30"
-category: "diary"
+title: '2020年11月振り返り'
+description: '2020年11月のやったことやお気持ちを振り返ります。'
+date: '2020-11-30'
+category: 'diary'
 tags: []
-image: ""
+image: ''
 ---
 
 2020年11月の振り返りです。  

@@ -1,10 +1,10 @@
 ---
-title: "ソードアート・オンライン 23 ユナイタル・リングⅡ を読んだ"
-description: "SAO の新シリーズ2巻目を読んだので感想。"
-date: "2020-07-26"
-category: "book"
-tags: ["sao"]
-image: ""
+title: 'ソードアート・オンライン 23 ユナイタル・リングⅡ を読んだ'
+description: 'SAO の新シリーズ2巻目を読んだので感想。'
+date: '2020-07-26'
+category: 'book'
+tags: ['sao']
+image: ''
 ---
 
 ユナイタル・リング編の2巻目である SAO の23巻を読みました。  

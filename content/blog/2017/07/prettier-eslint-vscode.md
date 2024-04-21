@@ -1,10 +1,10 @@
 ---
-title: "PrettierをEslintと連携してコード自動整形かつVisual Studio Codeでオートフォーマットする"
-description: "Prettierがとても便利なのでVisual Studio Codeから使えるようにした。"
-date: "2017-07-12"
-category: "tech"
-tags: ["js", "prettier", "eslint", "vscode"]
-image: ""
+title: 'PrettierをEslintと連携してコード自動整形かつVisual Studio Codeでオートフォーマットする'
+description: 'Prettierがとても便利なのでVisual Studio Codeから使えるようにした。'
+date: '2017-07-12'
+category: 'tech'
+tags: ['js', 'prettier', 'eslint', 'vscode']
+image: ''
 ---
 
 [prettier](https://github.com/prettier/prettier) は JavaScript のコードフォーマッター。  
@@ -61,8 +61,8 @@ jsファイルは `./src` 以下にある想定。
 
 これらを使う。
 
-* [husky](https://github.com/typicode/husky) : git コマンドにフックをはさめるようにする
-* [lint-staged](https://github.com/okonet/lint-staged) : git のステージング領域のファイルに対して処理をする
+- [husky](https://github.com/typicode/husky) : git コマンドにフックをはさめるようにする
+- [lint-staged](https://github.com/okonet/lint-staged) : git のステージング領域のファイルに対して処理をする
 
 `package.json` に以下を追記。
 

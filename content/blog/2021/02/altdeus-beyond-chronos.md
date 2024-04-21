@@ -1,10 +1,10 @@
 ---
-title: "ALTDEUS: Beyond Chronos をプレイした。めっちゃ泣いた。"
-description: "クラファンで応援していた VR ゲームをついにプレイできたので感想。"
-date: "2021-02-17"
-category: "game"
+title: 'ALTDEUS: Beyond Chronos をプレイした。めっちゃ泣いた。'
+description: 'クラファンで応援していた VR ゲームをついにプレイできたので感想。'
+date: '2021-02-17'
+category: 'game'
 tags: []
-image: ""
+image: ''
 ---
 
 [ALTDEUS: Beyond Chronos](https://altdeus.com/) というゲームをプレイしてクリアしたので感想を書こうと思います。

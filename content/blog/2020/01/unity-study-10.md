@@ -1,10 +1,10 @@
 ---
-title: "【Unity勉強】10日目：VRChat に自作ワールドをアップする"
-description: "最近は VR 熱が高いので今回も VRChat の話です。"
-date: "2020-01-21"
-category: "tech"
-tags: ["unity"]
-image: ""
+title: '【Unity勉強】10日目：VRChat に自作ワールドをアップする'
+description: '最近は VR 熱が高いので今回も VRChat の話です。'
+date: '2020-01-21'
+category: 'tech'
+tags: ['unity']
+image: ''
 ---
 
 [VRChat](https://www.vrchat.com/) に自分のワールドをあげて好き放題な世界を作りたいですね、ということで調べてみました。  
@@ -26,4 +26,3 @@ VRChat で自作ワールドで遊ぶって、これはもうつまりマイク�
 今回はそこまでやる必要はないので一旦スルーした。現状でも URL を渡せば誰でも呼ぶことができるっぽい。
 
 終わり。
-

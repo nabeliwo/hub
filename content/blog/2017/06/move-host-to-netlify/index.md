@@ -1,10 +1,10 @@
 ---
-title: "このブログのホスト先をさくらVPSからnetlifyに移行しました"
-description: "ちょっとだけ移行に手間取ったのでメモしときます"
-date: "2017-06-24"
-category: "tech"
-tags: ["netlify"]
-image: ""
+title: 'このブログのホスト先をさくらVPSからnetlifyに移行しました'
+description: 'ちょっとだけ移行に手間取ったのでメモしときます'
+date: '2017-06-24'
+category: 'tech'
+tags: ['netlify']
+image: ''
 ---
 
 このブログはさくらVPSでホストしていたのですが今話題の[netlify](https://www.netlify.com/)に移行したのでそのときのメモ。
@@ -13,8 +13,8 @@ image: ""
 
 ここらへん読めば大体わかる。
 
-* [高機能ホスティングサービスNetlifyについて調べて使ってみた](http://qiita.com/TakahiRoyte/items/b7c4d1581df1a17a93fb)
-* [Netlifyは最強の静的ウェブサイトホスティングサービスかもしれない](http://yoshidashingo.hatenablog.com/entry/2016/08/22/193821)
+- [高機能ホスティングサービスNetlifyについて調べて使ってみた](http://qiita.com/TakahiRoyte/items/b7c4d1581df1a17a93fb)
+- [Netlifyは最強の静的ウェブサイトホスティングサービスかもしれない](http://yoshidashingo.hatenablog.com/entry/2016/08/22/193821)
 
 ## netlifyでホストするまで
 
@@ -42,7 +42,7 @@ GUIでポチポチで全部いける。ぐぐればいっぱい出てくるの�
 「ドメイン設定 > ネームサーバーの設定 > ネームサーバーの変更 > 他のネームサーバーを利用」まで進んでお名前の独自設定用のネームサーバーを入れる。  
 この値はお名前.com使ってたらみんな一緒。
 
-![お名前.comのキャプチャ](./01.png "お名前.comのキャプチャ")
+![お名前.comのキャプチャ](./01.png 'お名前.comのキャプチャ')
 
 ### DNSレコード設定を変更する
 
@@ -50,7 +50,7 @@ GUIでポチポチで全部いける。ぐぐればいっぱい出てくるの�
 Aに入れるIPはnetlifyの共通のもの。  
 CNAMEに入れるものは[your-site-name].netlify.comの形式。
 
-![DNSレコード設定のキャプチャ](./02.png "DNSレコード設定のキャプチャ")
+![DNSレコード設定のキャプチャ](./02.png 'DNSレコード設定のキャプチャ')
 
 以上でDNSの設定は終わり。  
 nslookup叩きまくって「まだ来ない…まだ来ない…きた！」とかやってたけど本当にこういうのってどうやってやるものなんだろう…。

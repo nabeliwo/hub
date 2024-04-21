@@ -1,10 +1,10 @@
 ---
-title: "【Unity勉強】5日目：UIを作る"
-description: "ゲームの UI を作る機構について勉強しました。"
-date: "2020-01-02"
-category: "tech"
-tags: ["unity"]
-image: ""
+title: '【Unity勉強】5日目：UIを作る'
+description: 'ゲームの UI を作る機構について勉強しました。'
+date: '2020-01-02'
+category: 'tech'
+tags: ['unity']
+image: ''
 ---
 
 あけましておめでとうございます。  

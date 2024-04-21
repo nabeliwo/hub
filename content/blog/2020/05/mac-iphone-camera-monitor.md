@@ -1,10 +1,10 @@
 ---
-title: "iPhone で撮影している映像を Mac でモニターする方法"
-description: "iPhone インカメラを使わずに自分を撮影しつつモニターする方法を調べていて見つけたので共有。"
-date: "2020-05-15"
-category: "gadget"
-tags: ["iphone"]
-image: ""
+title: 'iPhone で撮影している映像を Mac でモニターする方法'
+description: 'iPhone インカメラを使わずに自分を撮影しつつモニターする方法を調べていて見つけたので共有。'
+date: '2020-05-15'
+category: 'gadget'
+tags: ['iphone']
+image: ''
 ---
 
 iPhone を使って自分を撮影したい時ってありますよね。  

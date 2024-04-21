@@ -1,10 +1,10 @@
 ---
-title: "『物語思考 「やりたいこと」が見つからなくて悩む人のキャリア設計術』を読んだ"
-description: "けんすうさんの本を読んだ話。"
-date: "2024-01-14"
-category: "book"
+title: '『物語思考 「やりたいこと」が見つからなくて悩む人のキャリア設計術』を読んだ'
+description: 'けんすうさんの本を読んだ話。'
+date: '2024-01-14'
+category: 'book'
 tags: []
-image: ""
+image: ''
 ---
 
 [けんすうさん](https://twitter.com/kensuu)著の『[物語思考 「やりたいこと」が見つからなくて悩む人のキャリア設計術](https://amzn.to/3RVKgxV)』を読んだので感想です。

@@ -1,10 +1,10 @@
 ---
-title: "React アプリケーションのボイラープレートを作った"
-description: "普段 TypeScript や React を使ってアプリケーションを作っているけれどその立ち上げがめんどくさかったのでボイラープレートを用意した話。"
-date: "2020-02-16"
-category: "made"
-tags: ["ts", "react"]
-image: ""
+title: 'React アプリケーションのボイラープレートを作った'
+description: '普段 TypeScript や React を使ってアプリケーションを作っているけれどその立ち上げがめんどくさかったのでボイラープレートを用意した話。'
+date: '2020-02-16'
+category: 'made'
+tags: ['ts', 'react']
+image: ''
 ---
 
 僕が個人で何かのアプリケーションを作るとき、最近は手癖で TypeScript + React でとりあえず始めている。 Redux を入れるかどうかは性質を考えてから決めているけれど、先の2つに関してはほぼ無思考で入れている。  
@@ -12,7 +12,7 @@ image: ""
 
 アプリケーションの性質によって変わるのでとりあえず2つに分けて作った。
 
-- [static-site-boilerplate-with-react-ts-webpack](https://github.com/nabeliwo/static-site-boilerplate-with-react-ts-webpack)  
+- [static-site-boilerplate-with-react-ts-webpack](https://github.com/nabeliwo/static-site-boilerplate-with-react-ts-webpack)
 - [prettier-eslint-stylelint-boilerplate](https://github.com/nabeliwo/prettier-eslint-stylelint-boilerplate)
 
 ## static-site-boilerplate-with-react-ts-webpack

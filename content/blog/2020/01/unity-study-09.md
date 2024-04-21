@@ -1,10 +1,10 @@
 ---
-title: "【Unity勉強】9日目：VRoid で作った VRM を VRChat にアップロードして動かす"
-description: "VRChat を自分のアバターで遊んでみたかったのでついにやってみた。"
-date: "2020-01-19"
-category: "tech"
-tags: ["unity"]
-image: ""
+title: '【Unity勉強】9日目：VRoid で作った VRM を VRChat にアップロードして動かす'
+description: 'VRChat を自分のアバターで遊んでみたかったのでついにやってみた。'
+date: '2020-01-19'
+category: 'tech'
+tags: ['unity']
+image: ''
 ---
 
 [VRoid](https://vroid.com/) で作ったアバターを [VRChat](https://www.vrchat.com/) で動かしてみたかったのでやり方調べてみました。  

@@ -1,10 +1,10 @@
 ---
-title: "ブラウザで動くステップシーケンサーを作った"
-description: "React を使ってブラウザで動くステップシーケンサーを作ったのでその詳しい話。"
-date: "2020-02-28"
-category: "made"
-tags: ["ts", "react"]
-image: "/images/blog/thumbnails/2020/02/web-step-sequencer.png"
+title: 'ブラウザで動くステップシーケンサーを作った'
+description: 'React を使ってブラウザで動くステップシーケンサーを作ったのでその詳しい話。'
+date: '2020-02-28'
+category: 'made'
+tags: ['ts', 'react']
+image: '/images/blog/thumbnails/2020/02/web-step-sequencer.png'
 ---
 
 ## ステップシーケンサーを作ってみたかった
@@ -20,7 +20,7 @@ image: "/images/blog/thumbnails/2020/02/web-step-sequencer.png"
 で、こういうのって物理マシンか結構ガチなソフトウェアでしか存在してなくて、ただ物理マシンは大体見た目がかっこいいのでそれはそれで良いんだけど、ちょっと敷居が高くて気軽に触れるようなものではない。
 
 ところで Google が作ったこういう Web アプリケーションはある。  
-![Chrome Music Lab - Song Maker](./02.png "Chrome Music Lab - Song Maker")
+![Chrome Music Lab - Song Maker](./02.png 'Chrome Music Lab - Song Maker')
 
 [Chrome Music Lab - Song Maker](https://musiclab.chromeexperiments.com/Song-Maker/)
 

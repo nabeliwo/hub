@@ -1,10 +1,10 @@
 ---
-title: "【ランキング生成サービス作成日記】 #01 やっていくぞ"
-description : "web アプリケーション作るぞい。"
-date: "2018-09-25"
-category: "diary"
+title: '【ランキング生成サービス作成日記】 #01 やっていくぞ'
+description: 'web アプリケーション作るぞい。'
+date: '2018-09-25'
+category: 'diary'
 tags: []
-image: ""
+image: ''
 ---
 
 前々から作りたいなーと思っていた web サービスがあるんですよね。

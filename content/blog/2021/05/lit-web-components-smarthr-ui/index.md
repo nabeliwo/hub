@@ -1,10 +1,10 @@
 ---
-title: "Lit を使って Web Components で SmartHR UI を再現する"
-description: "Lit という Web Components を作るためのパッケージがとても便利っぽかったので試してみた。"
-date: "2021-05-12"
-category: "tech"
-tags: ["js", "web-components"]
-image: ""
+title: 'Lit を使って Web Components で SmartHR UI を再現する'
+description: 'Lit という Web Components を作るためのパッケージがとても便利っぽかったので試してみた。'
+date: '2021-05-12'
+category: 'tech'
+tags: ['js', 'web-components']
+image: ''
 ---
 
 Lit という Web Components を作るためのパッケージがリリースされました。  
@@ -44,24 +44,24 @@ Web Components で提供されたコンポーネントは React からでも Vue
 
 ### Button
 
-![Button Component](./01.png "Button Component")
+![Button Component](./01.png 'Button Component')
 
 単体の要素で完結するような、シンプルなコンポーネントはとても簡単に実装できます。  
 基本的には見た目の装飾くらいしかやることがないので、スタイルがカプセル化された button タグを作るような感じになります。
 
 theme という attribute を与えて見た目のテーマを変更したり、 size という attribute を与えてボタンの大きさを変更したりなどの工夫ができます。
 
-![Button Component の HTML](./02.png "Button Component の HTML")
+![Button Component の HTML](./02.png 'Button Component の HTML')
 
 このように shadow-root が作られ、この中のスタイルはカプセル化され、外からの影響を受けません。
 
 ### Tooltip
 
-![Tooltip Component](./03.png "Tooltip Component")
+![Tooltip Component](./03.png 'Tooltip Component')
 
 Tooltip はホバーすることで要素が出現するコンポーネントです。
 
-![Tooltip Component hover](./04.png "Tooltip Component hover")
+![Tooltip Component hover](./04.png 'Tooltip Component hover')
 
 Button と違って動きはありますが、 hover をフックに CSS だけで完結できるものなので、基本的には実装は簡単です。  
 ただ、 SmartHR UI の Tooltip における吹き出しの部分は `ReactDOM.createPortal` を使って実装されています。理由としては、 Tooltip が `overflow: hidden` なボックスの中に配置された場合に、吹き出し部分だけボックスをはみ出るような状況になったときに親要素の `overflow: hidden` によって吹き出しが見切れてしまう問題が起きたので、 `ReactDOM.createPortal` を使って body 内の最後に要素を追加して吹き出しを出現させるという方法をとっているためです。  
@@ -71,7 +71,7 @@ Button と違って動きはありますが、 hover をフックに CSS だけ�
 
 ### Accordion
 
-![Accordion Component](./05.png "Accordion Component")
+![Accordion Component](./05.png 'Accordion Component')
 
 SmartHR UI の Accordion の実装は、 `AccordionPanel`, `AccordionPanelItem`, `AccordionPanelTrigger`, `AccordionPanelContent` の4つのコンポーネントに分かれていて、以下のように使う側で組み合わせることで使用できます。
 
@@ -95,7 +95,7 @@ const Component = () => (
 
 今回は簡易な実装として、 `accordion-panel` と `accordion-panel-item` の2つのコンポーネントのみを実装しています。
 
-![Accordion Component の HTML](./06.png "Accordion Component の HTML")
+![Accordion Component の HTML](./06.png 'Accordion Component の HTML')
 
 このように複数のコンポーネントによって1つの UI を作るタイプのコンポーネントを作る場合にも、 Lit で実装する際に課題がありました。  
 SmartHR UI ではデフォルトだと、同じ AccordionPanel 内にある AccordionPanelItem の場合、一つの AccordionItem が開いた状態で別の AccordionPanelItem を開くと、もともと開いていたものが閉じる仕様になっています。この機能を実現するためには、 AccordionPanel 内で現在の開閉状態を state で持ち、それを `React.createContext` でコンテクストに埋め込み、 AccordionPanelItem でそのコンテクストを抽出して状態を反映させるという処理が必要になります。

@@ -1,10 +1,10 @@
 ---
-title : "ようやくLet's Encryptでhttpsになった"
-description: "随分時間がかかってしまったけれどやっとhttpsになった。"
-date: "2017-06-06"
-category: "diary"
+title: "ようやくLet's Encryptでhttpsになった"
+description: '随分時間がかかってしまったけれどやっとhttpsになった。'
+date: '2017-06-06'
+category: 'diary'
 tags: []
-image: ""
+image: ''
 ---
 
 このブログをたててから長い間放置していたhttps対応なわけですが、本日ようやく重い腰をあげて対応しました。
@@ -14,8 +14,8 @@ image: ""
 手順とかはそこら中にあふれているので特に書きません。  
 参考にしたのは以下の2つのサイト。
 
-* [Let's Encrypt で Nginx にSSLを設定する](http://qiita.com/HeRo/items/f9eb8d8a08d4d5b63ee9)
-* [Let's Encryptでサブドメインをまとめてhttpsにする](http://lealog.hateblo.jp/entry/2016/12/01/151627)
+- [Let's Encrypt で Nginx にSSLを設定する](http://qiita.com/HeRo/items/f9eb8d8a08d4d5b63ee9)
+- [Let's Encryptでサブドメインをまとめてhttpsにする](http://lealog.hateblo.jp/entry/2016/12/01/151627)
 
 書いてある通りにやって多少躓きつつも特に困ることもなくささっと終わった感じ。あっけない。
 

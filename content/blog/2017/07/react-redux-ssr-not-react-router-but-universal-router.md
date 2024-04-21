@@ -1,10 +1,10 @@
 ---
-title: "react-routerではなくuniversal-routerでReact + ReduxのSSR + SPAする"
-description: "react-routerからuniversal-routerに移行したくなったのでそのときの行程メモ。"
-date: "2017-07-04"
-category: "tech"
-tags : ["js", "react"]
-image: ""
+title: 'react-routerではなくuniversal-routerでReact + ReduxのSSR + SPAする'
+description: 'react-routerからuniversal-routerに移行したくなったのでそのときの行程メモ。'
+date: '2017-07-04'
+category: 'tech'
+tags: ['js', 'react']
+image: ''
 ---
 
 [react-router](https://github.com/ReactTraining/react-router)がv4になったことで既存のアプリケーションが完全に壊れて困っちゃった人。いると思います。  
@@ -12,7 +12,7 @@ image: ""
 しかしそこは今後もドラスティックなメジャーバージョンアップを行うことが予想されるreact-routerなので、この際別のルーティングライブラリを選択してもいいのではないか、みたいな。  
 そういうモチベーションで今回の記事を書いてみました。
 
-そしてこの記事ではreact-routerの代わりにuniversal-routerを使います。  
+そしてこの記事ではreact-routerの代わりにuniversal-routerを使います。
 
 ## universal-router is...
 
@@ -29,10 +29,10 @@ APIがシンプルなので覚えることが少なく、react-routerで言うon
 
 やってみた結果思ったことはこんな感じ。
 
-* **universal-routerを使うということはReduxとhistoryとの繋ぎこみを自分でやるということ**
-* **universal-routerを使うということはReactとrouterとの繋ぎこみを自分でやるということ**
-* **universal-routerを使うということはhistory毎のscroll位置の保存みたいな泥臭いことを自分でやるということ**
-* **まあでも自由を得ることができるのでそれは嬉しいよね**
+- **universal-routerを使うということはReduxとhistoryとの繋ぎこみを自分でやるということ**
+- **universal-routerを使うということはReactとrouterとの繋ぎこみを自分でやるということ**
+- **universal-routerを使うということはhistory毎のscroll位置の保存みたいな泥臭いことを自分でやるということ**
+- **まあでも自由を得ることができるのでそれは嬉しいよね**
 
 (ルーターというコンテキストにおいてReduxは全然関係ないけれど、今回はReact + ReduxのSSR + SPA環境においてのルーティングという話なので許してください。)
 
@@ -56,7 +56,7 @@ SPAを作るにあたり必須なのがhistory管理なわけですが、react-r
 以下の記事がとても参考になりました。  
 [An Introduction to the Redux-First Routing Model](https://medium.freecodecamp.org/an-introduction-to-the-redux-first-routing-model-98926ebf53cb)
 
-上記の記事を元に(というかそのまんまに)Reduxでのhistory管理は実装しました。  
+上記の記事を元に(というかそのまんまに)Reduxでのhistory管理は実装しました。
 
 **actions/history.js**
 
@@ -68,31 +68,31 @@ export const GO_BACK = 'HISTORY_GO_BACK'
 export const GO_FORWARD = 'HISTORY_GO_FORWARD'
 export const LOCATION_CHANGE = 'HISTORY_LOCATION_CHANGE'
 
-export const push = href => ({
+export const push = (href) => ({
   type: PUSH,
-  payload: href
+  payload: href,
 })
-export const replace = href => ({
+export const replace = (href) => ({
   type: REPLACE,
-  payload: href
+  payload: href,
 })
-export const go = index => ({
+export const go = (index) => ({
   type: GO,
-  payload: index
+  payload: index,
 })
 export const goBack = () => ({
-  type: GO_BACK
+  type: GO_BACK,
 })
 export const goForward = () => ({
-  type: GO_FORWARD
+  type: GO_FORWARD,
 })
 export const locationChange = ({ pathname, search, hash }) => ({
   type: LOCATION_CHANGE,
   payload: {
     pathname,
     search,
-    hash
-  }
+    hash,
+  },
 })
 ```
 
@@ -102,7 +102,7 @@ history管理する上で必要なアクションを全て用意します。
 **middlewares/history.js**
 
 ```js
-const historyMiddleware = history => () => next => action => {
+const historyMiddleware = (history) => () => (next) => (action) => {
   switch (action.type) {
     case PUSH:
       history.push(action.payload)
@@ -141,7 +141,7 @@ export default historyMiddleware
 const initialState = {
   pathname: '/',
   search: '',
-  hash: ''
+  hash: '',
 }
 
 const historyReducer = (state = initialState, action) => {
@@ -155,28 +155,22 @@ const historyReducer = (state = initialState, action) => {
 }
 
 const rootReducer = combineReducers({
-  routing: historyReducer
+  routing: historyReducer,
 })
 
 export default rootReducer
 ```
 
 storeで持つhistoryのstateはpathnameとsearchとhasnの値のみになります。  
-reducerでは、 `LOCATION_CHANGE` のactionだけ処理します。  
+reducerでは、 `LOCATION_CHANGE` のactionだけ処理します。
 
 **store/configureStore.js**
 
 ```js
 export default function configureStore(initialState, history) {
-  const middlewares = applyMiddleware(
-    historyMiddleware(history)
-  )
+  const middlewares = applyMiddleware(historyMiddleware(history))
 
-  return createStore(
-    rootReducer,
-    initialState,
-    compose(middlewares)
-  )
+  return createStore(rootReducer, initialState, compose(middlewares))
 }
 ```
 
@@ -228,8 +222,8 @@ function dispatchLocationChange(dispatch, location) {
     locationChange({
       pathname: location.pathname,
       search: location.search,
-      hash: location.hash
-    })
+      hash: location.hash,
+    }),
   )
 }
 
@@ -242,20 +236,23 @@ class App extends React.PureComponent {
     this.state = { children }
 
     dispatchLocationChange(dispatch, history.location)
-    history.listen(location => dispatchLocationChange(dispatch, location))
+    history.listen((location) => dispatchLocationChange(dispatch, location))
   }
 
   componentWillUpdate(prevProps, prevState) {
     const prevRouter = prevProps.routing
     const currentRouter = this.props.routing
 
-    if (prevRouter.pathname !== currentRouter.pathname || prevRouter.hash !== currentRouter.hash || prevRouter.search !== currentRouter.search) {
+    if (
+      prevRouter.pathname !== currentRouter.pathname ||
+      prevRouter.hash !== currentRouter.hash ||
+      prevRouter.search !== currentRouter.search
+    ) {
       const { router } = this.props
 
-      router.resolve({ path: prevRouter.pathname })
-      .then(route => {
+      router.resolve({ path: prevRouter.pathname }).then((route) => {
         this.setState({
-          children: route.component
+          children: route.component,
         })
       })
     }
@@ -266,8 +263,8 @@ class App extends React.PureComponent {
   }
 }
 
-export default connect(state => ({
-  routing: state.routing
+export default connect((state) => ({
+  routing: state.routing,
 }))(App)
 ```
 
@@ -294,7 +291,6 @@ export default new Router(routes)
 ここではただインスタンスを作るだけで、実際の設定は別ファイルでやっています。  
 ただ、universal-routerのAPIを見ればわかりますが、インスタンス化する際にルーティング時のフックとなる処理を色々挟んだりできるので、そういうことがしたい場合はここに書くことができます。
 
-
 **routes/index.js**
 
 ```js
@@ -307,12 +303,12 @@ const routes = {
   children: [
     {
       path: '/',
-      action: home
+      action: home,
     },
     {
       path: '/users',
-      action: users
-    }
+      action: users,
+    },
   ],
 
   async action({ next }) {
@@ -322,7 +318,7 @@ const routes = {
     route.description = route.description || ''
 
     return route
-  }
+  },
 }
 
 export default routes
@@ -360,7 +356,7 @@ async function action() {
   return {
     title: 'Home',
     description: 'This is Home page',
-    component: <Home />
+    component: <Home />,
   }
 }
 
@@ -381,9 +377,11 @@ async function startApp() {
 
   render(
     <Provider store={store}>
-      <App router={router} history={history}>{route.component}</App>
+      <App router={router} history={history}>
+        {route.component}
+      </App>
     </Provider>,
-    document.getElementById('app')
+    document.getElementById('app'),
   )
 }
 
@@ -403,8 +401,8 @@ function dispatchLocationChange(dispatch, location) {
     locationChange({
       pathname: location.pathname,
       search: location.search,
-      hash: location.hash
-    })
+      hash: location.hash,
+    }),
   )
 }
 
@@ -417,20 +415,23 @@ class App extends React.PureComponent {
     this.state = { children }
 
     dispatchLocationChange(dispatch, history.location)
-    history.listen(location => dispatchLocationChange(dispatch, location))
+    history.listen((location) => dispatchLocationChange(dispatch, location))
   }
 
   componentWillUpdate(prevProps, prevState) {
     const prevRouter = prevProps.routing
     const currentRouter = this.props.routing
 
-    if (prevRouter.pathname !== currentRouter.pathname || prevRouter.hash !== currentRouter.hash || prevRouter.search !== currentRouter.search) {
+    if (
+      prevRouter.pathname !== currentRouter.pathname ||
+      prevRouter.hash !== currentRouter.hash ||
+      prevRouter.search !== currentRouter.search
+    ) {
       const { router } = this.props
 
-      router.resolve({ path: prevRouter.pathname })
-      .then(route => {
+      router.resolve({ path: prevRouter.pathname }).then((route) => {
         this.setState({
-          children: route.component
+          children: route.component,
         })
       })
     }
@@ -441,8 +442,8 @@ class App extends React.PureComponent {
   }
 }
 
-export default connect(state => ({
-  routing: state.routing
+export default connect((state) => ({
+  routing: state.routing,
 }))(App)
 ```
 
@@ -462,11 +463,14 @@ app.get('*', async (req, res, next) => {
   try {
     const history = createMemoryHistory({ initialEntries: [req.path] })
     const store = configureStore({}, history)
-    const route = await router.resolve({
-      path: req.path,
-      query: req.query
-    })
-    .catch(err => { throw new Error(err) })
+    const route = await router
+      .resolve({
+        path: req.path,
+        query: req.query,
+      })
+      .catch((err) => {
+        throw new Error(err)
+      })
 
     if (route.redirect) {
       res.redirect(route.status || 302, route.redirect)
@@ -476,10 +480,12 @@ app.get('*', async (req, res, next) => {
     const data = Object.assign({}, route, {
       children: ReactDOM.renderToString(
         <Provider store={store}>
-          <App router={router} history={history}>{route.component}</App>
-        </Provider>
+          <App router={router} history={history}>
+            {route.component}
+          </App>
+        </Provider>,
       ),
-      initialState: store.getState()
+      initialState: store.getState(),
     })
 
     const html = ReactDOM.renderToStaticMarkup(<Html {...data} />)
@@ -537,7 +543,7 @@ initialStateをscriptタグ内で保持してます。それをクライアン�
 ここまでやってようやくSSR + SPAの基盤が作れます。  
 react-routerで言うところのonEnterの代替になるものはactionであり、onLeaveに当たるものは存在しないので自分で実装する必要があります。
 
-react-routerを使うと実際こっちが考えることが大分減るので、楽したいのであればreact-routerの今後も行われるであろうドラスティックな変更は許容して、react-router@v4を使っていくのが良いかと思います。  
+react-routerを使うと実際こっちが考えることが大分減るので、楽したいのであればreact-routerの今後も行われるであろうドラスティックな変更は許容して、react-router@v4を使っていくのが良いかと思います。
 
 universal-routerを使うことで得られるメリットとしては、middleware-styleなのでフック挟むのが簡単だったり、あとは本当にAPIがシンプルなのでやりたいことに対して簡単に実装ができます。(ここで言う簡単とはsimpleではなくeasyなのであれですが…)  
 ちなみに今回のサンプルのルーティングは本当に基本的なことしか書いてないので、Real Worldではもっともっとここにいろんな処理を挟み込む必要がでてくるかと思います。でもまあそういうのも特に困ることなく書き加えられるかなと思います。

@@ -1,10 +1,10 @@
 ---
-title: "ブログを GatsbyJS でリニューアルしました"
-description: "React ベースの静的サイトジェネレータである GatsbyJS を使ってブログを作り直したので解説。"
-date: "2019-10-11"
-category: "made"
-tags: ["react", "gatsby"]
-image: ""
+title: 'ブログを GatsbyJS でリニューアルしました'
+description: 'React ベースの静的サイトジェネレータである GatsbyJS を使ってブログを作り直したので解説。'
+date: '2019-10-11'
+category: 'made'
+tags: ['react', 'gatsby']
+image: ''
 ---
 
 とてもお久しぶりにブログを書きます。どうもこんばんは、 [@nabeliwo](https://twitter.com/nabeliwo) です。
@@ -48,12 +48,12 @@ image: ""
 僕は特にデザインに明るいというわけでもなくて毎回見た目は雰囲気で「これかっこよくね？」って思ったものを作るっていうアレなのですが、今回もそんな感じです。  
 強いて言えば最近は乗算にはまっているので乗算を使ったエフェクトを入れたいなーっていうのがあって、ロゴに乗算を使ってみました。
 
-![ラリルレロ](./01.gif "ラリルレロ")
+![ラリルレロ](./01.gif 'ラリルレロ')
 
 こんな感じ。個人的にはとても気に入ってます。  
 ちなみに前回のブログはこんな感じのロゴにしてました。
 
-![nabeliwo-note](./02.gif "nabeliwo-note")
+![nabeliwo-note](./02.gif 'nabeliwo-note')
 
 これもめっちゃいいですね…。  
 こういうのを考えるのが結構好きだったりします。

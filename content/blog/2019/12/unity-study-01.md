@@ -1,10 +1,10 @@
 ---
-title: "【Unity勉強】1日目：Unity Hub を知る"
-description: "僕が一番楽しめる理想のゲームを作るために Unity の勉強をはじめました。"
-date: "2019-12-11"
-category: "tech"
-tags: ["unity", "sao"]
-image: ""
+title: '【Unity勉強】1日目：Unity Hub を知る'
+description: '僕が一番楽しめる理想のゲームを作るために Unity の勉強をはじめました。'
+date: '2019-12-11'
+category: 'tech'
+tags: ['unity', 'sao']
+image: ''
 ---
 
 こんにちは。  

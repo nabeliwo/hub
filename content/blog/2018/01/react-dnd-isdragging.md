@@ -1,10 +1,10 @@
 ---
-title: "react-dnd で isDragging が正しい値を返さないとき"
-description: "react-dnd を使っていてハマったときのメモ。"
-date: "2018-01-04"
-category: "tech"
-tags: ["js", "react"]
-image: ""
+title: 'react-dnd で isDragging が正しい値を返さないとき'
+description: 'react-dnd を使っていてハマったときのメモ。'
+date: '2018-01-04'
+category: 'tech'
+tags: ['js', 'react']
+image: ''
 ---
 
 [react-dnd](https://github.com/react-dnd/react-dnd) という React でドラッグ＆ドロップを実装したいときに使われる鉄板ライブラリがあります。  

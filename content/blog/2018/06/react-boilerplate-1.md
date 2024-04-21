@@ -1,10 +1,10 @@
 ---
-title: "TypeScript で Express サーバーと React アプリケーションを作る【最強の React ボイラープレートを作るぞシリーズ1】"
-description: "最強の React ボイラープレートを目指して…。"
-date: "2018-06-30"
-category: "tech"
-tags: ["ts", "node", "express", "react"]
-image: ""
+title: 'TypeScript で Express サーバーと React アプリケーションを作る【最強の React ボイラープレートを作るぞシリーズ1】'
+description: '最強の React ボイラープレートを目指して…。'
+date: '2018-06-30'
+category: 'tech'
+tags: ['ts', 'node', 'express', 'react']
+image: ''
 ---
 
 ## 前置き
@@ -236,10 +236,7 @@ const baseConfig = {
 }
 const devConfig = merge(baseConfig, {
   devtool: 'source-map',
-  plugins: [
-    new webpack.NamedModulesPlugin(),
-    new webpack.NoEmitOnErrorsPlugin(),
-  ],
+  plugins: [new webpack.NamedModulesPlugin(), new webpack.NoEmitOnErrorsPlugin()],
 })
 const prdConfig = merge(baseConfig, {})
 
@@ -281,21 +278,20 @@ div 1個だけ置くやつ。
 ```html
 <!-- ./public/index.html -->
 
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
-  <meta name="format-detection" content="telephone=no, email=no, address=no">
-  <title>ts-react-spa-ssr-boilerplate</title>
-</head>
-<body>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0" />
+    <meta name="format-detection" content="telephone=no, email=no, address=no" />
+    <title>ts-react-spa-ssr-boilerplate</title>
+  </head>
+  <body>
+    <div id="root"></div>
 
-<div id="root"></div>
-
-<script src="/assets/js/client.bundle.js"></script>
-</body>
+    <script src="/assets/js/client.bundle.js"></script>
+  </body>
 </html>
 ```
 
@@ -410,7 +406,7 @@ Prettier の設定。
 
 これもやってることは tslint.json とほぼ同じですね。
 
-設定ファイルを用意したら npm script を追加します。  
+設定ファイルを用意したら npm script を追加します。
 
 ```
 # ./package.json
@@ -434,7 +430,7 @@ Prettier の設定。
 ```
 
 複数タスクを走らせるために npm-run-all を使用しています。  
-lint タスクを走らせることで lint エラーの確認ができます。 format タスクを走らせることで lint 結果に基づいてファイルをフォーマットしてくれます。  
+lint タスクを走らせることで lint エラーの確認ができます。 format タスクを走らせることで lint 結果に基づいてファイルをフォーマットしてくれます。
 
 precommit で lint-staged の設定をしています。  
 lint-staged と husky を使うことで commit 時に format を走らせているので、開発者は特にここらへん気にすることなく開発することができますね。

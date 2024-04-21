@@ -17,9 +17,7 @@ export function Nav() {
       <ul>
         {menu.items.map((item) => (
           <li key={`${menu.category}-${item.label}`} className="relative pl-4">
-            {matchNavItem(item.path, pathname) && (
-              <span className="absolute left-0 top-2 h-4 w-1 bg-blue" />
-            )}
+            {matchNavItem(item.path, pathname) && <span className="absolute left-0 top-2 h-4 w-1 bg-blue" />}
 
             <TextLink href={item.path}>{item.label}</TextLink>
           </li>

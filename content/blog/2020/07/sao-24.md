@@ -1,10 +1,10 @@
 ---
-title: "ソードアート・オンライン 24 ユナイタル・リングⅢ を読んだ"
-description: "SAO の新シリーズ3巻目を読んだので感想。"
-date: "2020-07-27"
-category: "book"
-tags: ["sao"]
-image: ""
+title: 'ソードアート・オンライン 24 ユナイタル・リングⅢ を読んだ'
+description: 'SAO の新シリーズ3巻目を読んだので感想。'
+date: '2020-07-27'
+category: 'book'
+tags: ['sao']
+image: ''
 ---
 
 ユナイタル・リング編の3巻目である SAO の24巻を読みました。  

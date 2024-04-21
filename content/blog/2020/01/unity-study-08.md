@@ -1,10 +1,10 @@
 ---
-title: "【Unity勉強】8日目：Unity のプロジェクトを作って Git で管理する"
-description: "ついに自分でゲームを作るのでとりあえず Git で管理できるようにする。"
-date: "2020-01-18"
-category: "tech"
-tags: ["unity"]
-image: ""
+title: '【Unity勉強】8日目：Unity のプロジェクトを作って Git で管理する'
+description: 'ついに自分でゲームを作るのでとりあえず Git で管理できるようにする。'
+date: '2020-01-18'
+category: 'tech'
+tags: ['unity']
+image: ''
 ---
 
 書籍を一冊終わらせて2Dも3Dもなんとなくやり方はわかったのでついに自分で何かしらのものを作ろうと思います。まずは2Dのゲームを作ります。
@@ -49,4 +49,3 @@ https://github.com/nabeliwo/genkai-run
 
 ちなみに今回はこの Qiita の記事を参考にした。  
 [UnityプロジェクトをGitで管理 - Qiita](https://qiita.com/cs1000/items/07368892a599b2b7b836)
-

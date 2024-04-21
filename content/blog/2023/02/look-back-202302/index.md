@@ -1,10 +1,10 @@
 ---
-title: "2023年2月のふりかえり"
-description: "2023年2月にやったことやお気持ちなどをふりかえります。"
-date: "2023-02-28"
-category: "diary"
+title: '2023年2月のふりかえり'
+description: '2023年2月にやったことやお気持ちなどをふりかえります。'
+date: '2023-02-28'
+category: 'diary'
 tags: []
-image: ""
+image: ''
 ---
 
 ## 今月のトピック

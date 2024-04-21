@@ -1,10 +1,10 @@
 ---
-title: "Windows 開発環境を作る"
-description: "WSL2 使うととっても簡単に Windows で開発できるんだなって。"
-date: "2020-10-19"
-category: "tech"
-tags: ["wsl"]
-image: ""
+title: 'Windows 開発環境を作る'
+description: 'WSL2 使うととっても簡単に Windows で開発できるんだなって。'
+date: '2020-10-19'
+category: 'tech'
+tags: ['wsl']
+image: ''
 ---
 
 やっぱり大層な自作ゲーミング PC というものを所持しているわけなのでこれをゲーム以外にも有効活用しない手はないということで、前々から Windows で開発する環境を作ってはいたのだけれど普段開発している Mac との違いに戸惑うことが多くて結局家で個人の開発をするときでも Mac を使ってしまう、という状況があった。  

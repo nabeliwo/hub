@@ -1,10 +1,10 @@
 ---
-title: "『作れる！学べる！Unreal Engine 4 ゲーム開発入門』を読んだ"
-description: "Unreal Engine 4 ってどんな感じなのかなーを知りたくて勉強してみた話。"
-date: "2020-09-05"
-category: "book"
-tags: ["ue"]
-image: ""
+title: '『作れる！学べる！Unreal Engine 4 ゲーム開発入門』を読んだ'
+description: 'Unreal Engine 4 ってどんな感じなのかなーを知りたくて勉強してみた話。'
+date: '2020-09-05'
+category: 'book'
+tags: ['ue']
+image: ''
 ---
 
 ゲームを作るぞーってなったときに Unity か Unreal Engine かどっちを選べば良いんだろ～ってのは一通り考えていて、色々とメリデメを調べた見た感じは Unreal Engine の強みであるグラフィック性能を活かせるものを個人で作れるようにはしばらくはならんだろうな、という考えのもと、日本語での公式ドキュメントや非公式の情報にアクセスしやすいであろう Unity を選んで勉強を始めた。  

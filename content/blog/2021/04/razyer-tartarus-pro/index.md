@@ -1,10 +1,10 @@
 ---
-title: "左手ゲーミングキーパッド Razer Tartarus Pro Mercury White を買った"
-description: "ゲーム環境を追及した結果左手キーパッドにたどり着きました。"
-date: "2021-04-14"
-category: "gadget"
-tags: ["razer"]
-image: "/images/blog/thumbnails/2021/04/razer-tartarus-pro.jpg"
+title: '左手ゲーミングキーパッド Razer Tartarus Pro Mercury White を買った'
+description: 'ゲーム環境を追及した結果左手キーパッドにたどり着きました。'
+date: '2021-04-14'
+category: 'gadget'
+tags: ['razer']
+image: '/images/blog/thumbnails/2021/04/razer-tartarus-pro.jpg'
 ---
 
 ついに左手ゲーミングキーパッドに手を出しました。1ヵ月くらい使ってみたのでその感想を書きます。
@@ -33,7 +33,7 @@ image: "/images/blog/thumbnails/2021/04/razer-tartarus-pro.jpg"
 
 現在はこんな感じになっています。
 
-![最近のデスク](./02.jpg "最近のデスク")
+![最近のデスク](./02.jpg '最近のデスク')
 
 やっぱりデバイスを白で統一するのがこだわりですね…美しい…。  
 上でも言いましたが、キーボードは今後もっとコーディングしやすさを意識して分割キーボードとかにする予定。
