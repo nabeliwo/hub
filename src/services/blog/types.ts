@@ -16,6 +16,7 @@ export const categoryMap = {
   diary: '日記',
   made: '作ったもの',
   poem: 'ポエム',
+  house: '家',
   gadget: 'ガジェット',
   'pc-build': '自作 PC',
   game: 'ゲーム',

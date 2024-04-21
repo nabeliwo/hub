@@ -7,14 +7,13 @@ export const profile = {
 export const blog = {
   siteName: 'nabeliwo blog',
   description:
-    'The nabeliwo blog is a place for me to summarize what I feel in my daily life, without focusing on any particular genre.',
+    'nabeliwo blog は nabeliwo の日々の出来事だったり生活の中で感じたことだったりを雑にお届けします。',
   url: 'https://nabeliwo.blue/blog',
 }
 
 export const weekly = {
   siteName: 'nabeliwo weekly',
-  description:
-    'The nabeliwo weekly is a place to summarize my daily activities in the form of a weekly report.',
+  description: 'nabeliwo weekly は nabeliwo の日々の活動を週報の形式でまとめてお届けします。',
   url: 'https://nabeliwo.blue/weekly',
 }
 

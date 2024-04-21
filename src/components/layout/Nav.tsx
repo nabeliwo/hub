@@ -6,7 +6,7 @@ import { navigationMap } from '@/constants/path'
 import { matchNavItem } from '@/utils/helper'
 
 import { TextLink } from '../ui/TextLink'
-import { BarsIcon } from '../ui/icon/Bars'
+import { BarsIcon } from '../ui/icon/BarsIcon'
 
 export function Nav() {
   const pathname = usePathname()
@@ -14,7 +14,7 @@ export function Nav() {
     <section key={menu.category}>
       <h2 className="mb-2 text-xl md:mb-4">{menu.category}</h2>
 
-      <ul>
+      <ul className="leading-8">
         {menu.items.map((item) => (
           <li key={`${menu.category}-${item.label}`} className="relative pl-4">
             {matchNavItem(item.path, pathname) && <span className="absolute left-0 top-2 h-4 w-1 bg-blue" />}
@@ -38,12 +38,12 @@ export function Nav() {
       <nav className="fixed right-4 top-4 z-10 md:hidden">
         <details>
           <summary className="list-none text-right">
-            <div className="inline-flex size-8 items-center justify-center bg-blue">
-              <BarsIcon />
+            <div className="inline-flex size-8 items-center justify-center bg-blue text-white">
+              <BarsIcon alt="Menu" />
             </div>
           </summary>
 
-          <div className="space-y-4 bg-white px-6 py-4 shadow-2xl">{items}</div>
+          <div className="space-y-4 bg-white px-8 py-6 shadow-2xl">{items}</div>
         </details>
       </nav>
     </>

@@ -27,13 +27,3 @@
   src: url(/fonts/MPLUS1p-Bold.ttf) format("truetype");
 }
 
-body {
-  /*
-    MEMO: 背景全体に方眼紙のような升目を出すためのスタイル。
-          本当はこれも tailwind に持っていきたいがスタイルが複雑すぎて厳しいのでこのまま。
-  */
-  background-image: linear-gradient(0deg, transparent calc(100% - 1px), #f0f0f0 calc(100% - 1px)),
-    linear-gradient(90deg, transparent calc(100% - 1px), #f0f0f0 calc(100% - 1px));
-  background-size: 1rem 1rem;
-  background-repeat: repeat;
-}

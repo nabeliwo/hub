@@ -1,9 +1,23 @@
 .wrapper {
-  & a {
-    text-decoration: underline;
+  & h2 {
+    font-size: 1.5rem;
+
+    &:not(:first-child) {
+      margin-top: 3rem;
+    }
   }
 
-  & p:not(:first-of-type) {
+  & a {
+    text-decoration: underline;
+
+    @media (min-width: 768px) {
+      &:hover {
+        text-decoration: none;
+      }
+    }
+  }
+
+  & p:not(:first-child) {
     margin-top: 2rem;
   }
 
