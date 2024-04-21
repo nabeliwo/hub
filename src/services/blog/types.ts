@@ -1,3 +1,17 @@
+export type BlogFrontMatter = {
+  title: string
+  description: string
+  date: string
+  category: keyof typeof categoryMap
+  tags: Array<keyof typeof tagMap>
+  image: string
+}
+
+export type Blog = BlogFrontMatter & {
+  content: string
+  slug: string
+}
+
 export const categoryMap = {
   diary: '日記',
   made: '作ったもの',

@@ -1,7 +1,12 @@
-import { getSingleMdContent } from '@/utils/markdown'
+import fs from 'fs'
+import path from 'path'
+
+import { getMdContent } from '@/utils/markdown'
 
 export async function getPage(name: string) {
-  const { metaData, content } = await getSingleMdContent(`content/profile/${name}.md`)
+  const fileFullPath = path.join(process.cwd(), `content/profile/${name}.md`)
+  const file = fs.readFileSync(fileFullPath, 'utf8')
+  const { metaData, content } = await getMdContent(file)
 
   return {
     title: metaData.title as string,
