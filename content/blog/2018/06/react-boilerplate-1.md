@@ -2,7 +2,8 @@
 title: "TypeScript で Express サーバーと React アプリケーションを作る【最強の React ボイラープレートを作るぞシリーズ1】"
 description: "最強の React ボイラープレートを目指して…。"
 date: "2018-06-30"
-tags: ["javascript"]
+category: "tech"
+tags: ["ts", "node", "express", "react"]
 image: ""
 ---
 

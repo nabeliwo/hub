@@ -2,7 +2,8 @@
 title: "2023年8月のふりかえり"
 description: "2023年8月にやったことやお気持ちなどをふりかえります。"
 date: "2023-08-31"
-tags: ["diary"]
+category: "diary"
+tags: []
 image: ""
 ---
 

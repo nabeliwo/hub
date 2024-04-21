@@ -2,7 +2,8 @@
 title: "【ランキング生成サービス作成日記】 #01 やっていくぞ"
 description : "web アプリケーション作るぞい。"
 date: "2018-09-25"
-tags: ["diary"]
+category: "diary"
+tags: []
 image: ""
 ---
 

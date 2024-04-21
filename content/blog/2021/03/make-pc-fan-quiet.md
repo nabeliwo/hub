@@ -2,7 +2,8 @@
 title: "自作 PC のファンがうるさいのでちょっと静かにしてほしい"
 description: "以前自作した PC のファンがうるさくて困っていたので改善した話です。"
 date: "2021-03-09"
-tags: ["pc"]
+category: "pc-build"
+tags: []
 image: ""
 ---
 

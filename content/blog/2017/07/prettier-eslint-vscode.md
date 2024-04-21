@@ -2,7 +2,8 @@
 title: "PrettierをEslintと連携してコード自動整形かつVisual Studio Codeでオートフォーマットする"
 description: "Prettierがとても便利なのでVisual Studio Codeから使えるようにした。"
 date: "2017-07-12"
-tags: ["javascript"]
+category: "tech"
+tags: ["js", "prettier", "eslint", "vscode"]
 image: ""
 ---
 

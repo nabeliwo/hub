@@ -2,7 +2,8 @@
 title: "くらしのマーケットで依頼してドラム式洗濯機の清掃をした"
 description: "洗濯機が尋常じゃなく汚れていた話です。"
 date: "2024-01-15"
-tags: ["diary", "house"]
+category: "house"
+tags: []
 image: /images/post/2024/01/clean-washing-machine.jpg
 ---
 

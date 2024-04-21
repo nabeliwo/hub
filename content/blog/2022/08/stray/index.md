@@ -2,7 +2,8 @@
 title: "話題の猫ゲー『Stray』をプレイした"
 description: "廃れた精神が潤っていくのがわかるゲームでした。"
 date: "2022-08-12"
-tags: ["game"]
+category: "game"
+tags: ["ps4"]
 image: "/images/post/2022/08/stray/thumbnail.jpg"
 ---
 

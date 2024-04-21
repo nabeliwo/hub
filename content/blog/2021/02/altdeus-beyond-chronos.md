@@ -2,7 +2,8 @@
 title: "ALTDEUS: Beyond Chronos をプレイした。めっちゃ泣いた。"
 description: "クラファンで応援していた VR ゲームをついにプレイできたので感想。"
 date: "2021-02-17"
-tags: ["game"]
+category: "game"
+tags: []
 image: ""
 ---
 

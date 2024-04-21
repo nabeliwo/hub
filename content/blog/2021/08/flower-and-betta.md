@@ -2,7 +2,8 @@
 title: "花を飾ったりベタを飼ったりしている"
 description: "最近の行動とお気持ちの話。"
 date: "2021-08-09"
-tags: ["diary", "poem"]
+category: "poem"
+tags: []
 image: "/images/post/2021/08/flower-and-betta/01.jpg"
 ---
 

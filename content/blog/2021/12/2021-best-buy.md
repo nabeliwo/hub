@@ -2,7 +2,8 @@
 title: "リモートワークに役立ちそうな2021年に買ってよかったもの"
 description: "アドベントカレンダー用に捻り出したネタです。"
 date: "2021-12-24"
-tags: ["diary"]
+category: "diary"
+tags: []
 image: ""
 ---
 

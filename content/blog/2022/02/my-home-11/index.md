@@ -2,7 +2,8 @@
 title: "#11 ついに新しい家に住み始めた【家を建てる話をするシリーズ】"
 description: "長い間続いた注文住宅も、ついに引っ越しを迎えました。"
 date: "2022-02-12"
-tags: ["house"]
+category: "house"
+tags: []
 image: ""
 ---
 

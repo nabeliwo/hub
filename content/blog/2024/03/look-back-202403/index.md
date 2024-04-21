@@ -2,7 +2,8 @@
 title: '2024年3月のふりかえり'
 description: '2024年3月にやったことやお気持ちなどをふりかえります。'
 date: '2024-03-31'
-tags: ['diary']
+category: 'diary'
+tags: []
 image: ''
 ---
 

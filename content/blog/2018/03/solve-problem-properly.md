@@ -2,7 +2,8 @@
 title: "適切な問題設定をして適切な解法で解決するのは難しい"
 description: "やりたいことに対して生じた問題をどうやって解決するのかって話。"
 date: "2018-03-06"
-tags: ["poem"]
+category: "poem"
+tags: []
 image: ""
 ---
 

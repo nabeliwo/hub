@@ -2,7 +2,8 @@
 title: "#8 表札を作った【家を建てる話をするシリーズ】"
 description: "ちょっと気が早いですが表札が完成したので見せたい"
 date: "2021-11-19"
-tags: ["house"]
+category: "house"
+tags: []
 image: ""
 ---
 

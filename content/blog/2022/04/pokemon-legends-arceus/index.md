@@ -2,7 +2,8 @@
 title: "Pokémon LEGENDS アルセウス"
 description: "アルセウスをクリアしたので感想。"
 date: "2022-04-29"
-tags: ["game"]
+category: "game"
+tags: ["pokemon", "switch"]
 image: ""
 ---
 

@@ -2,7 +2,8 @@
 title: "4K60FPSでゲーム配信するために 4K60 Pro MK.2 を導入する"
 description: "最高画質での配信を目指す話。"
 date: "2021-02-06"
-tags: ["pc", "game"]
+category: "pc-build"
+tags: ["game-streaming"]
 image: "/images/post/2021/02/4k60-pro-mk2/04.jpg"
 ---
 

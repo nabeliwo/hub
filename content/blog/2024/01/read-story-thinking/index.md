@@ -2,7 +2,8 @@
 title: "『物語思考 「やりたいこと」が見つからなくて悩む人のキャリア設計術』を読んだ"
 description: "けんすうさんの本を読んだ話。"
 date: "2024-01-14"
-tags: ["book"]
+category: "book"
+tags: []
 image: ""
 ---
 

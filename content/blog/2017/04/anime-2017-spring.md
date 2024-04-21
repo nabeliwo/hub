@@ -2,7 +2,8 @@
 title: "2017春アニメの期待値を並べてみた"
 description: "2017年の春アニメの見るやつリストと期待値表。"
 date: "2017-04-06"
-tags: ["anime"]
+category: "anime"
+tags: []
 image: ""
 ---
 

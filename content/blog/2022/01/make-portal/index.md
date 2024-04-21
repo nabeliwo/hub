@@ -2,7 +2,8 @@
 title: "自分のアウトプットする場を整えている話"
 description: "ブログとか nippo とかポータルサイトとか Twitter アカウントを整理している話をします。"
 date: "2022-01-03"
-tags: ["diary"]
+category: "diary"
+tags: []
 image: ""
 ---
 

@@ -2,7 +2,8 @@
 title: "『グラフィックスプログラミング入門』を読んだ"
 description: "JS でグラフィックスプログラミングの基礎を学べる本がとてもよかったという話"
 date: "2020-01-28"
-tags: ["javascript", "book"]
+category: "book"
+tags: ["js"]
 image: ""
 ---
 

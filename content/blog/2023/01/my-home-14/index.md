@@ -2,7 +2,8 @@
 title: "#14 雑草抜くのがしんどすぎたので防草シートと砂利を敷いた【家を建てる話をするシリーズ】"
 description: "防草シートと砂利を敷いた話をします。"
 date: "2023-01-16"
-tags: ["house"]
+category: "house"
+tags: []
 image: "/images/post/2023/01/my-home-14/thumbnail.jpg"
 ---
 

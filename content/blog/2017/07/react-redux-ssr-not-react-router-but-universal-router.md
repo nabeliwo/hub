@@ -2,7 +2,8 @@
 title: "react-routerではなくuniversal-routerでReact + ReduxのSSR + SPAする"
 description: "react-routerからuniversal-routerに移行したくなったのでそのときの行程メモ。"
 date: "2017-07-04"
-tags : ["javascript"]
+category: "tech"
+tags : ["js", "react"]
 image: ""
 ---
 

@@ -2,7 +2,8 @@
 title: "エンジニアとしての自分の弱点を考えてみる"
 description: "自分は色々弱いところがあるなあと思ったので。"
 date: "2020-06-18"
-tags: ["poem"]
+category: "poem"
+tags: []
 image: ""
 ---
 

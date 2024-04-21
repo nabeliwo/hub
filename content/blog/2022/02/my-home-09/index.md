@@ -2,7 +2,8 @@
 title: "#9 金銭消費貸借契約、略して金消契約というものをした【家を建てる話をするシリーズ】"
 description: "おうち関連のお金の契約の話です。"
 date: "2022-02-10"
-tags: ["house"]
+category: "house"
+tags: []
 image: ""
 ---
 

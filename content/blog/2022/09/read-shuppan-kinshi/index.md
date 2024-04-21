@@ -2,7 +2,8 @@
 title: "『出版禁止』を読んだ"
 description: "長江俊和さんの書籍は映像作品と変わらず面白かったという話。"
 date: "2022-11-10"
-tags: ["book"]
+category: "book"
+tags: []
 image: ""
 ---
 

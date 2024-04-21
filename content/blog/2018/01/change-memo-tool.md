@@ -2,7 +2,8 @@
 title: "メモツールを Bear から Inkdrop に移行した"
 description: "ようやく最高のメモツールを見つけたかもしれない。"
 date: "2018-01-07"
-tags: ["diary"]
+category: "diary"
+tags: []
 image: ""
 ---
 

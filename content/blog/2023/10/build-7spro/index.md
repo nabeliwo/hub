@@ -2,7 +2,8 @@
 title: "7sPro という自作キーボードを組んだ"
 description: "初めての自作キーボードが良い感じにできたので共有です。"
 date: "2023-10-12"
-tags: ["made", "pc"]
+category: "gadget"
+tags: ["hhkb", "keyboard-build"]
 image: "/images/post/2023/10/build-7spro.jpg"
 ---
 

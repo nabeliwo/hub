@@ -2,7 +2,8 @@
 title: "【SHURE】ゲーミングヘッドセットをやめてイヤホンを使ってみてる【SE215】"
 description: "ゲーミングヘッドセットで頭が痛くなっちゃう話と新しいイヤホンを買った話をします。"
 date: "2021-09-06"
-tags: ["diary", "game"]
+category: "gadget"
+tags: ["shure"]
 image: "/images/post/2021/09/shure-se215/01.jpg"
 ---
 

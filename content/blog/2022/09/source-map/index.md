@@ -2,7 +2,8 @@
 title: "ソースマップのことを何もわかっていなかったので調べた"
 description: "ソースマップのことを雰囲気で解釈していたことに気づいてしまった僕は。"
 date: "2022-09-07"
-tags: ["javascript"]
+category: "tech"
+tags: ["js"]
 image: ""
 ---
 

@@ -2,7 +2,8 @@
 title: "Happy Hacking Keyboard 雪を手に入れた"
 description: "最高の HHKB を手に入れてしまったので紹介したい。"
 date: "2021-11-03"
-tags: ["diary", "pc"]
+category: "gadget"
+tags: ["hhkb"]
 image: "/images/post/2021/11/hhkb-snow/03.jpg"
 ---
 

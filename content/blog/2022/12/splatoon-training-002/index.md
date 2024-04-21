@@ -2,7 +2,8 @@
 title: "#2 プライムシューターコラボのギア考察【スプラトゥーンXP向上委員会】"
 date: "2022-12-19"
 description: "僕の持ちブキであるプライムシューターコラボのギアについて考えます。"
-tags: ["game", "splatoon"]
+category: "game"
+tags: ["splatoon"]
 image: ""
 ---
 

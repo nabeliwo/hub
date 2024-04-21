@@ -2,7 +2,8 @@
 title: "物理ホワイトボードをはじめてみた"
 description: "やりたいことを確実にやっていくために試しに物理ホワイトボードを試してみている話。"
 date: "2020-11-24"
-tags: ["diary"]
+category: "diary"
+tags: []
 image: ""
 ---
 

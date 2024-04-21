@@ -2,11 +2,12 @@
 title: "React で2Dゲームを作る技術"
 description: "SmartHR Advent Calendar 2020 用のネタとして、 React で Canvas を使わずにゲームを作る話をします。"
 date: "2020-12-21"
-tags: ["javascript"]
+category: "tech"
+tags: ["js", "react"]
 image: ""
 ---
 
-これは [SmartHR Advent Calendar 2020]() の21日目のエントリです。
+これは [SmartHR Advent Calendar 2020](https://qiita.com/advent-calendar/2020/smarthr) の21日目のエントリです。
 
 ## アバン
 

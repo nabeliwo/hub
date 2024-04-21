@@ -2,7 +2,8 @@
 title: "2023年7月のふりかえり"
 description: "2023年7月にやったことやお気持ちなどをふりかえります。"
 date: "2023-07-31"
-tags: ["diary"]
+category: "diary"
+tags: []
 image: ""
 ---
 

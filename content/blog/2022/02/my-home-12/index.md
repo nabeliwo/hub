@@ -2,7 +2,8 @@
 title: "#12 新築戸建て住宅の光回線工事は場合によっては地獄という話【家を建てる話をするシリーズ】"
 description: "光回線の工事で地獄を見ています。"
 date: "2022-02-26"
-tags: ["house"]
+category: "house"
+tags: []
 image: ""
 ---
 

@@ -2,7 +2,8 @@
 title: "React アプリケーションのボイラープレートを作った"
 description: "普段 TypeScript や React を使ってアプリケーションを作っているけれどその立ち上げがめんどくさかったのでボイラープレートを用意した話。"
 date: "2020-02-16"
-tags: ["javascript", "made"]
+category: "made"
+tags: ["ts", "react"]
 image: ""
 ---
 

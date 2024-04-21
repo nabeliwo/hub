@@ -2,7 +2,8 @@
 title: "2023年のふりかえり"
 description: "2023年を振り返ります。"
 date: "2023-12-31"
-tags: ["diary"]
+category: "diary"
+tags: []
 image: ''
 ---
 

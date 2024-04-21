@@ -2,7 +2,8 @@
 title: "ホワイトラビットを読んだ"
 description: "伊坂幸太郎のホワイトラビットを読んだ感想。"
 date: "2020-12-09"
-tags: ["book"]
+category: "book"
+tags: []
 image: ""
 ---
 

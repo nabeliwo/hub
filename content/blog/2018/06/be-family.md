@@ -2,8 +2,8 @@
 title: "夫になりました。そして父になりました。"
 description: "入籍と出産報告です。"
 date: "2018-06-20"
-tags: ["poem", "diary"]
-slug: "be-family"
+category: "diary"
+tags: []
 ---
 
 タイトル通り、結婚エントリかつ出産エントリつまりおめでたエントリです。  

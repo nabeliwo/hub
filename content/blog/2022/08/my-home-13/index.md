@@ -2,7 +2,8 @@
 title: "#13 外構がほぼ完成した【家を建てる話をするシリーズ】"
 description: "引越してから半年以上経ってますが今更工事進捗が出ました。"
 date: "2022-08-15"
-tags: ["house"]
+category: "house"
+tags: []
 image: "/images/post/2022/08/my-home-13/thumbnail.jpg"
 ---
 

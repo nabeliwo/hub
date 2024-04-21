@@ -2,7 +2,8 @@
 title: "『ゼルダの伝説』をやった"
 description: "ゼルダシリーズ全部やるぞの気持ちでまずは初代をやった話。"
 date: "2023-12-24"
-tags: ["game", "zelda"]
+category: "game"
+tags: ["zelda"]
 image: /images/post/2023/12/legend-of-zelda.png
 ---
 

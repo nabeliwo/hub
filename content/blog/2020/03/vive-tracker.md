@@ -2,7 +2,8 @@
 title: "HTC VIVE Pro と VIVE トラッカーx3でフルトラッキングをする"
 description: "新しく VIVE トラッカーを3つ買ったので初めてのフルトラッキングをしてみた。"
 date: "2020-03-16"
-tags: ["vr"]
+category: "vr"
+tags: []
 image: ""
 ---
 

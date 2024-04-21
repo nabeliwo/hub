@@ -2,7 +2,8 @@
 title: "Lit を使って Web Components で SmartHR UI を再現する"
 description: "Lit という Web Components を作るためのパッケージがとても便利っぽかったので試してみた。"
 date: "2021-05-12"
-tags: ["web-components", "javascript"]
+category: "tech"
+tags: ["js", "web-components"]
 image: ""
 ---
 

@@ -2,7 +2,8 @@
 title: "ブログの見た目を変えた"
 description: "ちょっと落ち着いた感じを出したくてブログのデザインをいじった話です。"
 date: "2020-12-30"
-tags: ["diary", "made"]
+category: "diary"
+tags: []
 image: ""
 ---
 

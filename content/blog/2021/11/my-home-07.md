@@ -2,7 +2,8 @@
 title: "#7 上棟立ち合いをした【家を建てる話をするシリーズ】"
 description: "ついに完成が見え始めてきて興奮しています。"
 date: "2021-11-12"
-tags: ["house"]
+category: "house"
+tags: []
 image: ""
 ---
 

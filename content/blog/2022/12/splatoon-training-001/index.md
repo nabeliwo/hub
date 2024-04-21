@@ -2,7 +2,8 @@
 title: "#1 何に対しても本気になれない俺達よ【スプラトゥーンXP向上委員会】"
 date: "2022-12-07"
 description: "スプラトゥーン3に本気で向かい合いたい気持ちになったんだ僕は。"
-tags: ["game", "splatoon"]
+category: "game"
+tags: ["splatoon"]
 image: ""
 ---
 

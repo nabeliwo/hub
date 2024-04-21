@@ -2,7 +2,8 @@
 title: "#10 施主検査をした【家を建てる話をするシリーズ】"
 description: "施主検査っていうのが何かって話と自分の体験談です。"
 date: "2022-02-11"
-tags: ["house"]
+category: "house"
+tags: []
 image: ""
 ---
 

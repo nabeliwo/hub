@@ -2,7 +2,8 @@
 title: "React のホバー時のスタイル変更を簡単にレスポンシブ対応させる"
 description: "要素にホバーした際のスタイル変更のめんどいあれこれを React で簡単にやっちゃう話です。"
 date: "2018-05-13"
-tags: ["javascript", "css"]
+category: "tech"
+tags: ["js", "css", "react"]
 image: ""
 ---
 

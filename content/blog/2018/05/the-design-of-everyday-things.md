@@ -2,7 +2,8 @@
 title: "『誰のためのデザイン？』を読んだ"
 description: "Donald Arthur Norman の『誰のためのデザイン？』を読んだので僕なりのまとめ。"
 date: "2018-05-12"
-tags: ["design", "book"]
+category: "book"
+tags: []
 image: ""
 ---
 

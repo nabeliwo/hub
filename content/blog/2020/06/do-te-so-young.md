@@ -2,7 +2,8 @@
 title: "自分より10以上年下の VTuber が生配信で「出会いを大切にね」と言っていて"
 description: "これは気持ち悪いポエムです。"
 date: "2020-06-11"
-tags: ["poem"]
+category: "poem"
+tags: []
 image: ""
 ---
 

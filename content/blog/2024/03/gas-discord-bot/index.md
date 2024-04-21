@@ -2,7 +2,8 @@
 title: 'GAS で Discord Bot を作る良い感じのアーキテクチャを考えた'
 description: 'GAS で Discord Bot を作ったので色々まとめた'
 date: '2024-03-08'
-tags: ['javascript', 'made']
+category: 'tech'
+tags: ['gas', "ts"]
 image: ''
 ---
 

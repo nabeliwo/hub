@@ -2,7 +2,8 @@
 title: "【Unity勉強】10日目：VRChat に自作ワールドをアップする"
 description: "最近は VR 熱が高いので今回も VRChat の話です。"
 date: "2020-01-21"
-tags: ["unity", "vr"]
+category: "tech"
+tags: ["unity"]
 image: ""
 ---
 

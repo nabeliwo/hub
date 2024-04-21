@@ -2,6 +2,7 @@
 title: "【Unity勉強】8日目：Unity のプロジェクトを作って Git で管理する"
 description: "ついに自分でゲームを作るのでとりあえず Git で管理できるようにする。"
 date: "2020-01-18"
+category: "tech"
 tags: ["unity"]
 image: ""
 ---

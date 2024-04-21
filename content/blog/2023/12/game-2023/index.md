@@ -2,7 +2,8 @@
 title: "よかったゲーム2023"
 description: "2023年にやった中で良かったゲームを紹介します。"
 date: "2023-12-29"
-tags: ["game"]
+category: "game"
+tags: []
 image: ''
 ---
 

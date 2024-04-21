@@ -2,7 +2,8 @@
 title: "『UXデザインの法則 ―最高のプロダクトとサービスを支える心理学』を読んだ"
 description: "社内で輪読会形式でデザイン本を読んだ話。"
 date: "2022-02-13"
-tags: ["book"]
+category: "book"
+tags: []
 image: ""
 ---
 

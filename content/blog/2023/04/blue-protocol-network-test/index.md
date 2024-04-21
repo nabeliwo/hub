@@ -2,7 +2,8 @@
 title: "BLUE PROTOCOL ネットワークテストに参加した"
 description: "BLUE PROTOCOL は本当に良いぞという話。"
 date: "2023-04-03"
-tags: ["game", "blue-protocol"]
+category: "game"
+tags: ["blue-protocol"]
 image: "/images/post/2023/04/blue-protocol-network-test.png"
 ---
 

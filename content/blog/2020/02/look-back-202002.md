@@ -2,7 +2,8 @@
 title: "2020年2月振り返り"
 description: "毎月の振り返りをログに残すことにしました。今回は2020年2月の振り返り。"
 date: "2020-02-29"
-tags: ["diary"]
+category: "diary"
+tags: []
 image: ""
 ---
 

@@ -2,7 +2,8 @@
 title: "VDRAW が VTuber の配信システムとしてめちゃ良さそう"
 description: "VDRAW というツールがめっちゃ良かったという話・"
 date: "2020-03-22"
-tags: ["vr"]
+category: "vr"
+tags: []
 image: ""
 ---
 

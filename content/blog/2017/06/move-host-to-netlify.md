@@ -2,7 +2,8 @@
 title: "このブログのホスト先をさくらVPSからnetlifyに移行しました"
 description: "ちょっとだけ移行に手間取ったのでメモしときます"
 date: "2017-06-24"
-tags: ["infra"]
+category: "tech"
+tags: ["netlify"]
 image: ""
 ---
 

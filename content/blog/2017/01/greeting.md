@@ -2,7 +2,8 @@
 title: "2017年になりましたのでご挨拶"
 description: "2017年1回目の記事ですが特に内容のある話はしません。"
 date: "2017-01-09"
-tags: ["diary"]
+category: "diary"
+tags: ["hugo"]
 image: ""
 ---
 

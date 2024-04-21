@@ -2,7 +2,8 @@
 title: "左手ゲーミングキーパッド Razer Tartarus Pro Mercury White を買った"
 description: "ゲーム環境を追及した結果左手キーパッドにたどり着きました。"
 date: "2021-04-14"
-tags: ["pc", "game"]
+category: "gadget"
+tags: ["razer"]
 image: "/images/post/2021/04/razer-tartarus-pro/01.jpg"
 ---
 

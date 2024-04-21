@@ -2,7 +2,8 @@
 title: "2020年11月振り返り"
 description: "2020年11月のやったことやお気持ちを振り返ります。"
 date: "2020-11-30"
-tags: ["diary"]
+category: "diary"
+tags: []
 image: ""
 ---
 

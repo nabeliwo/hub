@@ -2,7 +2,8 @@
 title: "ブラウザで動くステップシーケンサーを作った"
 description: "React を使ってブラウザで動くステップシーケンサーを作ったのでその詳しい話。"
 date: "2020-02-28"
-tags: ["javascript", "made"]
+category: "made"
+tags: ["ts", "react"]
 image: "/images/post/2020/02/web-step-sequencer/01.png"
 ---
 

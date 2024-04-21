@@ -2,7 +2,8 @@
 title: "Windows 開発環境を作る"
 description: "WSL2 使うととっても簡単に Windows で開発できるんだなって。"
 date: "2020-10-19"
-tags: ["pc"]
+category: "tech"
+tags: ["wsl"]
 image: ""
 ---
 

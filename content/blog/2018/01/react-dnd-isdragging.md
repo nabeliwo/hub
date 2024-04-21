@@ -2,7 +2,8 @@
 title: "react-dnd で isDragging が正しい値を返さないとき"
 description: "react-dnd を使っていてハマったときのメモ。"
 date: "2018-01-04"
-tags: ["javascript"]
+category: "tech"
+tags: ["js", "react"]
 image: ""
 ---
 

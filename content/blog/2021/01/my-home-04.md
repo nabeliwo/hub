@@ -2,7 +2,8 @@
 title: "#4 間取りがほぼ決まった【家を建てる話をするシリーズ】"
 description: "おうちの間取りが大体決まったのでその話をします。"
 date: "2021-01-10"
-tags: ["house"]
+category: "house"
+tags: []
 image: ""
 ---
 

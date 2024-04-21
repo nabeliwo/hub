@@ -2,7 +2,8 @@
 title: '2023年12月のふりかえり'
 description: '2023年12月にやったことやお気持ちなどをふりかえります。'
 date: '2023-12-30'
-tags: ['diary']
+category: 'diary'
+tags: []
 image: ''
 ---
 
