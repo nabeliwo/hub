@@ -1,9 +1,23 @@
 import { PostWrapper } from '@/components/model/post/PostWrapper'
 import { Heading } from '@/components/ui/Heading'
-import { getSingleMd } from '@/utils/markdown'
+import { getPage } from '@/services/profile'
+
+import type { Metadata, ResolvingMetadata } from 'next'
+
+export async function generateMetadata(_: unknown, parent: ResolvingMetadata): Promise<Metadata> {
+  const parentMetadata = await parent
+  const title = 'Favorite | ' + parentMetadata.title?.absolute
+
+  return {
+    title,
+    openGraph: {
+      title,
+    },
+  }
+}
 
 export default async function Favorite() {
-  const { content } = await getSingleMd('content/profile/favorite.md')
+  const { content } = await getPage('favorite')
 
   return (
     <>

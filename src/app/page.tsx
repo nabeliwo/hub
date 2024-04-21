@@ -1,10 +1,10 @@
 import { PostWrapper } from '@/components/model/post/PostWrapper'
 import { Heading } from '@/components/ui/Heading'
 import { NabeliwoIcon } from '@/components/ui/icon/NabeliwoIcon'
-import { getSingleMd } from '@/utils/markdown'
+import { getPage } from '@/services/profile'
 
 export default async function AboutMe() {
-  const { content } = await getSingleMd('content/profile/aboutMe.md')
+  const { content } = await getPage('aboutMe')
 
   return (
     <>

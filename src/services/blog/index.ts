@@ -1,0 +1,1 @@
+export { getBlogs } from './logic'

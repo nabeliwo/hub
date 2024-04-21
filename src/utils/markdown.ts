@@ -8,7 +8,7 @@ import remarkParse from 'remark-parse'
 import remarkRehype from 'remark-rehype'
 import { unified } from 'unified'
 
-export async function getSingleMd(filePath: string) {
+export async function getSingleMdContent(filePath: string) {
   const fileFullPath = path.join(process.cwd(), filePath)
   const file = fs.readFileSync(fileFullPath, 'utf8')
   const { data, content } = matter(file)
@@ -22,8 +22,7 @@ export async function getSingleMd(filePath: string) {
   const contentHtml = processedContent.toString()
 
   return {
-    title: data.title as string,
-    description: data.description as string,
+    metaData: data,
     content: contentHtml,
   }
 }
