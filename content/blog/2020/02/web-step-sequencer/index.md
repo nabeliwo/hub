@@ -20,7 +20,7 @@ image: '/images/blog/2020/02/web-step-sequencer/thumbnail.png'
 で、こういうのって物理マシンか結構ガチなソフトウェアでしか存在してなくて、ただ物理マシンは大体見た目がかっこいいのでそれはそれで良いんだけど、ちょっと敷居が高くて気軽に触れるようなものではない。
 
 ところで Google が作ったこういう Web アプリケーションはある。  
-![Chrome Music Lab - Song Maker](./02.png 'Chrome Music Lab - Song Maker')
+![Chrome Music Lab - Song Maker](/images/blog/2020/02/web-step-sequencer/02.png 'Chrome Music Lab - Song Maker')
 
 [Chrome Music Lab - Song Maker](https://musiclab.chromeexperiments.com/Song-Maker/)
 
