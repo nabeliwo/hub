@@ -1,3 +1,5 @@
+import Link from 'next/link'
+
 type Props = {
   href: string
   children: number
@@ -19,8 +21,8 @@ export function PaginationItem({ href, current = false, children }: Props) {
   }
 
   return (
-    <a className="px-2" href={href} aria-label={`${children}ページ目`}>
+    <Link className="px-2" href={href} aria-label={`${children}ページ目`}>
       {children}
-    </a>
+    </Link>
   )
 }

@@ -1,3 +1,5 @@
+import Link from 'next/link'
+
 import { ChevronDoubleLeftIcon } from '../icon/ChevronDoubleLeftIcon'
 import { ChevronDoubleRightIcon } from '../icon/ChevronDoubleRightIcon'
 import { ChevronLeftIcon } from '../icon/ChevronLeftIcon'
@@ -53,8 +55,8 @@ export function PaginationControllerItem({ href, disabled = false, direction, do
   }
 
   return (
-    <a href={href}>
+    <Link href={href}>
       <Icon alt={alt} />
-    </a>
+    </Link>
   )
 }
