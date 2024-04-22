@@ -24,11 +24,7 @@ function getFiles(dirName: string): string[] {
 
 function getSlug(filePath: string) {
   const shortPath = filePath.replace(`${cwd}/${BLOGS_DIRECTORY}`, '')
-
-  // 昔は index.md を使わずに hoge.md の形で記事を書いていたので、今と昔の書き方どちらにも対応する
-  const replaceTarget = shortPath.includes('index.md') ? '/index.md' : '.md'
-
-  return shortPath.replace(replaceTarget, '')
+  return shortPath.replace('.md', '')
 }
 
 export async function getBlogs(): Promise<Blog[]> {
@@ -60,15 +56,7 @@ export async function getBlogs(): Promise<Blog[]> {
 
 export async function getBlog(pathname: string): Promise<Blog> {
   const fullPath = path.join(cwd, BLOGS_DIRECTORY, pathname)
-  let file: string
-
-  // 昔は index.md を使わずに hoge.md の形で記事を書いていたので、今と昔の書き方どちらにも対応する
-  try {
-    file = fs.readFileSync(fullPath + '/index.md', 'utf8')
-  } catch {
-    file = fs.readFileSync(fullPath + '.md', 'utf8')
-  }
-
+  const file = fs.readFileSync(fullPath + '.md', 'utf8')
   const { metaData, content } = await getMdContent(file)
 
   if (!isBlogFrontMatter(metaData)) {
