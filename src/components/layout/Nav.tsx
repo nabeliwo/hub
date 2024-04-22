@@ -3,7 +3,7 @@
 import { usePathname } from 'next/navigation'
 
 import { navigationMap } from '@/constants/path'
-import { matchNavItem } from '@/utils/helper'
+import { matchNavItem } from '@/utils/pageHelper'
 
 import { TextLink } from '../ui/TextLink'
 import { BarsIcon } from '../ui/icon/BarsIcon'
