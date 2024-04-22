@@ -24,10 +24,6 @@ images.forEach(async (image) => {
   const afterPath = path.join(cwd, 'public/images/blog', image.replace(cwd + '/content/blog/', ''))
   const afterPathArray = afterPath.split('/')
   const directory = afterPathArray.slice(0, afterPathArray.length - 1).join('/')
-  console.log('------------------')
-  console.log(image)
-  console.log(afterPath)
-  console.log(directory)
 
   await fs.promises.mkdir(directory, { recursive: true })
   fs.renameSync(image, afterPath)
