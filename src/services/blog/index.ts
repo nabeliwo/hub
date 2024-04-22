@@ -1,2 +1,2 @@
 export { categoryMap, tagMap } from './types'
-export { getBlogs } from './logic'
+export { getBlogs, getBlog } from './logic'

@@ -1,31 +1,3 @@
-export type BlogFrontMatter = {
-  title: string
-  description: string
-  date: string
-  category: keyof typeof categoryMap
-  tags: Array<keyof typeof tagMap>
-  image: string
-}
-
-export type Blog = BlogFrontMatter & {
-  content: string
-  slug: string
-}
-
-export const categoryMap = {
-  diary: '日記',
-  made: '作ったもの',
-  poem: 'ポエム',
-  house: '家',
-  gadget: 'ガジェット',
-  'pc-build': '自作 PC',
-  game: 'ゲーム',
-  anime: 'アニメ',
-  book: '読書',
-  vr: 'VR',
-  tech: '技術',
-}
-
 export const tagMap = {
   // tech
   hugo: 'Hugo',
@@ -71,4 +43,73 @@ export const tagMap = {
 
   // anime
   sao: 'ソードアート・オンライン',
+}
+
+export const categoryMap = {
+  diary: '日記',
+  made: '作ったもの',
+  poem: 'ポエム',
+  house: '家',
+  gadget: 'ガジェット',
+  'pc-build': '自作 PC',
+  game: 'ゲーム',
+  anime: 'アニメ',
+  book: '読書',
+  vr: 'VR',
+  tech: '技術',
+}
+
+export type BlogFrontMatter = {
+  title: string
+  description: string
+  date: string
+  category: keyof typeof categoryMap
+  tags: Array<keyof typeof tagMap>
+  image: string
+}
+
+export type Blog = BlogFrontMatter & {
+  content: string
+  slug: string
+}
+
+export function isBlogFrontMatter(metaData: unknown): metaData is BlogFrontMatter {
+  if (typeof metaData !== 'object' || metaData === null) {
+    return false
+  }
+
+  const value = metaData as Record<string, unknown>
+
+  if (!('title' in value) || typeof value.title !== 'string') {
+    return false
+  }
+
+  if (!('description' in value) || typeof value.description !== 'string') {
+    return false
+  }
+
+  if (
+    !('date' in value) ||
+    typeof value.date !== 'string' ||
+    new Date(value.date).toString() === 'Invalid Date'
+  ) {
+    return false
+  }
+
+  if (!('category' in value) || typeof value.category !== 'string' || !(value.category in categoryMap)) {
+    return false
+  }
+  if (
+    !('tags' in value) ||
+    !Array.isArray(value.tags) ||
+    !value.tags.every((tag) => typeof tag === 'string' && tag in tagMap)
+  ) {
+    return false
+  }
+
+  if (!('image' in value) || typeof value.image !== 'string') {
+    return false
+  }
+
+  return true
 }
