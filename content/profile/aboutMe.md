@@ -37,7 +37,6 @@ If this site piques your interest, please feel free to contact me through any of
 - [Zenn](https://zenn.dev/nabeliwo)
   - From now on, I will post on this platform.
 
-
 ## Others
 
 - [booklog](https://booklog.jp/users/nabeliwo)
