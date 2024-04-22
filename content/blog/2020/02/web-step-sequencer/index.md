@@ -4,7 +4,7 @@ description: 'React を使ってブラウザで動くステップシーケンサ
 date: '2020-02-28'
 category: 'made'
 tags: ['ts', 'react']
-image: '/images/blog/thumbnails/2020/02/web-step-sequencer.png'
+image: '/images/blog/2020/02/web-step-sequencer/thumbnail.png'
 ---
 
 ## ステップシーケンサーを作ってみたかった

@@ -3,7 +3,7 @@ import path from 'path'
 
 import { getMdContent } from '@/util/markdown'
 
-import { isBlogFrontMatter, type Blog, type BlogFrontMatter } from './types'
+import { isBlogFrontMatter, type Blog } from './types'
 
 const BLOGS_DIRECTORY = 'content/blog'
 const cwd = process.cwd()

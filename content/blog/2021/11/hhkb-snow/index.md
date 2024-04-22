@@ -4,7 +4,7 @@ description: '最高の HHKB を手に入れてしまったので紹介したい
 date: '2021-11-03'
 category: 'gadget'
 tags: ['hhkb']
-image: '/images/blog/thumbnails/2021/11/hhkb-snow.jpg'
+image: '/images/blog/2021/11/hhkb-snow/thumbnail.jpg'
 ---
 
 我らが PFU さんの Happy Hacking Keyboard がなんと25周年ということで、「雪」モデルというものが発売されました。  

@@ -4,7 +4,7 @@ description: 'ゲーム環境を追及した結果左手キーパッドにたど
 date: '2021-04-14'
 category: 'gadget'
 tags: ['razer']
-image: '/images/blog/thumbnails/2021/04/razer-tartarus-pro.jpg'
+image: '/images/blog/2021/04/razer-tartarus-pro/thumbnail.jpg'
 ---
 
 ついに左手ゲーミングキーパッドに手を出しました。1ヵ月くらい使ってみたのでその感想を書きます。

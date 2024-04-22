@@ -4,7 +4,7 @@ description: 'ゲーミングヘッドセットで頭が痛くなっちゃう話
 date: '2021-09-06'
 category: 'gadget'
 tags: ['shure']
-image: '/images/blog/thumbnails/2021/09/shure-se215.jpg'
+image: '/images/blog/2021/09/shure-se215/thumbnail.jpg'
 ---
 
 最近イヤホンを新しく買ってそれをメインに使ってますという話と、なぜ今更ワイヤレスでないイヤホン買ってんのよっていう話をします。  

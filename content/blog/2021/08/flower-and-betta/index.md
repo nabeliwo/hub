@@ -4,7 +4,7 @@ description: '最近の行動とお気持ちの話。'
 date: '2021-08-09'
 category: 'poem'
 tags: []
-image: '/images/blog/thumbnails/2021/08/flower-and-betta.jpg'
+image: '/images/blog/2021/08/flower-and-betta/thumbnail.jpg'
 ---
 
 なかなかブログの更新頻度を保つことができない。  

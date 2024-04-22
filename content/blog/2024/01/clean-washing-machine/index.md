@@ -4,7 +4,7 @@ description: '洗濯機が尋常じゃなく汚れていた話です。'
 date: '2024-01-15'
 category: 'house'
 tags: []
-image: '/images/blog/thumbnails/2024/01/clean-washing-machine.jpg'
+image: '/images/blog/2024/01/clean-washing-machine/thumbnail.jpg'
 ---
 
 最近我が家のドラム式洗濯機の調子が悪くなっているのを感じていた。  

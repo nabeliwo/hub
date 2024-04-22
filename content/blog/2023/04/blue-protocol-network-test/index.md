@@ -4,7 +4,7 @@ description: 'BLUE PROTOCOL は本当に良いぞという話。'
 date: '2023-04-03'
 category: 'game'
 tags: ['blue-protocol']
-image: '/images/blog/thumbnails/2023/04/blue-protocol-network-test.png'
+image: '/images/blog/2023/04/blue-protocol-network-test/thumbnail.png'
 ---
 
 [BLUE PROTOCOL](https://blue-protocol.com/) というまだ未リリースの MMO があって、開発が発表されてからかれこれ8年経っていてずっと開発され続けている。  

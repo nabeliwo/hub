@@ -4,7 +4,7 @@ description: '最高画質での配信を目指す話。'
 date: '2021-02-06'
 category: 'pc-build'
 tags: ['game-streaming']
-image: '/images/blog/thumbnails/2021/02/4k60-pro-mk2.jpg'
+image: '/images/blog/2021/02/4k60-pro-mk2/thumbnail.jpg'
 ---
 
 最近はあんまりしてなかったんだけど、僕はゲーム配信をするのが結構好きでがっつり環境を揃えていたりした。  
