@@ -1,7 +1,7 @@
 import fs from 'fs'
 import path from 'path'
 
-import { getMdContent } from '@/utils/markdown'
+import { getMdContent } from '@/util/markdown'
 
 import { isBlogFrontMatter, type Blog, type BlogFrontMatter } from './types'
 

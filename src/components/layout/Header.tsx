@@ -2,7 +2,7 @@
 
 import { usePathname } from 'next/navigation'
 
-import { getHeaderInfo } from '@/utils/pageHelper'
+import { getHeaderInfo } from '@/util/pageHelper'
 
 export function Header() {
   const pathname = usePathname()

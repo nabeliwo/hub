@@ -5,7 +5,7 @@ import { TextLink } from '@/components/ui/TextLink'
 import { blog } from '@/constants/meta'
 import { path } from '@/constants/path'
 import { categoryMap, getBlogs, tagMap } from '@/services/blog'
-import { paginate } from '@/utils/pagination'
+import { paginate } from '@/util/pagination'
 
 import type { Metadata } from 'next'
 import type { ReactNode } from 'react'

@@ -1,7 +1,7 @@
 import fs from 'fs'
 import path from 'path'
 
-import { getMdContent } from '@/utils/markdown'
+import { getMdContent } from '@/util/markdown'
 
 export async function getPage(name: string) {
   const fileFullPath = path.join(process.cwd(), `content/profile/${name}.md`)
