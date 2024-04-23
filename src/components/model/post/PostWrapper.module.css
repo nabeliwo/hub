@@ -1,15 +1,31 @@
 .wrapper {
+  line-height: 1.75rem;
+
   & h2 {
     font-size: 1.5rem;
 
     &:not(:first-child) {
-      margin-top: 3rem;
+      margin-top: 6rem;
+    }
+
+    & + h3 {
+      margin-top: 2rem;
     }
   }
 
   & h3 {
+    margin-top: 4rem;
     font-size: 1.25rem;
+
+    & + h4 {
+      margin-top: 2rem;
+    }
+  }
+
+  & h4 {
     margin-top: 2rem;
+    font-weight: bold;
+    font-size: 1.125rem;
   }
 
   & a {
@@ -22,8 +38,15 @@
     }
   }
 
-  & p:not(:first-child) {
-    margin-top: 2rem;
+  & p {
+    &:not(:first-child) {
+      margin-top: 2rem;
+    }
+
+    &:has(> img) {
+      margin-left: -1rem;
+      margin-right: -1rem;
+    }
   }
 
   & ul {

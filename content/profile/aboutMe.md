@@ -13,12 +13,14 @@ By exploring this site, you can learn almost everything about me—from what I d
 
 If this site piques your interest, please feel free to contact me through any of the social media platforms listed below. I welcome work inquiries, feedback on my content, or even if you just want to have a fun conversation. Let's be friends!
 
-## YouTube
+## Links
+
+### YouTube
 
 - [nabeliwo channel](https://www.youtube.com/@nabeliwo)
   - I review PC peripherals and gadgets.
 
-## SNS
+### SNS
 
 - X
   - [nabeliwo](https://twitter.com/nabeliwo)
@@ -30,14 +32,14 @@ If this site piques your interest, please feel free to contact me through any of
 - [GitHub](https://github.com/nabeliwo)
   - Languages and tools I use most frequently are TypeScript, Next.js, and React.
 
-## Tech Posts
+### Tech Posts
 
 - [Qiita](https://qiita.com/nabeliwo)
   - I used to post often but will no longer use this platform.
 - [Zenn](https://zenn.dev/nabeliwo)
   - From now on, I will post on this platform.
 
-## Others
+### Others
 
 - [booklog](https://booklog.jp/users/nabeliwo)
   - Here is a summary of the books I read.
