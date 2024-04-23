@@ -3,7 +3,9 @@ import path from 'path'
 
 import { getMdContent } from '@/util/markdown'
 
-import { isBlogFrontMatter, type Blog } from './types'
+import { isBlogFrontMatter } from './types'
+
+import type { Blog } from './types'
 
 const BLOGS_DIRECTORY = 'content/blog'
 const cwd = process.cwd()
@@ -64,4 +66,18 @@ export async function getBlog(pathname: string): Promise<Blog> {
   }
 
   return { ...metaData, content, slug: pathname }
+}
+
+export function countItems(items: string[]): { [key: string]: number } {
+  const countMap: { [key: string]: number } = {}
+
+  for (const item of items) {
+    if (countMap[item]) {
+      countMap[item]++
+    } else {
+      countMap[item] = 1
+    }
+  }
+
+  return countMap
 }
