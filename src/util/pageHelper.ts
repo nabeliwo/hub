@@ -1,6 +1,10 @@
 import { bestBuy, blog, profile, weekly } from '@/constants/meta'
 import { path } from '@/constants/path'
 
+export function range(start: number, end: number) {
+  return [...Array(end - start + 1)].map((_, i) => start + i)
+}
+
 export function matchNavItem(itemPath: string, currentPath: string) {
   if (itemPath === path.aboutMe) {
     return currentPath === itemPath
@@ -39,4 +43,25 @@ export function getHeaderInfo(pathname: string) {
     description: profile.description,
     url: path.aboutMe,
   }
+}
+
+const PER = 20
+const PAGE = '1'
+export function paginate<T>(
+  items: T[],
+  page = PAGE,
+): {
+  items: T[]
+  totalPages: number
+  currentPage: number
+} {
+  const totalPages = Math.ceil(items.length / PER)
+  const pageNumber = Number(page)
+  const currentPage = pageNumber > totalPages ? totalPages : pageNumber
+
+  const startIndex = (currentPage - 1) * PER
+  const endIndex = startIndex + PER
+  const pageItems = items.slice(startIndex, endIndex)
+
+  return { items: pageItems, totalPages, currentPage }
 }

@@ -1,7 +1,3 @@
-'use client'
-
-import { useSearchParams } from 'next/navigation'
-
 import { PaginationControllerItem } from './PaginationControllerItem'
 import { PaginationItem } from './PaginationItem'
 
@@ -12,29 +8,19 @@ type Props = {
 }
 
 export function Pagination({ totalPages, currentPage, path }: Props) {
-  const searchParams = useSearchParams()
-
   if (totalPages <= 1) {
     return null
   }
-
-  const per = searchParams.get('per')
-  const perParam = per ? `&per=${per}` : ''
 
   return (
     <nav>
       <ul className="flex gap-2">
         <li>
-          <PaginationControllerItem
-            href={`${path}?page=1${perParam}`}
-            direction="prev"
-            disabled={currentPage === 1}
-            double
-          />
+          <PaginationControllerItem href={path} direction="prev" disabled={currentPage === 1} double />
         </li>
         <li>
           <PaginationControllerItem
-            href={`${path}?page=${currentPage - 1}${perParam}`}
+            href={currentPage - 1 === 1 ? path : `${path}/${currentPage - 1}`}
             direction="prev"
             disabled={currentPage === 1}
           />
@@ -44,7 +30,7 @@ export function Pagination({ totalPages, currentPage, path }: Props) {
           .filter((page) => page >= 1 && page <= totalPages)
           .map((page) => (
             <li key={page}>
-              <PaginationItem href={`${path}?page=${page}${perParam}`} current={currentPage === page}>
+              <PaginationItem href={page === 1 ? path : `${path}/${page}`} current={currentPage === page}>
                 {page}
               </PaginationItem>
             </li>
@@ -52,14 +38,14 @@ export function Pagination({ totalPages, currentPage, path }: Props) {
 
         <li>
           <PaginationControllerItem
-            href={`${path}?page=${currentPage + 1}${perParam}`}
+            href={`${path}/${currentPage + 1}`}
             direction="next"
             disabled={currentPage === totalPages}
           />
         </li>
         <li>
           <PaginationControllerItem
-            href={`${path}?page=${totalPages}${perParam}`}
+            href={`${path}/${totalPages}`}
             direction="next"
             disabled={currentPage === totalPages}
             double

@@ -1,13 +1,16 @@
-import { PostWrapper } from '@/components/model/post/PostWrapper'
-import { Datetime } from '@/components/ui/Datetime'
-import { Heading } from '@/components/ui/Heading'
-import { TextLink } from '@/components/ui/TextLink'
+import { BlogDetail } from '@/components/page/BlogDetail'
 import { blog } from '@/constants/meta'
-import { path } from '@/constants/path'
-import { categoryMap, getBlog, tagMap } from '@/services/blog'
+import { getBlog, getBlogs } from '@/services/blog'
 
 import type { Metadata } from 'next'
-import type { ReactNode } from 'react'
+
+export async function generateStaticParams() {
+  const blogs = await getBlogs()
+
+  return blogs.map((blog) => ({
+    slug: blog.slug.slice(1).split('/'),
+  }))
+}
 
 type Props = {
   params: {
@@ -34,55 +37,9 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   }
 }
 
-export default async function BlogDetail({ params }: Props) {
+export default async function BlogDetailPage({ params }: Props) {
   const pathname = params.slug.join('/')
   const blog = await getBlog(pathname)
 
-  return (
-    <>
-      <p className="text-sm text-grey-text">
-        <Datetime>{blog.date}</Datetime>
-      </p>
-
-      <Heading>{blog.title}</Heading>
-
-      <div className="mt-2 text-sm md:flex md:gap-4">
-        <p className="flex gap-1">
-          <span className="text-grey-text">CATEGORY:</span>
-          <TextLink href={path.blogCategoryItem(blog.category)}>{categoryMap[blog.category]}</TextLink>
-        </p>
-
-        {blog.tags.length > 0 && (
-          <p className="flex gap-1">
-            <span className="text-grey-text">TAGS:</span>
-
-            <span>
-              {blog.tags.reduce(
-                (prev, cur, i) => [
-                  ...prev,
-                  i > 0 && ' / ',
-                  <TextLink key={i} href={path.blogTagItem(cur)}>
-                    #{tagMap[cur]}
-                  </TextLink>,
-                ],
-                [] as ReactNode[],
-              )}
-            </span>
-          </p>
-        )}
-      </div>
-
-      {blog.image && (
-        <div className="-mx-4 mt-8 md:mx-0">
-          <img src={blog.image} alt="" />
-        </div>
-      )}
-
-      <div className="mt-12">
-        <PostWrapper>
-          <div dangerouslySetInnerHTML={{ __html: blog.content }} />
-        </PostWrapper>
-      </div>
-    </>
-  )
+  return <BlogDetail blog={blog} />
 }

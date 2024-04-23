@@ -1,5 +1,4 @@
-import { PostWrapper } from '@/components/model/post/PostWrapper'
-import { Heading } from '@/components/ui/Heading'
+import { Profile } from '@/components/page/Profile'
 import { getPage } from '@/services/profile'
 
 import type { Metadata, ResolvingMetadata } from 'next'
@@ -18,16 +17,5 @@ export async function generateMetadata(_: unknown, parent: ResolvingMetadata): P
 
 export default async function Philosophy() {
   const { content } = await getPage('philosophy')
-
-  return (
-    <>
-      <Heading>Philosophy</Heading>
-
-      <div className="mt-8">
-        <PostWrapper>
-          <div dangerouslySetInnerHTML={{ __html: content }} />
-        </PostWrapper>
-      </div>
-    </>
-  )
+  return <Profile title="Philosophy" content={content} />
 }

@@ -1,8 +1,5 @@
-import { Heading } from '@/components/ui/Heading'
-import { TextLink } from '@/components/ui/TextLink'
-import { blog } from '@/constants/meta'
-import { path } from '@/constants/path'
-import { tagMap, getBlogs, countItems } from '@/services/blog'
+import { TagList } from '@/components/page/TagList'
+import { getBlogs, countItems } from '@/services/blog'
 
 import type { Metadata, ResolvingMetadata } from 'next'
 
@@ -26,21 +23,5 @@ export default async function Tags() {
   const tags = blogs.flatMap((blog) => blog.tags)
   const countMap = countItems(tags)
 
-  return (
-    <>
-      <Heading>{blog.siteName} のタグ一覧</Heading>
-
-      <ul className="mt-8 flex flex-wrap gap-4">
-        {Object.entries(tagMap).map(([key, value], i) => {
-          return (
-            <li key={i}>
-              <TextLink href={path.blogTagItem(key)}>
-                {value} ({countMap[key]})
-              </TextLink>
-            </li>
-          )
-        })}
-      </ul>
-    </>
-  )
+  return <TagList countMap={countMap} />
 }
