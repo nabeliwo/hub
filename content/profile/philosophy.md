@@ -3,4 +3,4 @@ title: ''
 description: ''
 ---
 
-フィロソフィーです
+TBD
