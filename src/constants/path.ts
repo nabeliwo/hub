@@ -13,7 +13,7 @@ export const path = {
   weekly: '/weekly',
   weeklyItem: (slug: string) => `/weekly${slug}`,
   bestBuy: '/best-buy',
-  bestBuyItem: (itemId: string) => `/best-buy/${itemId}`,
+  bestBuyItem: (slug: string) => `/best-buy${slug}`,
 }
 
 export const navigationMap = [

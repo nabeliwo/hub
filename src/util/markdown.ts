@@ -19,5 +19,6 @@ export async function getMdContent(file: string) {
   return {
     metaData: data,
     content: contentHtml,
+    originalContent: content,
   }
 }

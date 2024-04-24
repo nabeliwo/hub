@@ -59,7 +59,7 @@ export const categoryMap = {
   tech: '技術',
 }
 
-export type BlogFrontMatter = {
+type BlogFrontMatter = {
   title: string
   description: string
   date: string

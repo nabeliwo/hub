@@ -18,6 +18,13 @@ const config: Config = {
       blue: '#2286FF',
       'blue-light': '#64aaff',
     },
+    extend: {
+      width: {
+        'best-buy-half': 'calc(50% - 0.5rem)',
+        'best-buy-one-third': 'calc(33.333% - 10.666px)',
+        'best-buy-one-fourth': 'calc(25% - 0.75rem)',
+      },
+    },
   },
   plugins: [],
 }

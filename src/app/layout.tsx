@@ -33,7 +33,7 @@ export default function RootLayout({ children }: PropsWithChildren) {
 
         <div className="flex gap-16 px-4 pb-16 pt-8 md:p-12 md:pb-20">
           <Nav />
-          <main>{children}</main>
+          <main className="flex-1">{children}</main>
         </div>
 
         <Footer />
