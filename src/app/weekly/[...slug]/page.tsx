@@ -1,3 +1,5 @@
+import { notFound } from 'next/navigation'
+
 import { WeeklyDetail } from '@/components/page/WeeklyDetail'
 import { weekly } from '@/constants/meta'
 import { getWeeklies, getWeekly } from '@/services/weekly'
@@ -21,6 +23,11 @@ type Props = {
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const pathname = params.slug.join('/')
   const weeklyData = await getWeekly(pathname)
+
+  if (!weeklyData) {
+    return notFound()
+  }
+
   const title = `${weeklyData.title} | ${weekly.siteName}`
 
   return {
@@ -39,7 +46,11 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
 export default async function WeeklyDetailPage({ params }: Props) {
   const pathname = params.slug.join('/')
-  const weekly = await getWeekly(pathname)
+  const weeklyData = await getWeekly(pathname)
 
-  return <WeeklyDetail weekly={weekly} />
+  if (!weeklyData) {
+    return notFound()
+  }
+
+  return <WeeklyDetail weekly={weeklyData} />
 }

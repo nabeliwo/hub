@@ -1,3 +1,5 @@
+import { notFound } from 'next/navigation'
+
 import { CategoryBlogList } from '@/components/page/CategoryBlogList'
 import { categoryMap, getBlogs } from '@/services/blog'
 import { paginate, range } from '@/util/pageHelper'
@@ -29,7 +31,16 @@ export default async function CategoryBlogs({ params }: Props) {
   const blogs = await getBlogs()
   const categoryBlogs = blogs.filter((item) => item.category === params.categoryName)
   const count = categoryBlogs.length
-  const { items, totalPages, currentPage } = paginate(categoryBlogs, params.page)
+
+  if (count === 0) {
+    return notFound()
+  }
+
+  const { items, totalPages, currentPage, error } = paginate(categoryBlogs, params.page)
+
+  if (error) {
+    return notFound()
+  }
 
   return (
     <CategoryBlogList

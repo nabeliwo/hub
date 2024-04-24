@@ -8,7 +8,7 @@ type Props = {
 
 export function AboutMe({ content }: Props) {
   return (
-    <>
+    <div className="max-w-2xl">
       <Heading>About Me</Heading>
 
       <p className="mt-4 flex gap-2 text-xl leading-8 md:mt-8">
@@ -19,6 +19,6 @@ export function AboutMe({ content }: Props) {
       <div className="mt-8">
         <HtmlContent>{content}</HtmlContent>
       </div>
-    </>
+    </div>
   )
 }

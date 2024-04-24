@@ -56,14 +56,19 @@ export async function getWeeklies(): Promise<Weekly[]> {
   return sortedContents
 }
 
-export async function getWeekly(pathname: string): Promise<Weekly> {
+export async function getWeekly(pathname: string): Promise<Weekly | null> {
   const fullPath = path.join(cwd, WEEKLIES_DIRECTORY, pathname)
-  const file = fs.readFileSync(fullPath + '.md', 'utf8')
-  const { metaData, content } = await getMdContent(file)
 
-  if (!isWeeklyFrontMatter(metaData)) {
-    throw new Error(`frontmatter の値が不正です。該当記事のパス: ${fullPath}`)
+  try {
+    const file = fs.readFileSync(fullPath + '.md', 'utf8')
+    const { metaData, content } = await getMdContent(file)
+
+    if (!isWeeklyFrontMatter(metaData)) {
+      throw new Error(`frontmatter の値が不正です。該当記事のパス: ${fullPath}`)
+    }
+
+    return { ...metaData, date: pathname.replace('/', '-'), content, slug: pathname }
+  } catch {
+    return null
   }
-
-  return { ...metaData, date: pathname.replace('/', '-'), content, slug: pathname }
 }

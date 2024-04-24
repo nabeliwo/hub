@@ -1,3 +1,5 @@
-export default function bestBuy() {
-  return <p>best buy</p>
+import { BestBuyList } from '@/components/page/BestBuyList'
+
+export default function BestBuy() {
+  return <BestBuyList />
 }

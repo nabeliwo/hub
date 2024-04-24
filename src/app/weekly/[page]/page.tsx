@@ -1,3 +1,5 @@
+import { notFound } from 'next/navigation'
+
 import { WeeklyList } from '@/components/page/WeeklyList'
 import { getWeeklies } from '@/services/weekly'
 import { paginate, range } from '@/util/pageHelper'
@@ -19,7 +21,11 @@ type Props = {
 
 export default async function Weekly({ params }: Props) {
   const weeklies = await getWeeklies()
-  const { items, totalPages, currentPage } = paginate(weeklies, params.page)
+  const { items, totalPages, currentPage, error } = paginate(weeklies, params.page)
+
+  if (error) {
+    return notFound()
+  }
 
   return <WeeklyList weeklies={items} totalPages={totalPages} currentPage={currentPage} />
 }

@@ -1,3 +1,5 @@
+import { notFound } from 'next/navigation'
+
 import { BlogDetail } from '@/components/page/BlogDetail'
 import { blog } from '@/constants/meta'
 import { getBlog, getBlogs } from '@/services/blog'
@@ -21,6 +23,11 @@ type Props = {
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const pathname = params.slug.join('/')
   const blogData = await getBlog(pathname)
+
+  if (!blogData) {
+    return notFound()
+  }
+
   const title = `${blogData.title} | ${blog.siteName}`
 
   return {
@@ -39,7 +46,11 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
 export default async function BlogDetailPage({ params }: Props) {
   const pathname = params.slug.join('/')
-  const blog = await getBlog(pathname)
+  const blogData = await getBlog(pathname)
 
-  return <BlogDetail blog={blog} />
+  if (!blogData) {
+    return notFound()
+  }
+
+  return <BlogDetail blog={blogData} />
 }

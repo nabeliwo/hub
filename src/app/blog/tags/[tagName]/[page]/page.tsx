@@ -1,3 +1,5 @@
+import { notFound } from 'next/navigation'
+
 import { TagBlogList } from '@/components/page/TagBlogList'
 import { tagMap, getBlogs } from '@/services/blog'
 import { paginate, range } from '@/util/pageHelper'
@@ -29,7 +31,16 @@ export default async function TagBlogs({ params }: Props) {
   const blogs = await getBlogs()
   const tagBlogs = blogs.filter((item) => item.tags.includes(params.tagName))
   const count = tagBlogs.length
-  const { items, totalPages, currentPage } = paginate(tagBlogs, params.page)
+
+  if (count === 0) {
+    return notFound()
+  }
+
+  const { items, totalPages, currentPage, error } = paginate(tagBlogs, params.page)
+
+  if (error) {
+    return notFound()
+  }
 
   return (
     <TagBlogList

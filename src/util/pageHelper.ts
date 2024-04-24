@@ -54,14 +54,25 @@ export function paginate<T>(
   items: T[]
   totalPages: number
   currentPage: number
+  error: boolean
 } {
   const totalPages = Math.ceil(items.length / PER)
   const pageNumber = Number(page)
+
+  if (isNaN(pageNumber)) {
+    return {
+      items: [],
+      totalPages: 0,
+      currentPage: 0,
+      error: true,
+    }
+  }
+
   const currentPage = pageNumber > totalPages ? totalPages : pageNumber
 
   const startIndex = (currentPage - 1) * PER
   const endIndex = startIndex + PER
   const pageItems = items.slice(startIndex, endIndex)
 
-  return { items: pageItems, totalPages, currentPage }
+  return { items: pageItems, totalPages, currentPage, error: false }
 }

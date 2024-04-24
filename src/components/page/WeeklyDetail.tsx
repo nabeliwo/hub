@@ -9,7 +9,6 @@ type Props = {
 }
 
 export function WeeklyDetail({ weekly }: Props) {
-  console.log(weekly.date)
   return (
     <>
       <p className="text-sm text-grey-text">

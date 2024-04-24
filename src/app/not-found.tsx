@@ -1,3 +1,7 @@
 export default function NotFound() {
-  return <p>TODO: Not Found</p>
+  return (
+    <div className="max-w-2xl">
+      <p>TODO: Not Found</p>
+    </div>
+  )
 }

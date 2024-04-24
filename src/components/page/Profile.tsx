@@ -8,12 +8,12 @@ type Props = {
 
 export function Profile({ title, content }: Props) {
   return (
-    <>
+    <div className="max-w-2xl">
       <Heading>{title}</Heading>
 
       <div className="mt-8">
         <HtmlContent>{content}</HtmlContent>
       </div>
-    </>
+    </div>
   )
 }

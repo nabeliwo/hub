@@ -56,16 +56,21 @@ export async function getBlogs(): Promise<Blog[]> {
   return sortedContents
 }
 
-export async function getBlog(pathname: string): Promise<Blog> {
+export async function getBlog(pathname: string): Promise<Blog | null> {
   const fullPath = path.join(cwd, BLOGS_DIRECTORY, pathname)
-  const file = fs.readFileSync(fullPath + '.md', 'utf8')
-  const { metaData, content } = await getMdContent(file)
 
-  if (!isBlogFrontMatter(metaData)) {
-    throw new Error(`frontmatter の値が不正です。該当記事のパス: ${fullPath}`)
+  try {
+    const file = fs.readFileSync(fullPath + '.md', 'utf8')
+    const { metaData, content } = await getMdContent(file)
+
+    if (!isBlogFrontMatter(metaData)) {
+      throw new Error(`frontmatter の値が不正です。該当記事のパス: ${fullPath}`)
+    }
+
+    return { ...metaData, content, slug: pathname }
+  } catch (e) {
+    return null
   }
-
-  return { ...metaData, content, slug: pathname }
 }
 
 export function countItems(items: string[]): { [key: string]: number } {

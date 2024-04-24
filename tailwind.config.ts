@@ -13,6 +13,7 @@ const config: Config = {
       'grey-border': '#d6d3d0',
       'grey-bg': '#edebe8',
       'grey-disabled': '#c1bdb7',
+      'grey-bestbuy': '#f2f5f7',
       black: '#222',
       blue: '#2286FF',
       'blue-light': '#64aaff',
