@@ -5,6 +5,7 @@ import type { Blog } from '@/services/blog/types'
 import { BlogItem } from '../model/blog/BlogItem'
 import { Heading } from '../ui/Heading'
 import { Pagination } from '../ui/Pagination'
+import { TextLink } from '../ui/TextLink'
 
 type Props = {
   tagName: keyof typeof tagMap
@@ -17,7 +18,9 @@ type Props = {
 export function TagBlogList({ tagName, blogs, count, totalPages, currentPage }: Props) {
   return (
     <>
-      <Heading>
+      <TextLink href={path.blogTags}>すべてのタグ一覧を見る</TextLink>
+
+      <Heading className="mt-2">
         タグが「{tagMap[tagName]}」の記事一覧 ({count}件)
       </Heading>
 

@@ -6,9 +6,12 @@ export const path = {
   favorite: '/favorite',
   blog: '/blog',
   blogItem: (slug: string) => `/blog${slug}`,
+  blogCategories: '/blog/categories',
   blogCategoryItem: (categoryName: string) => `/blog/categories/${categoryName}`,
+  blogTags: '/blog/tags',
   blogTagItem: (tagName: string) => `/blog/tags/${tagName}`,
   weekly: '/weekly',
+  weeklyItem: (slug: string) => `/weekly${slug}`,
   bestBuy: '/best-buy',
   bestBuyItem: (itemId: string) => `/best-buy/${itemId}`,
 }

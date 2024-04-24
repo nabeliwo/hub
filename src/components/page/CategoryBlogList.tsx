@@ -5,6 +5,7 @@ import type { Blog } from '@/services/blog/types'
 import { BlogItem } from '../model/blog/BlogItem'
 import { Heading } from '../ui/Heading'
 import { Pagination } from '../ui/Pagination'
+import { TextLink } from '../ui/TextLink'
 
 type Props = {
   categoryName: keyof typeof categoryMap
@@ -17,11 +18,13 @@ type Props = {
 export function CategoryBlogList({ categoryName, blogs, count, totalPages, currentPage }: Props) {
   return (
     <>
-      <Heading>
+      <TextLink href={path.blogCategories}>すべてのカテゴリ一覧を見る</TextLink>
+
+      <Heading className="mt-2">
         カテゴリが「{categoryMap[categoryName]}」の記事一覧 ({count}件)
       </Heading>
 
-      <section className="mt-8 space-y-12">
+      <section className="mt-12 space-y-12">
         {blogs.map((blog, i) => (
           <BlogItem key={i} blog={blog} />
         ))}
