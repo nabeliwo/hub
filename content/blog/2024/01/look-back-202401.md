@@ -5,6 +5,7 @@ date: '2024-01-31'
 category: 'diary'
 tags: []
 image: ''
+alt: ''
 ---
 
 ## 今月のトピック

@@ -5,6 +5,7 @@ date: '2020-03-21'
 category: 'game'
 tags: ['seikendensetsu']
 image: ''
+alt: ''
 ---
 
 ## 体験版がリリースされました

@@ -5,6 +5,7 @@ date: '2017-03-04'
 category: 'game'
 tags: ['switch', 'zelda']
 image: ''
+alt: ''
 ---
 
 はい。  

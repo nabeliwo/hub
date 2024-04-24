@@ -5,6 +5,7 @@ date: '2023-02-28'
 category: 'diary'
 tags: []
 image: ''
+alt: ''
 ---
 
 ## 今月のトピック

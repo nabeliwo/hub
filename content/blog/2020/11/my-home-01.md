@@ -5,6 +5,7 @@ date: '2020-11-30'
 category: 'house'
 tags: []
 image: ''
+alt: ''
 ---
 
 昔から mizzy さんの[フリーランスの家づくり日記](https://mizzy.hateblo.jp/)がすごく好きで、エンタメとしてよく読んでいた。  

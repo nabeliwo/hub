@@ -2,6 +2,7 @@
 title: 'AZURA Y2K Series「Space Travel」'
 date: '2024-03-09'
 image: '/images/best-buy/2024/azura_y2k_series.png'
+alt: 'Figure of a three-headed girl with blue hair wearing silver clothes. It is a cute figure with a spacey atmosphere.'
 ---
 
 When I was walking in a shopping mall, I found a figure vending machine and fell in love with this AZURA series that was in the machine, so I bought it.  

@@ -5,6 +5,7 @@ date: '2017-01-11'
 category: 'diary'
 tags: ['hugo']
 image: ''
+alt: ''
 ---
 
 絵文字対応しました:beer: めでたい:smile::tada:

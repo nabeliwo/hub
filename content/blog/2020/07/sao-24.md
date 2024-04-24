@@ -5,6 +5,7 @@ date: '2020-07-27'
 category: 'book'
 tags: ['sao']
 image: ''
+alt: ''
 ---
 
 ユナイタル・リング編の3巻目である SAO の24巻を読みました。  

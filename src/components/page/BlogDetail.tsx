@@ -50,7 +50,7 @@ export function BlogDetail({ blog }: Props) {
 
       {blog.image && (
         <div className="-mx-4 mt-8 md:mx-0">
-          <img src={blog.image} alt="" />
+          <img src={blog.image} alt={blog.alt} />
         </div>
       )}
 

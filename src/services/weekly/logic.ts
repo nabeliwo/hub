@@ -1,6 +1,8 @@
 import fs from 'fs'
 import path from 'path'
 
+import { weekly } from '@/constants/meta'
+import { generateRssFeed } from '@/util/feed'
 import { getMdContent } from '@/util/markdown'
 
 import { isWeeklyFrontMatter, type Weekly } from './types'
@@ -71,4 +73,22 @@ export async function getWeekly(pathname: string): Promise<Weekly | null> {
   } catch {
     return null
   }
+}
+
+export async function generateWeeklyRssFeed(weeklies: Weekly[]) {
+  await generateRssFeed(
+    {
+      url: weekly.url,
+      title: weekly.siteName,
+      description: weekly.description,
+      type: 'weekly',
+    },
+    weeklies.map((item) => ({
+      title: item.title,
+      description: item.description,
+      content: item.content,
+      date: item.date,
+      url: weekly.url + item.slug,
+    })),
+  )
 }

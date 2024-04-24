@@ -5,6 +5,7 @@ date: '2020-01-19'
 category: 'tech'
 tags: ['unity']
 image: ''
+alt: ''
 ---
 
 [VRoid](https://vroid.com/) で作ったアバターを [VRChat](https://www.vrchat.com/) で動かしてみたかったのでやり方調べてみました。  

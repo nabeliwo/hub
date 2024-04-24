@@ -5,6 +5,7 @@ date: '2018-06-30'
 category: 'tech'
 tags: ['ts', 'node', 'express', 'react']
 image: ''
+alt: ''
 ---
 
 ## 前置き

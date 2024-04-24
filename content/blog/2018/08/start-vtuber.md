@@ -5,6 +5,7 @@ date: '2018-08-25'
 category: 'vr'
 tags: []
 image: ''
+alt: ''
 ---
 
 「バ美肉」というものがある。  

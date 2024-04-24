@@ -5,6 +5,7 @@ date: '2022-02-11'
 category: 'house'
 tags: []
 image: ''
+alt: ''
 ---
 
 施主検査ってやつをやってきました。  

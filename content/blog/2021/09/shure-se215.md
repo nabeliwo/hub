@@ -5,6 +5,7 @@ date: '2021-09-06'
 category: 'gadget'
 tags: ['shure']
 image: '/images/blog/2021/09/shure-se215/thumbnail.jpg'
+alt: 'SHURE の『SE215』というイヤホンの外箱の写真。青い箱で、イヤホン自体も青色。'
 ---
 
 最近イヤホンを新しく買ってそれをメインに使ってますという話と、なぜ今更ワイヤレスでないイヤホン買ってんのよっていう話をします。  

@@ -5,6 +5,7 @@ date: '2020-11-30'
 category: 'diary'
 tags: []
 image: ''
+alt: ''
 ---
 
 2020年11月の振り返りです。  

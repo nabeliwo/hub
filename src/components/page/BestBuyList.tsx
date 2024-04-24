@@ -26,9 +26,9 @@ export function BestBuyList({ bestBuys }: Props) {
               <img
                 className="absolute inset-1/2 z-10 -translate-x-1/2 -translate-y-1/2 transition-transform group-hover:scale-105"
                 src={bestBuy.image}
-                width="80%"
-                height="80%"
-                alt=""
+                alt={bestBuy.alt}
+                width="90%"
+                height="auto"
               />
 
               <p className="absolute bottom-4 left-0 z-20 bg-white/70 px-4 py-2 text-sm">{bestBuy.title}</p>

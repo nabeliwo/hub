@@ -66,6 +66,7 @@ type BlogFrontMatter = {
   category: keyof typeof categoryMap
   tags: Array<keyof typeof tagMap>
   image: string
+  alt: string
 }
 
 export type Blog = BlogFrontMatter & {

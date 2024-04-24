@@ -5,6 +5,7 @@ date: '2021-01-09'
 category: 'diary'
 tags: []
 image: ''
+alt: ''
 ---
 
 あけましておめでとうございます。  

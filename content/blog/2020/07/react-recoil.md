@@ -5,6 +5,7 @@ date: '2020-07-30'
 category: 'tech'
 tags: ['js', 'react']
 image: ''
+alt: ''
 ---
 
 [Recoil](https://recoiljs.org/) という React のための state マネジメントライブラリが少し前に話題になりました。  

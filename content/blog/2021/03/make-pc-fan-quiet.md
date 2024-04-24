@@ -5,6 +5,7 @@ date: '2021-03-09'
 category: 'pc-build'
 tags: []
 image: ''
+alt: ''
 ---
 
 約1年ほど前に PC を自作しました。  

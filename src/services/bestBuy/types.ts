@@ -2,6 +2,7 @@ type BestBuyFrontMatter = {
   title: string
   date: string
   image: string
+  alt: string
 }
 
 export type BestBuy = BestBuyFrontMatter & {

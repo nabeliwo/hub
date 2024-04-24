@@ -5,6 +5,7 @@ date: '2021-11-03'
 category: 'gadget'
 tags: ['hhkb']
 image: '/images/blog/2021/11/hhkb-snow/thumbnail.jpg'
+alt: 'Happy Hacking Keyboard というキーボードの写真。キーキャップに文字の刻印が無く、雪のように真っ白なキーボード。'
 ---
 
 我らが PFU さんの Happy Hacking Keyboard がなんと25周年ということで、「雪」モデルというものが発売されました。  

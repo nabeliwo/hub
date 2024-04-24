@@ -5,6 +5,7 @@ date: '2023-10-12'
 category: 'gadget'
 tags: ['hhkb', 'keyboard-build']
 image: '/images/blog/2023/10/build-7spro/thumbnail.jpg'
+alt: '7sPro という自作キーボードの写真。セパレートタイプのキーボードで、筐体は水色。'
 ---
 
 [7sPro](https://shop.yushakobo.jp/products/7spro) という自作キーボードキットを購入して先日組んだので、そのときのメモだったり作ってみた感想だったりそもそも 7sPro の何が良いのかっていう話だったりを書きます。

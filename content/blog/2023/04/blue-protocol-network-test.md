@@ -5,6 +5,7 @@ date: '2023-04-03'
 category: 'game'
 tags: ['blue-protocol']
 image: '/images/blog/2023/04/blue-protocol-network-test/thumbnail.png'
+alt: 'ゲーム『BLUE PROTOCOL』のキャプチャ。アニメ調のグラフィックで水色の髪のかわいい女の子のキャラクターが腕を組んでポーズを決めている。'
 ---
 
 [BLUE PROTOCOL](https://blue-protocol.com/) というまだ未リリースの MMO があって、開発が発表されてからかれこれ8年経っていてずっと開発され続けている。  

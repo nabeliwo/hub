@@ -5,6 +5,7 @@ date: '2020-12-17'
 category: 'book'
 tags: ['sao']
 image: ''
+alt: ''
 ---
 
 ユナイタル・リング編の4巻目である SAO の25巻を読みました。  

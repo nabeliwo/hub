@@ -5,6 +5,7 @@ date: '2019-10-11'
 category: 'made'
 tags: ['react', 'gatsby']
 image: ''
+alt: ''
 ---
 
 とてもお久しぶりにブログを書きます。どうもこんばんは、 [@nabeliwo](https://twitter.com/nabeliwo) です。

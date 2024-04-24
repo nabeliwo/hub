@@ -5,6 +5,7 @@ date: '2022-04-29'
 category: 'game'
 tags: ['pokemon', 'switch']
 image: ''
+alt: ''
 ---
 
 『Pokémon LEGENDS アルセウス』を全クリした。  

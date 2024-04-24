@@ -5,6 +5,7 @@ date: '2021-02-17'
 category: 'game'
 tags: []
 image: ''
+alt: ''
 ---
 
 [ALTDEUS: Beyond Chronos](https://altdeus.com/) というゲームをプレイしてクリアしたので感想を書こうと思います。

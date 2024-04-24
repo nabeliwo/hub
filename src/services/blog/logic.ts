@@ -1,6 +1,8 @@
 import fs from 'fs'
 import path from 'path'
 
+import { blog } from '@/constants/meta'
+import { generateRssFeed } from '@/util/feed'
 import { getMdContent } from '@/util/markdown'
 
 import { isBlogFrontMatter } from './types'
@@ -85,4 +87,22 @@ export function countItems(items: string[]): { [key: string]: number } {
   }
 
   return countMap
+}
+
+export async function generateBlogRssFeed(blogs: Blog[]) {
+  await generateRssFeed(
+    {
+      url: blog.url,
+      title: blog.siteName,
+      description: blog.description,
+      type: 'blog',
+    },
+    blogs.map((item) => ({
+      title: item.title,
+      description: item.description,
+      content: item.content,
+      date: item.date,
+      url: blog.url + item.slug,
+    })),
+  )
 }

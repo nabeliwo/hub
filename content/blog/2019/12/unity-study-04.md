@@ -5,6 +5,7 @@ date: '2019-12-30'
 category: 'tech'
 tags: ['unity']
 image: ''
+alt: ''
 ---
 
 引き続き、こちらの書籍を使って勉強をしています。

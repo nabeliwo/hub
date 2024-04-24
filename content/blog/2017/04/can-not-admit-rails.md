@@ -5,6 +5,7 @@ date: '2017-04-18'
 category: 'poem'
 tags: ['ruby', 'rails']
 image: ''
+alt: ''
 ---
 
 JavaScript一筋のフロントエンドエンジニアだった僕がサーバーサイドにコンバートしてRailsを触るようになってもう少しで1ヶ月が経ちます。  

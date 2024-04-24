@@ -5,6 +5,7 @@ date: '2020-01-02'
 category: 'tech'
 tags: ['unity']
 image: ''
+alt: ''
 ---
 
 あけましておめでとうございます。  

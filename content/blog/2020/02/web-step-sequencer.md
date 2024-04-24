@@ -5,6 +5,7 @@ date: '2020-02-28'
 category: 'made'
 tags: ['ts', 'react']
 image: '/images/blog/2020/02/web-step-sequencer/thumbnail.png'
+alt: 'ウェブアプリ『Web step sequencer built with React』のキャプチャ。ステップシーケンサーのボタン群を UI に落とし込んだ画面になっている。'
 ---
 
 ## ステップシーケンサーを作ってみたかった

@@ -45,7 +45,7 @@ export function Nav() {
         </details>
       </nav>
 
-      <nav className="fixed right-4 top-4 z-10 md:hidden">
+      <nav className="fixed right-4 top-4 z-50 md:hidden">
         <details>
           <summary className="list-none text-right" ref={spSummaryRef}>
             <div className="inline-flex size-8 items-center justify-center bg-blue text-white">

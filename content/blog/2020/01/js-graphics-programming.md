@@ -5,6 +5,7 @@ date: '2020-01-28'
 category: 'book'
 tags: ['js']
 image: ''
+alt: ''
 ---
 
 これを読んだ。  

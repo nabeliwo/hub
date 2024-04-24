@@ -5,6 +5,7 @@ date: '2017-06-24'
 category: 'tech'
 tags: ['netlify']
 image: ''
+alt: ''
 ---
 
 このブログはさくらVPSでホストしていたのですが今話題の[netlify](https://www.netlify.com/)に移行したのでそのときのメモ。

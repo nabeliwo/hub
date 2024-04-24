@@ -5,6 +5,7 @@ date: '2020-01-21'
 category: 'tech'
 tags: ['unity']
 image: ''
+alt: ''
 ---
 
 [VRChat](https://www.vrchat.com/) に自分のワールドをあげて好き放題な世界を作りたいですね、ということで調べてみました。  

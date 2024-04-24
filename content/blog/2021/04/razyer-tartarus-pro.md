@@ -5,6 +5,7 @@ date: '2021-04-14'
 category: 'gadget'
 tags: ['razer']
 image: '/images/blog/2021/04/razer-tartarus-pro/thumbnail.jpg'
+alt: 'Razer の『Tartarus Pro Mercury White』の写真。通常の半分のキー数のキーボードで、全体的に白い筐体が水色の LED の光放っている。'
 ---
 
 ついに左手ゲーミングキーパッドに手を出しました。1ヵ月くらい使ってみたのでその感想を書きます。

@@ -5,6 +5,7 @@ date: '2017-07-04'
 category: 'tech'
 tags: ['js', 'react']
 image: ''
+alt: ''
 ---
 
 [react-router](https://github.com/ReactTraining/react-router)がv4になったことで既存のアプリケーションが完全に壊れて困っちゃった人。いると思います。  

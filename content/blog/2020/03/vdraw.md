@@ -5,6 +5,7 @@ date: '2020-03-22'
 category: 'vr'
 tags: []
 image: ''
+alt: ''
 ---
 
 <blockquote class="twitter-tweet"><p lang="ja" dir="ltr">たのしい <a href="https://twitter.com/hashtag/VRoid?src=hash&amp;ref_src=twsrc%5Etfw">#VRoid</a> <a href="https://twitter.com/hashtag/VDRAW?src=hash&amp;ref_src=twsrc%5Etfw">#VDRAW</a> <a href="https://t.co/WI5szlBAEy">pic.twitter.com/WI5szlBAEy</a></p>&mdash; でこりを (@dekoiliwo) <a href="https://twitter.com/dekoiliwo/status/1241650013375041536?ref_src=twsrc%5Etfw">March 22, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>

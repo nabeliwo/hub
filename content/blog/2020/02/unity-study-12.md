@@ -5,6 +5,7 @@ date: '2020-02-03'
 category: 'tech'
 tags: ['unity']
 image: ''
+alt: ''
 ---
 
 以前こんな感じで Unity プロジェクトを Git 管理する、という話をした。  

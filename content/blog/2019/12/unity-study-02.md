@@ -5,6 +5,7 @@ date: '2019-12-25'
 category: 'tech'
 tags: ['unity']
 image: ''
+alt: ''
 ---
 
 奇しくもクリスマスの投稿となってしまいましたが、2日目書きます。

@@ -5,6 +5,7 @@ date: '2022-01-03'
 category: 'diary'
 tags: []
 image: ''
+alt: ''
 ---
 
 あけましておめでとうごいます。  

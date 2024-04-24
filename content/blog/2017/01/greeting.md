@@ -5,6 +5,7 @@ date: '2017-01-09'
 category: 'diary'
 tags: ['hugo']
 image: ''
+alt: ''
 ---
 
 明けましたね。  

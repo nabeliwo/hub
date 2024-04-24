@@ -5,6 +5,7 @@ description: 'プライムシューターコラボは最強だという話。'
 category: 'game'
 tags: ['splatoon']
 image: ''
+alt: ''
 ---
 
 この記事は [Splatoon Advent Calendar 2018](https://adventar.org/calendars/3171) の7日目の記事です。

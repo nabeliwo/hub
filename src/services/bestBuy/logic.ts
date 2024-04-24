@@ -1,6 +1,8 @@
 import fs from 'fs'
 import path from 'path'
 
+import { bestBuy } from '@/constants/meta'
+import { generateRssFeed } from '@/util/feed'
 import { getMdContent } from '@/util/markdown'
 
 import { isBestBuyFrontMatter } from './types'
@@ -81,4 +83,22 @@ export async function getBestBuy(pathname: string): Promise<BestBuy | null> {
   } catch (e) {
     return null
   }
+}
+
+export async function generateBestBuyRssFeed(weeklies: BestBuy[]) {
+  await generateRssFeed(
+    {
+      url: bestBuy.url,
+      title: bestBuy.siteName,
+      description: bestBuy.description,
+      type: 'best-buy',
+    },
+    weeklies.map((item) => ({
+      title: item.title,
+      description: item.description,
+      content: item.content,
+      date: item.date,
+      url: bestBuy.url + item.slug,
+    })),
+  )
 }

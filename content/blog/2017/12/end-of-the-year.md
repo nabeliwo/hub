@@ -5,6 +5,7 @@ date: '2017-12-30'
 category: 'poem'
 tags: []
 image: ''
+alt: ''
 ---
 
 ## 雑談をします

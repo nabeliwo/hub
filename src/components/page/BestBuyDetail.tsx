@@ -19,7 +19,13 @@ export function BestBuyDetail({ bestBuy }: Props) {
 
       {bestBuy.image && (
         <div className="relative mt-8 w-full rounded-2xl bg-grey-bestbuy pt-[100%]">
-          <img className="absolute inset-1/2 -translate-x-1/2 -translate-y-1/2" src={bestBuy.image} alt="" />
+          <img
+            className="absolute inset-1/2 -translate-x-1/2 -translate-y-1/2"
+            src={bestBuy.image}
+            alt={bestBuy.alt}
+            width="100%"
+            height="auto"
+          />
         </div>
       )}
 

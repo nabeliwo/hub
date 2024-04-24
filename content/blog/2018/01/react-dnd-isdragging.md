@@ -5,6 +5,7 @@ date: '2018-01-04'
 category: 'tech'
 tags: ['js', 'react']
 image: ''
+alt: ''
 ---
 
 [react-dnd](https://github.com/react-dnd/react-dnd) という React でドラッグ＆ドロップを実装したいときに使われる鉄板ライブラリがあります。  

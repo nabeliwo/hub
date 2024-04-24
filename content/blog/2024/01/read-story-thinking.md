@@ -5,6 +5,7 @@ date: '2024-01-14'
 category: 'book'
 tags: []
 image: ''
+alt: ''
 ---
 
 [けんすうさん](https://twitter.com/kensuu)著の『[物語思考 「やりたいこと」が見つからなくて悩む人のキャリア設計術](https://amzn.to/3RVKgxV)』を読んだので感想です。

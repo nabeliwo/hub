@@ -45,6 +45,31 @@ export function getHeaderInfo(pathname: string) {
   }
 }
 
+export function getFooterRSSLink(pathname: string) {
+  if (pathname.startsWith(path.blog)) {
+    return {
+      label: 'Blog',
+      path: '/rss/blog/feed.xml',
+    }
+  }
+
+  if (pathname.startsWith(path.weekly)) {
+    return {
+      label: 'Weekly',
+      path: '/rss/weekly/feed.xml',
+    }
+  }
+
+  if (pathname.startsWith(path.bestBuy)) {
+    return {
+      label: 'Best Buy',
+      path: '/rss/best-buy/feed.xml',
+    }
+  }
+
+  return null
+}
+
 const PER = 20
 const PAGE = '1'
 export function paginate<T>(

@@ -5,6 +5,7 @@ date: '2024-03-08'
 category: 'tech'
 tags: ['gas', 'ts']
 image: ''
+alt: ''
 ---
 
 Google Apps Script (GAS) で Discord Bot を作るときに色々考えたのでメモ。

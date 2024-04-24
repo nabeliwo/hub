@@ -5,6 +5,7 @@ date: '2020-05-15'
 category: 'gadget'
 tags: ['iphone']
 image: ''
+alt: ''
 ---
 
 iPhone を使って自分を撮影したい時ってありますよね。  

@@ -5,6 +5,7 @@ date: '2020-12-21'
 category: 'tech'
 tags: ['js', 'react']
 image: ''
+alt: ''
 ---
 
 これは [SmartHR Advent Calendar 2020](https://qiita.com/advent-calendar/2020/smarthr) の21日目のエントリです。

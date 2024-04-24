@@ -5,6 +5,7 @@ date: '2022-08-12'
 category: 'game'
 tags: ['ps4']
 image: '/images/blog/2022/08/stray/thumbnail.jpg'
+alt: 'ゲーム『Stray』のキャプチャ。デスクトップ PC の筐体がいくつも高く積まれたサイバーパンクな雰囲気の場所に三毛猫が佇んでいる。'
 ---
 
 巷で話題の最高に癒される猫ゲー『[Stray](https://store.steampowered.com/app/1332010/Stray/?l=japanese)』をクリアしたので感想を書いてみる。

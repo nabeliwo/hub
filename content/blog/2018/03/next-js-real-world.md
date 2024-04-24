@@ -5,6 +5,7 @@ description: 'real world で next.js を使うことができるのか考えて�
 category: 'tech'
 tags: ['js', 'react', 'next']
 image: ''
+alt: ''
 ---
 
 最近はいろんなところで React アプリケーション(もちろん React とは限らないが)での SSR について語られることが多くなっていると感じる。  

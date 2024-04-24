@@ -5,6 +5,7 @@ date: '2022-06-08'
 category: 'book'
 tags: []
 image: ''
+alt: ''
 ---
 
 社の勉強会で、輪読会形式でこの本を読んだ。  

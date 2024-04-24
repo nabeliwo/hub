@@ -5,6 +5,7 @@ date: '2023-01-16'
 category: 'house'
 tags: []
 image: '/images/blog/2023/01/my-home-14/thumbnail.jpg'
+alt: '家の外の写真。地面を映しており、地面いっぱいに砂利がまかれている。'
 ---
 
 早いものでこの家に引っ越してきてそろそろ1年が経とうとしています。  

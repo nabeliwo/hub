@@ -5,6 +5,7 @@ date: '2021-02-07'
 category: 'tech'
 tags: ['js', 'web-components']
 image: ''
+alt: ''
 ---
 
 この記事は僕が所属している会社で開発している [SmartHR UI](https://github.com/kufu/smarthr-ui) という React コンポーネントライブラリの未来を見据えて考えたことを綴った社内向けの記事に加筆修正をしてこのブログに持ってきたものになります。  

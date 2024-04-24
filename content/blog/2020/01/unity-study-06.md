@@ -5,6 +5,7 @@ date: '2020-01-11'
 category: 'tech'
 tags: ['unity']
 image: ''
+alt: ''
 ---
 
 ちょっと日記に間が空いてしまった。  

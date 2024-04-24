@@ -5,6 +5,7 @@ date: '2021-12-24'
 category: 'diary'
 tags: []
 image: ''
+alt: ''
 ---
 
 この記事は [SmartHR Advent Calendar 2021](https://qiita.com/advent-calendar/2021/smarthr) の24日目です。

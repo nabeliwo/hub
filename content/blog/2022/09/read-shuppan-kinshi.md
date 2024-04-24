@@ -5,6 +5,7 @@ date: '2022-11-10'
 category: 'book'
 tags: []
 image: ''
+alt: ''
 ---
 
 長江俊和さんの『出版禁止』という本を読んだ。  

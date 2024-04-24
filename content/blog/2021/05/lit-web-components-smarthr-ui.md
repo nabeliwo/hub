@@ -5,6 +5,7 @@ date: '2021-05-12'
 category: 'tech'
 tags: ['js', 'web-components']
 image: ''
+alt: ''
 ---
 
 Lit という Web Components を作るためのパッケージがリリースされました。  

@@ -5,6 +5,7 @@ date: '2021-02-06'
 category: 'pc-build'
 tags: ['game-streaming']
 image: '/images/blog/2021/02/4k60-pro-mk2/thumbnail.jpg'
+alt: '自作パソコンの中身の写真。グラフィックボードとキャプチャーボードがマザーボードに刺さっている。'
 ---
 
 最近はあんまりしてなかったんだけど、僕はゲーム配信をするのが結構好きでがっつり環境を揃えていたりした。  

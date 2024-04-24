@@ -5,6 +5,7 @@ date: '2021-08-09'
 category: 'poem'
 tags: []
 image: '/images/blog/2021/08/flower-and-betta/thumbnail.jpg'
+alt: '部屋の一面の壁の写真。水色のぬいぐるみや、青い花、水色のベタの入った水槽など、白と青系のインテリアの部屋。'
 ---
 
 なかなかブログの更新頻度を保つことができない。  

@@ -5,6 +5,7 @@ date: '2018-09-25'
 category: 'diary'
 tags: []
 image: ''
+alt: ''
 ---
 
 前々から作りたいなーと思っていた web サービスがあるんですよね。

@@ -5,6 +5,7 @@ date: '2019-12-11'
 category: 'tech'
 tags: ['unity', 'sao']
 image: ''
+alt: ''
 ---
 
 こんにちは。  

@@ -5,6 +5,7 @@ date: '2017-07-12'
 category: 'tech'
 tags: ['js', 'prettier', 'eslint', 'vscode']
 image: ''
+alt: ''
 ---
 
 [prettier](https://github.com/prettier/prettier) は JavaScript のコードフォーマッター。  

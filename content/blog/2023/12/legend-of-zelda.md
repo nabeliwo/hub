@@ -5,6 +5,7 @@ date: '2023-12-24'
 category: 'game'
 tags: ['zelda']
 image: '/images/blog/2023/12/legend-of-zelda/thumbnail.png'
+alt: 'ゲーム『ゼルダの伝説』のキャプチャ。ドット調の二次元のグラフィック。タイトル画面を写している。'
 ---
 
 僕の中でゼルダの伝説全部やり直すぞタイムに入っているのでその第一弾として初代[ゼルダの伝説](https://www.nintendo.co.jp/software/zelda1/index.html)をやった。  

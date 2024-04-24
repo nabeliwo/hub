@@ -5,6 +5,7 @@ date: '2016-12-18'
 category: 'made'
 tags: ['hugo']
 image: ''
+alt: ''
 ---
 
 これまでの僕のブログ事情というと、

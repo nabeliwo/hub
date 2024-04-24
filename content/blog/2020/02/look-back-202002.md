@@ -5,6 +5,7 @@ date: '2020-02-29'
 category: 'diary'
 tags: []
 image: ''
+alt: ''
 ---
 
 2020年2月の振り返りです。  

@@ -5,6 +5,7 @@ date: '2020-01-30'
 category: 'tech'
 tags: ['unity']
 image: ''
+alt: ''
 ---
 
 前回は [VRChat](https://www.vrchat.com/) に自分のワールドをあげることができるようになりました。  

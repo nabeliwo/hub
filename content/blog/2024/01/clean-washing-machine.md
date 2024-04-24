@@ -5,6 +5,7 @@ date: '2024-01-15'
 category: 'house'
 tags: []
 image: '/images/blog/2024/01/clean-washing-machine/thumbnail.jpg'
+alt: 'ドラム式洗濯機が分解されて中身が丸裸になっている写真。'
 ---
 
 最近我が家のドラム式洗濯機の調子が悪くなっているのを感じていた。  
