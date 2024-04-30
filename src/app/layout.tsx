@@ -4,7 +4,7 @@ import { Nav } from '@/components/layout/Nav'
 import { profile } from '@/constants/meta'
 
 import type { Metadata } from 'next'
-import type { PropsWithChildren } from 'react'
+import type { PropsWithChildren, ReactNode } from 'react'
 
 import './globals.css'
 
@@ -25,7 +25,11 @@ export const metadata: Metadata = {
   },
 }
 
-export default function RootLayout({ children }: PropsWithChildren) {
+type Props = {
+  dialog: ReactNode
+}
+
+export default function RootLayout({ dialog, children }: PropsWithChildren<Props>) {
   return (
     <html lang="ja">
       <body className="font-body tracking-wide text-black">
@@ -37,6 +41,8 @@ export default function RootLayout({ children }: PropsWithChildren) {
         </div>
 
         <Footer />
+
+        {dialog}
       </body>
     </html>
   )
