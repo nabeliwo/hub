@@ -29,7 +29,7 @@ export function BestBuyDetailDialog({ bestBuy }: Props) {
             <Dialog.Title>{bestBuy.title}</Dialog.Title>
 
             <button onClick={() => onClose()}>
-              <XMarkIcon alt="閉じる" />
+              <XMarkIcon alt="Close" />
             </button>
           </div>
 
