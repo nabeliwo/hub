@@ -21,8 +21,6 @@ const config: Config = {
     extend: {
       width: {
         'best-buy-half': 'calc(50% - 0.5rem)',
-        'best-buy-one-third': 'calc(33.333% - 10.666px)',
-        'best-buy-one-fourth': 'calc(25% - 0.75rem)',
       },
     },
   },

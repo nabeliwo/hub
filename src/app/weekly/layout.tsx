@@ -16,5 +16,5 @@ export const metadata: Metadata = {
 }
 
 export default function WeeklyLayout({ children }: PropsWithChildren) {
-  return <div className="max-w-2xl">{children}</div>
+  return children
 }

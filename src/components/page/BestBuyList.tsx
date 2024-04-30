@@ -16,11 +16,18 @@ export function BestBuyList({ bestBuys }: Props) {
       <Heading visuallyHidden>{bestBuy.siteName}</Heading>
 
       <div className="flex flex-wrap gap-4">
-        {bestBuys.map((bestBuy, i) => (
-          <article
-            key={i}
-            className="w-full max-w-[590px] sm:w-best-buy-half lg:w-best-buy-one-third xl:w-best-buy-one-fourth"
-          >
+        {[
+          ...bestBuys,
+          ...bestBuys,
+          ...bestBuys,
+          ...bestBuys,
+          ...bestBuys,
+          ...bestBuys,
+          ...bestBuys,
+          ...bestBuys,
+          ...bestBuys,
+        ].map((bestBuy, i) => (
+          <article key={i} className="w-full sm:w-best-buy-half">
             <Link
               href={path.bestBuyItem(bestBuy.slug)}
               className="group relative block w-full rounded-2xl bg-grey-bestbuy pt-[100%]"

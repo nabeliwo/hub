@@ -35,9 +35,11 @@ export default function RootLayout({ dialog, children }: PropsWithChildren<Props
       <body className="font-body tracking-wide text-black">
         <Header />
 
-        <div className="flex gap-16 px-4 pb-16 pt-8 md:p-12 md:pb-20">
-          <Nav />
-          <main className="flex-1">{children}</main>
+        <div className="px-4 pb-16 pt-8 md:p-12 md:pb-20">
+          <div className="mx-auto flex max-w-4xl gap-16">
+            <Nav />
+            <main className="flex-1">{children}</main>
+          </div>
         </div>
 
         <Footer />

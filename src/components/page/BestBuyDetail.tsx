@@ -10,7 +10,7 @@ type Props = {
 
 export function BestBuyDetail({ bestBuy }: Props) {
   return (
-    <div className="max-w-2xl">
+    <>
       <p className="text-sm text-grey-text">
         <Datetime>{bestBuy.date}</Datetime>
       </p>
@@ -32,6 +32,6 @@ export function BestBuyDetail({ bestBuy }: Props) {
       <div className="mt-12">
         <HtmlContent>{bestBuy.content}</HtmlContent>
       </div>
-    </div>
+    </>
   )
 }
