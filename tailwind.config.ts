@@ -22,6 +22,9 @@ const config: Config = {
       width: {
         'best-buy-half': 'calc(50% - 0.5rem)',
       },
+      maxHeight: {
+        'best-buy-max': 'calc(100% - 2rem)',
+      },
     },
   },
   plugins: [],
