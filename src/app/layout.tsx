@@ -1,3 +1,5 @@
+import { SpeedInsights } from '@vercel/speed-insights/next'
+
 import { Footer } from '@/components/layout/Footer'
 import { Header } from '@/components/layout/Header'
 import { Nav } from '@/components/layout/Nav'
@@ -45,6 +47,8 @@ export default function RootLayout({ dialog, children }: PropsWithChildren<Props
         <Footer />
 
         {dialog}
+
+        <SpeedInsights />
       </body>
     </html>
   )
