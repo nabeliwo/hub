@@ -11,19 +11,11 @@ export function Header() {
   return (
     <header className="border-b border-grey-border p-4 md:p-12">
       <div className="mx-auto max-w-4xl">
-        <a
-          href={info.url}
-          className="mb-4 inline-block bg-blue px-4 leading-8 text-white hover:bg-blue-light md:mb-2"
-        >
+        <a href={info.url} className="inline-block bg-blue px-4 leading-8 text-white hover:bg-blue-light">
           {info.title}
         </a>
 
-        <p className="hidden pl-4 text-grey-text md:block">{info.description}</p>
-
-        <details className="bg-grey-bg px-4 py-2 text-sm md:hidden">
-          <summary>The {info.title} is...</summary>
-          <p className="mt-2 pb-2 leading-5">{info.description}</p>
-        </details>
+        <p className="mt-2 text-sm text-grey-text md:pl-4 md:text-base">{info.description}</p>
       </div>
     </header>
   )
