@@ -20,7 +20,7 @@ export const metadata: Metadata = {
     siteName: profile.siteName,
     type: 'website',
     url: profile.url,
-    images: '', // TODO
+    images: `${profile.url}/images/og-image/hub.png`,
   },
   twitter: {
     card: 'summary_large_image', // 1200px × 630px

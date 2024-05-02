@@ -30,7 +30,7 @@ export async function generateRssFeed(feedOptions: FeedOptions, items: Item[]) {
     title: feedOptions.title,
     description: feedOptions.description,
     language: 'ja',
-    image: '', // TODO
+    image: `${siteUrl}/images/og-image/${feedOptions.type}.png'`,
     favicon: siteUrl + '/favicon.io',
     copyright: 'All rights reserved 2024, nabeliwo',
     feedLinks: {

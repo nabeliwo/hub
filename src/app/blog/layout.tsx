@@ -16,7 +16,7 @@ export const metadata: Metadata = {
     siteName: blog.siteName,
     type: 'article',
     url: blog.url,
-    images: '', // TODO
+    images: `${profile.url}/images/og-image/blog.png`,
   },
 }
 
