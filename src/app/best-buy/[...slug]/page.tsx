@@ -25,7 +25,7 @@ export async function generateMetadata({ params }: Props, parent: ResolvingMetad
   const bestBuyData = await getBestBuy(pathname)
 
   if (!bestBuyData) {
-    return notFound()
+    return {}
   }
 
   const parentMetadata = await parent

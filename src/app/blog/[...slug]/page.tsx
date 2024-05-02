@@ -25,7 +25,7 @@ export async function generateMetadata({ params }: Props, parent: ResolvingMetad
   const blogData = await getBlog(pathname)
 
   if (!blogData) {
-    return notFound()
+    return {}
   }
 
   const parentMetadata = await parent

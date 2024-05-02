@@ -25,7 +25,7 @@ export async function generateMetadata({ params }: Props, parent: ResolvingMetad
   const weeklyData = await getWeekly(pathname)
 
   if (!weeklyData) {
-    return notFound()
+    return {}
   }
 
   const parentMetadata = await parent
