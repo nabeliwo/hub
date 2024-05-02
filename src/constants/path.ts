@@ -14,6 +14,11 @@ export const path = {
   weeklyItem: (slug: string) => `/weekly${slug}`,
   bestBuy: '/best-buy',
   bestBuyItem: (slug: string) => `/best-buy${slug}`,
+
+  api: {
+    ogImage: ({ siteName, title, image }: { siteName: string; title: string; image?: string }) =>
+      `/api/og-image?site_name=${siteName}&title=${title}${image ? `&image=${image}` : ''}`,
+  },
 }
 
 export const navigationMap = [

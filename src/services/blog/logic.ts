@@ -103,6 +103,7 @@ export async function generateBlogRssFeed(blogs: Blog[]) {
       content: item.content,
       date: item.date,
       url: blog.url + item.slug,
+      image: item.image,
     })),
   )
 }

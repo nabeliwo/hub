@@ -1,7 +1,8 @@
 import { notFound } from 'next/navigation'
 
 import { BestBuyDetail } from '@/components/page/BestBuyDetail'
-import { bestBuy } from '@/constants/meta'
+import { bestBuy, profile } from '@/constants/meta'
+import { path } from '@/constants/path'
 import { getBestBuy, getBestBuys } from '@/services/bestBuy'
 
 import type { Metadata, ResolvingMetadata } from 'next'
@@ -43,7 +44,11 @@ export async function generateMetadata({ params }: Props, parent: ResolvingMetad
     openGraph: {
       ...parentMetadata.openGraph,
       url,
-      images: '', // TODO
+      images: {
+        url: `${profile.url}${path.api.ogImage({ siteName: bestBuy.siteName, title: bestBuyData.title, image: bestBuyData.image })}`,
+        width: 1200,
+        height: 630,
+      },
     },
   }
 }

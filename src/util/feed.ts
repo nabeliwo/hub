@@ -19,6 +19,7 @@ type Item = {
   content: string
   date: string
   url: string
+  image?: string
 }
 
 export async function generateRssFeed(feedOptions: FeedOptions, items: Item[]) {
@@ -31,7 +32,7 @@ export async function generateRssFeed(feedOptions: FeedOptions, items: Item[]) {
     description: feedOptions.description,
     language: 'ja',
     image: `${siteUrl}/images/og-image/${feedOptions.type}.png'`,
-    favicon: siteUrl + '/favicon.io',
+    favicon: `${siteUrl}/favicon.ico`,
     copyright: 'All rights reserved 2024, nabeliwo',
     feedLinks: {
       rss2: `${siteUrl}/rss/${feedOptions.type}/feed.xml'`,
@@ -53,7 +54,7 @@ export async function generateRssFeed(feedOptions: FeedOptions, items: Item[]) {
       description: item.description,
       content: item.content,
       date: parseISO(item.date),
-      image: '', // TODO
+      image: item.image ? `${siteUrl}${item.image}` : undefined,
     })
   })
 

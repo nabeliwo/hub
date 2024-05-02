@@ -4,7 +4,7 @@ const config: Config = {
   content: ['./src/**/*.{js,ts,jsx,tsx,mdx}'],
   theme: {
     fontFamily: {
-      body: ['Iner', "'M PLUS 1p'", 'system-ui', 'sans-serif'],
+      body: ['Inter', "'M PLUS 1p'", 'system-ui', 'sans-serif'],
     },
     colors: {
       transparent: 'transparent',

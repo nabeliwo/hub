@@ -2,6 +2,7 @@ import { notFound } from 'next/navigation'
 
 import { WeeklyDetail } from '@/components/page/WeeklyDetail'
 import { profile, weekly } from '@/constants/meta'
+import { path } from '@/constants/path'
 import { getWeeklies, getWeekly } from '@/services/weekly'
 
 import type { Metadata, ResolvingMetadata } from 'next'
@@ -43,7 +44,11 @@ export async function generateMetadata({ params }: Props, parent: ResolvingMetad
     openGraph: {
       ...parentMetadata.openGraph,
       url,
-      images: '', // TODO
+      images: {
+        url: `${profile.url}${path.api.ogImage({ siteName: weekly.siteName, title: weeklyData.title })}`,
+        width: 1200,
+        height: 630,
+      },
     },
   }
 }

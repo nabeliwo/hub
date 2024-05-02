@@ -99,6 +99,7 @@ export async function generateBestBuyRssFeed(weeklies: BestBuy[]) {
       content: item.content,
       date: item.date,
       url: bestBuy.url + item.slug,
+      image: item.image,
     })),
   )
 }

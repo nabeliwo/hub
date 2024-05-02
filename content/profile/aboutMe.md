@@ -17,49 +17,49 @@ If this site piques your interest, please feel free to contact me through any of
 
 ### YouTube
 
-[nabeliwo / なべりを - YouTube](https://www.youtube.com/@nabeliwo)  
+[@nabeliwo / YouTube](https://www.youtube.com/@nabeliwo)  
 I review PC peripherals and gadgets.
 
 ### SNS
 
 #### X
 
-[nabeliwo（@nabeliwo) / X](https://twitter.com/nabeliwo)  
+[@nabeliwo / X](https://twitter.com/nabeliwo)  
 This account talks about engineering.
 
-[なべりを（@nabeliwo_2nd） / X](https://twitter.com/nabeliwo_2nd)  
+[@nabeliwo_2nd / X](https://twitter.com/nabeliwo_2nd)  
 This account talks about gadgets.
 
 #### Instagram
 
-[@nabeliwo • Instagram](https://www.instagram.com/nabeliwo)  
+[@nabeliwo / Instagram](https://www.instagram.com/nabeliwo)  
 I post gadgets, cats and something blue or white.
 
 #### GitHub
 
-[nabeliwo (nabeliwo)](https://github.com/nabeliwo)  
+[nabeliwo / GitHub](https://github.com/nabeliwo)  
 Languages and tools I use most frequently are TypeScript, Next.js, and React.
 
 ### Tech Posts
 
 #### Qiita
 
-[nabeliwo - Qiita](https://qiita.com/nabeliwo)  
+[nabeliwo / Qiita](https://qiita.com/nabeliwo)  
 I used to post often but will no longer use this platform.
 
 #### Zenn
 
-[nabeliwoさんの記事一覧 | Zenn](https://zenn.dev/nabeliwo)  
+[nabeliwo / Zenn](https://zenn.dev/nabeliwo)  
 From now on, I will post on this platform.
 
 ### Others
 
 #### booklog
 
-[読んだ (nabeliwo) - ブクログ](https://booklog.jp/users/nabeliwo)  
+[nabeliwo / Booklog](https://booklog.jp/users/nabeliwo)  
 Here is a summary of the books I read.
 
 #### Annict
 
-[nabeliwo (nabeliwo) | Annict](https://annict.com/@nabeliwo)  
+[nabeliwo / Annict](https://annict.com/@nabeliwo)  
 Here is a summary of the anime I watched.

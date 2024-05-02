@@ -1,7 +1,8 @@
 import { notFound } from 'next/navigation'
 
 import { BlogDetail } from '@/components/page/BlogDetail'
-import { blog } from '@/constants/meta'
+import { blog, profile } from '@/constants/meta'
+import { path } from '@/constants/path'
 import { getBlog, getBlogs } from '@/services/blog'
 
 import type { Metadata, ResolvingMetadata } from 'next'
@@ -43,7 +44,13 @@ export async function generateMetadata({ params }: Props, parent: ResolvingMetad
     openGraph: {
       ...parentMetadata.openGraph,
       url,
-      images: '', // TODO
+      images: blogData.image
+        ? `${profile.url}${blogData.image}`
+        : {
+            url: `${profile.url}${path.api.ogImage({ siteName: blog.siteName, title: blogData.title })}`,
+            width: 1200,
+            height: 630,
+          },
     },
   }
 }
