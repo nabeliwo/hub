@@ -1,9 +1,11 @@
 import { SpeedInsights } from '@vercel/speed-insights/next'
 
+import GoogleAnalytics from '@/components/functional/GoogleAnalytics'
 import { Footer } from '@/components/layout/Footer'
 import { Header } from '@/components/layout/Header'
 import { Nav } from '@/components/layout/Nav'
 import { profile } from '@/constants/meta'
+import { hasGaTagId } from '@/lib/gtag'
 
 import type { Metadata } from 'next'
 import type { PropsWithChildren, ReactNode } from 'react'
@@ -35,6 +37,12 @@ type Props = {
 export default function RootLayout({ dialog, children }: PropsWithChildren<Props>) {
   return (
     <html lang="ja">
+      {hasGaTagId && (
+        <head>
+          <GoogleAnalytics />
+        </head>
+      )}
+
       <body className="font-body tracking-wide text-black">
         <Header />
 
