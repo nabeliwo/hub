@@ -2,6 +2,7 @@
 
 import { Dialog } from '@headlessui/react'
 import { useRouter } from 'next/navigation'
+import { useState } from 'react'
 
 import { path } from '@/constants/path'
 import type { BestBuy } from '@/services/bestBuy'
@@ -14,13 +15,16 @@ type Props = {
 }
 
 export function BestBuyDetailDialog({ bestBuy }: Props) {
+  const [open, setOpen] = useState(true)
   const router = useRouter()
+
   const onClose = () => {
+    setOpen(false)
     router.push(path.bestBuy, { scroll: false })
   }
 
   return (
-    <Dialog open className="relative z-50" onClose={onClose}>
+    <Dialog open={open} className="relative z-50" onClose={onClose}>
       <div className="fixed inset-0 bg-black/30" aria-hidden="true" />
 
       <div className="fixed inset-0 flex w-screen items-center justify-center">
