@@ -4,7 +4,7 @@ import { BestBuyDetail } from '@/components/page/BestBuyDetail'
 import { bestBuy } from '@/constants/meta'
 import { getBestBuy, getBestBuys } from '@/services/bestBuy'
 
-import type { Metadata } from 'next'
+import type { Metadata, ResolvingMetadata } from 'next'
 
 export async function generateStaticParams() {
   const bestBuys = await getBestBuys()
@@ -20,7 +20,7 @@ type Props = {
   }
 }
 
-export async function generateMetadata({ params }: Props): Promise<Metadata> {
+export async function generateMetadata({ params }: Props, parent: ResolvingMetadata): Promise<Metadata> {
   const pathname = params.slug.join('/')
   const bestBuyData = await getBestBuy(pathname)
 
@@ -28,17 +28,18 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     return notFound()
   }
 
-  const title = `${bestBuyData.title} | ${bestBuy.siteName}`
+  const parentMetadata = await parent
+  const url = `${bestBuy.url}/${pathname}`
 
   return {
-    title,
+    title: `${bestBuyData.title} | ${bestBuy.siteName}`,
     description: bestBuyData.description,
+    alternates: {
+      canonical: url,
+    },
     openGraph: {
-      title,
-      description: bestBuyData.description,
-      siteName: bestBuy.siteName,
-      type: 'article',
-      url: `${bestBuy.url}/${pathname}`,
+      ...parentMetadata.openGraph,
+      url,
       images: '', // TODO
     },
   }

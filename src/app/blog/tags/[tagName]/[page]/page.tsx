@@ -1,8 +1,12 @@
 import { notFound } from 'next/navigation'
 
 import { TagBlogList } from '@/components/page/TagBlogList'
+import { blog, profile } from '@/constants/meta'
+import { path } from '@/constants/path'
 import { tagMap, getBlogs } from '@/services/blog'
 import { paginate, range } from '@/util/pageHelper'
+
+import type { Metadata, ResolvingMetadata } from 'next'
 
 export async function generateStaticParams() {
   const blogs = await getBlogs()
@@ -24,6 +28,23 @@ type Props = {
   params: {
     tagName: keyof typeof tagMap
     page: string
+  }
+}
+
+export async function generateMetadata({ params }: Props, parent: ResolvingMetadata): Promise<Metadata> {
+  const parentMetadata = await parent
+  const url = `${profile.url}${path.blogTagItem(params.tagName)}`
+
+  return {
+    title: `タグが「${tagMap[params.tagName]}」の記事一覧 (${params.page}ページ目) | ${blog.siteName}`,
+    description: `タグが「${tagMap[params.tagName]}」の記事一覧の${params.page}ページ目です。`,
+    alternates: {
+      canonical: url,
+    },
+    openGraph: {
+      ...parentMetadata.openGraph,
+      url,
+    },
   }
 }
 

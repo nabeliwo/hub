@@ -1,24 +1,24 @@
 export const profile = {
   siteName: 'nabeliwo hub',
   description: 'The nabeliwo hub is the place where all information about me is gathered.',
-  url: 'https://nabeliwo.com',
+  url: 'https://www.nabeliwo.com',
 }
 
 export const blog = {
   siteName: 'nabeliwo blog',
   description:
     'nabeliwo blog は nabeliwo の日々の出来事だったり生活の中で感じたことだったりを雑にお届けします。',
-  url: 'https://nabeliwo.com/blog',
+  url: 'https://www.nabeliwo.com/blog',
 }
 
 export const weekly = {
   siteName: 'nabeliwo weekly',
   description: 'nabeliwo weekly は nabeliwo の日々の活動を週報の形式でまとめてお届けします。',
-  url: 'https://nabeliwo.com/weekly',
+  url: 'https://www.nabeliwo.com/weekly',
 }
 
 export const bestBuy = {
   siteName: 'nabeliwo best buy',
   description: 'The nabeliwo best buy is a place where I show you my favorite things I bought.',
-  url: 'https://nabeliwo.com/best-buy',
+  url: 'https://www.nabeliwo.com/best-buy',
 }

@@ -6,10 +6,12 @@ import type { PropsWithChildren } from 'react'
 export const metadata: Metadata = {
   title: bestBuy.siteName,
   description: bestBuy.description,
+  alternates: {
+    canonical: bestBuy.url,
+  },
   openGraph: {
-    title: bestBuy.siteName,
-    description: bestBuy.description,
     siteName: bestBuy.siteName,
+    type: 'article',
     url: bestBuy.url,
     images: '', // TODO
   },

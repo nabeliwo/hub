@@ -4,7 +4,7 @@ import { BlogDetail } from '@/components/page/BlogDetail'
 import { blog } from '@/constants/meta'
 import { getBlog, getBlogs } from '@/services/blog'
 
-import type { Metadata } from 'next'
+import type { Metadata, ResolvingMetadata } from 'next'
 
 export async function generateStaticParams() {
   const blogs = await getBlogs()
@@ -20,7 +20,7 @@ type Props = {
   }
 }
 
-export async function generateMetadata({ params }: Props): Promise<Metadata> {
+export async function generateMetadata({ params }: Props, parent: ResolvingMetadata): Promise<Metadata> {
   const pathname = params.slug.join('/')
   const blogData = await getBlog(pathname)
 
@@ -28,17 +28,18 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     return notFound()
   }
 
-  const title = `${blogData.title} | ${blog.siteName}`
+  const parentMetadata = await parent
+  const url = `${blog.url}/${pathname}`
 
   return {
-    title,
+    title: `${blogData.title} | ${blog.siteName}`,
     description: blogData.description,
+    alternates: {
+      canonical: url,
+    },
     openGraph: {
-      title,
-      description: blogData.description,
-      siteName: blog.siteName,
-      type: 'article',
-      url: `${blog.url}/${pathname}`,
+      ...parentMetadata.openGraph,
+      url,
       images: '', // TODO
     },
   }

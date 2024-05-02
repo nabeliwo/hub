@@ -1,8 +1,12 @@
 import { notFound } from 'next/navigation'
 
 import { CategoryBlogList } from '@/components/page/CategoryBlogList'
+import { blog, profile } from '@/constants/meta'
+import { path } from '@/constants/path'
 import { categoryMap, getBlogs } from '@/services/blog'
 import { paginate, range } from '@/util/pageHelper'
+
+import type { Metadata, ResolvingMetadata } from 'next'
 
 export async function generateStaticParams() {
   const blogs = await getBlogs()
@@ -24,6 +28,23 @@ type Props = {
   params: {
     categoryName: keyof typeof categoryMap
     page: string
+  }
+}
+
+export async function generateMetadata({ params }: Props, parent: ResolvingMetadata): Promise<Metadata> {
+  const parentMetadata = await parent
+  const url = `${profile.url}${path.blogCategoryItem(params.categoryName)}/${params.page}`
+
+  return {
+    title: `カテゴリが「${categoryMap[params.categoryName]}」の記事一覧 (${params.page}ページ目) | ${blog.siteName}`,
+    description: `カテゴリが「${categoryMap[params.categoryName]}」の記事一覧の${params.page}ページ目です。`,
+    alternates: {
+      canonical: url,
+    },
+    openGraph: {
+      ...parentMetadata.openGraph,
+      url,
+    },
   }
 }
 

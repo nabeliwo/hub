@@ -13,9 +13,10 @@ import './globals.css'
 export const metadata: Metadata = {
   title: profile.siteName,
   description: profile.description,
+  alternates: {
+    canonical: profile.url,
+  },
   openGraph: {
-    title: profile.siteName,
-    description: profile.description,
     siteName: profile.siteName,
     type: 'website',
     url: profile.url,

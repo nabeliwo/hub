@@ -4,7 +4,7 @@ import { WeeklyDetail } from '@/components/page/WeeklyDetail'
 import { weekly } from '@/constants/meta'
 import { getWeeklies, getWeekly } from '@/services/weekly'
 
-import type { Metadata } from 'next'
+import type { Metadata, ResolvingMetadata } from 'next'
 
 export async function generateStaticParams() {
   const weeklies = await getWeeklies()
@@ -20,7 +20,7 @@ type Props = {
   }
 }
 
-export async function generateMetadata({ params }: Props): Promise<Metadata> {
+export async function generateMetadata({ params }: Props, parent: ResolvingMetadata): Promise<Metadata> {
   const pathname = params.slug.join('/')
   const weeklyData = await getWeekly(pathname)
 
@@ -28,17 +28,18 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     return notFound()
   }
 
-  const title = `${weeklyData.title} | ${weekly.siteName}`
+  const parentMetadata = await parent
+  const url = `${weekly.url}/${pathname}`
 
   return {
-    title,
+    title: `${weeklyData.title} | ${weekly.siteName}`,
     description: weeklyData.description,
+    alternates: {
+      canonical: url,
+    },
     openGraph: {
-      title,
-      description: weeklyData.description,
-      siteName: weekly.siteName,
-      type: 'article',
-      url: `${weekly.url}/${pathname}`,
+      ...parentMetadata.openGraph,
+      url,
       images: '', // TODO
     },
   }

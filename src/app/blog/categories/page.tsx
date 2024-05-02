@@ -1,19 +1,23 @@
 import { CategoryList } from '@/components/page/CategoryList'
+import { blog, profile } from '@/constants/meta'
+import { path } from '@/constants/path'
 import { getBlogs, countItems } from '@/services/blog'
 
 import type { Metadata, ResolvingMetadata } from 'next'
 
 export async function generateMetadata(_: unknown, parent: ResolvingMetadata): Promise<Metadata> {
   const parentMetadata = await parent
-  const title = 'カテゴリ一覧 | ' + parentMetadata.title?.absolute
-  const description = `${parentMetadata.title?.absolute} のカテゴリ一覧です。`
+  const url = `${profile.url}${path.blogCategories}`
 
   return {
-    title,
-    description,
+    title: `カテゴリ一覧 | ${blog.siteName}`,
+    description: `${blog.siteName} のカテゴリ一覧です。`,
+    alternates: {
+      canonical: url,
+    },
     openGraph: {
-      title,
-      description,
+      ...parentMetadata.openGraph,
+      url,
     },
   }
 }

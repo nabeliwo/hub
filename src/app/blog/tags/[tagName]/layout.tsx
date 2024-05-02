@@ -1,3 +1,5 @@
+import { blog, profile } from '@/constants/meta'
+import { path } from '@/constants/path'
 import { tagMap } from '@/services/blog'
 
 import type { Metadata, ResolvingMetadata } from 'next'
@@ -11,15 +13,17 @@ type Props = {
 
 export async function generateMetadata({ params }: Props, parent: ResolvingMetadata): Promise<Metadata> {
   const parentMetadata = await parent
-  const title = `タグが「${tagMap[params.tagName]}」の記事一覧 | ${parentMetadata.title?.absolute}`
-  const description = `タグが「${tagMap[params.tagName]}」の記事一覧です。`
+  const url = `${profile.url}${path.blogTagItem(params.tagName)}`
 
   return {
-    title,
-    description,
+    title: `タグが「${tagMap[params.tagName]}」の記事一覧 | ${blog.siteName}`,
+    description: `タグが「${tagMap[params.tagName]}」の記事一覧です。`,
+    alternates: {
+      canonical: url,
+    },
     openGraph: {
-      title,
-      description,
+      ...parentMetadata.openGraph,
+      url,
     },
   }
 }

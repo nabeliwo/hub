@@ -1,19 +1,23 @@
 import { TagList } from '@/components/page/TagList'
+import { blog, profile } from '@/constants/meta'
+import { path } from '@/constants/path'
 import { getBlogs, countItems } from '@/services/blog'
 
 import type { Metadata, ResolvingMetadata } from 'next'
 
 export async function generateMetadata(_: unknown, parent: ResolvingMetadata): Promise<Metadata> {
   const parentMetadata = await parent
-  const title = 'タグ一覧 | ' + parentMetadata.title?.absolute
-  const description = `${parentMetadata.title?.absolute} のタグ一覧です。`
+  const url = `${profile.url}${path.blogTags}`
 
   return {
-    title,
-    description,
+    title: `タグ一覧 | ${blog.siteName}`,
+    description: `${blog.siteName} のタグ一覧です。`,
+    alternates: {
+      canonical: url,
+    },
     openGraph: {
-      title,
-      description,
+      ...parentMetadata.openGraph,
+      url,
     },
   }
 }
