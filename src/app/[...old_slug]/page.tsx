@@ -39,9 +39,6 @@ function isValidOldBlogPath(strings: string[]): boolean {
 }
 
 export default async function OldRedirectedPage({ params }: Props) {
-  console.log('--------------------------- old path ----------------------------------')
-  console.log(params.old_slug)
-
   // 旧 nippo の URL へのアクセスの場合
   if (params.old_slug.length === 1 && isValidDate(params.old_slug[0] ?? '')) {
     return redirect(path.weeklyItem(formatDate(params.old_slug[0] ?? '')))
