@@ -1,4 +1,4 @@
-import { blog } from '@/constants/meta'
+import { blog, profile } from '@/constants/meta'
 
 import type { Metadata } from 'next'
 import type { PropsWithChildren } from 'react'
@@ -7,6 +7,9 @@ export const metadata: Metadata = {
   title: blog.siteName,
   description: blog.description,
   alternates: {
+    types: {
+      'application/rss+xml': `${profile.url}/rss/blog/feed.xml`,
+    },
     canonical: blog.url,
   },
   openGraph: {

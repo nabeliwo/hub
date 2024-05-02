@@ -1,7 +1,7 @@
 import { notFound } from 'next/navigation'
 
 import { WeeklyDetail } from '@/components/page/WeeklyDetail'
-import { weekly } from '@/constants/meta'
+import { profile, weekly } from '@/constants/meta'
 import { getWeeklies, getWeekly } from '@/services/weekly'
 
 import type { Metadata, ResolvingMetadata } from 'next'
@@ -35,7 +35,10 @@ export async function generateMetadata({ params }: Props, parent: ResolvingMetad
     title: `${weeklyData.title} | ${weekly.siteName}`,
     description: weeklyData.description,
     alternates: {
-      canonical: url,
+      types: {
+        'application/rss+xml': `${profile.url}/rss/weekly/feed.xml`,
+      },
+      canonical: weekly.url,
     },
     openGraph: {
       ...parentMetadata.openGraph,

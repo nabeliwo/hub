@@ -39,6 +39,9 @@ export async function generateMetadata({ params }: Props, parent: ResolvingMetad
     title: `タグが「${tagMap[params.tagName]}」の記事一覧 (${params.page}ページ目) | ${blog.siteName}`,
     description: `タグが「${tagMap[params.tagName]}」の記事一覧の${params.page}ページ目です。`,
     alternates: {
+      types: {
+        ...parentMetadata.alternates?.types,
+      },
       canonical: url,
     },
     openGraph: {

@@ -35,6 +35,9 @@ export async function generateMetadata({ params }: Props, parent: ResolvingMetad
     title: `${bestBuyData.title} | ${bestBuy.siteName}`,
     description: bestBuyData.description,
     alternates: {
+      types: {
+        ...parentMetadata.alternates?.types,
+      },
       canonical: url,
     },
     openGraph: {

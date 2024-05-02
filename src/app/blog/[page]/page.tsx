@@ -30,6 +30,9 @@ export async function generateMetadata({ params }: Props, parent: ResolvingMetad
     title: `記事一覧 (${params.page}ページ目) | ${blog.siteName}`,
     description: `${blog.siteName} の記事一覧の${params.page}ページ目です。`,
     alternates: {
+      types: {
+        ...parentMetadata.alternates?.types,
+      },
       canonical: url,
     },
     openGraph: {

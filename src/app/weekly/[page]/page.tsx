@@ -1,7 +1,7 @@
 import { notFound } from 'next/navigation'
 
 import { WeeklyList } from '@/components/page/WeeklyList'
-import { weekly } from '@/constants/meta'
+import { profile, weekly } from '@/constants/meta'
 import { getWeeklies } from '@/services/weekly'
 import { paginate, range } from '@/util/pageHelper'
 
@@ -28,7 +28,10 @@ export async function generateMetadata({ params }: Props, parent: ResolvingMetad
 
   return {
     alternates: {
-      canonical: url,
+      types: {
+        'application/rss+xml': `${profile.url}/rss/weekly/feed.xml`,
+      },
+      canonical: weekly.url,
     },
     openGraph: {
       ...parentMetadata.openGraph,

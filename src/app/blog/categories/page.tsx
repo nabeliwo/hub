@@ -13,6 +13,9 @@ export async function generateMetadata(_: unknown, parent: ResolvingMetadata): P
     title: `カテゴリ一覧 | ${blog.siteName}`,
     description: `${blog.siteName} のカテゴリ一覧です。`,
     alternates: {
+      types: {
+        ...parentMetadata.alternates?.types,
+      },
       canonical: url,
     },
     openGraph: {

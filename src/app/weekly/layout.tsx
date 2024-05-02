@@ -1,4 +1,4 @@
-import { weekly } from '@/constants/meta'
+import { profile, weekly } from '@/constants/meta'
 
 import type { Metadata } from 'next'
 import type { PropsWithChildren } from 'react'
@@ -7,6 +7,9 @@ export const metadata: Metadata = {
   title: weekly.siteName,
   description: weekly.description,
   alternates: {
+    types: {
+      'application/rss+xml': `${profile.url}/rss/weekly/feed.xml`,
+    },
     canonical: weekly.url,
   },
   openGraph: {

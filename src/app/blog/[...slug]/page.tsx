@@ -35,6 +35,9 @@ export async function generateMetadata({ params }: Props, parent: ResolvingMetad
     title: `${blogData.title} | ${blog.siteName}`,
     description: blogData.description,
     alternates: {
+      types: {
+        ...parentMetadata.alternates?.types,
+      },
       canonical: url,
     },
     openGraph: {
