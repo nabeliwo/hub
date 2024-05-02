@@ -1,4 +1,5 @@
 import { SpeedInsights } from '@vercel/speed-insights/next'
+import { Suspense, type PropsWithChildren, type ReactNode } from 'react'
 
 import GoogleAnalytics from '@/components/functional/GoogleAnalytics'
 import { Footer } from '@/components/layout/Footer'
@@ -8,7 +9,6 @@ import { profile } from '@/constants/meta'
 import { hasGaTagId } from '@/lib/gtag'
 
 import type { Metadata } from 'next'
-import type { PropsWithChildren, ReactNode } from 'react'
 
 import './globals.css'
 
@@ -39,7 +39,9 @@ export default function RootLayout({ dialog, children }: PropsWithChildren<Props
     <html lang="ja">
       {hasGaTagId && (
         <head>
-          <GoogleAnalytics />
+          <Suspense>
+            <GoogleAnalytics />
+          </Suspense>
         </head>
       )}
 
