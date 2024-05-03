@@ -49,7 +49,7 @@ export default function RootLayout({ dialog, children }: PropsWithChildren<Props
         <Header />
 
         <div className="px-4 pb-16 pt-8 md:p-12 md:pb-20">
-          <div className="mx-auto flex max-w-4xl gap-16">
+          <div className="mx-auto max-w-4xl md:flex md:gap-16">
             <Nav />
             <main className="flex-1">{children}</main>
           </div>
