@@ -46,6 +46,13 @@
     &:has(> img) {
       margin-left: -1rem;
       margin-right: -1rem;
+
+      @media (min-width: 768px) {
+        & {
+          margin-left: 0;
+          margin-right: 0;
+        }
+      }
     }
   }
 

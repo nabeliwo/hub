@@ -38,7 +38,7 @@ export function Nav() {
 
   return (
     <>
-      <nav className="sticky top-0 -m-4 hidden self-start pt-4 md:block">
+      <nav className="sticky top-0 -mt-4 hidden self-start pt-4 md:block">
         <details open className="">
           <summary className="w-20 cursor-pointer">Menu</summary>
           <div className="w-28 space-y-8 py-4">{items}</div>
