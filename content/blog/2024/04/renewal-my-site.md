@@ -1,7 +1,7 @@
 ---
 title: '自分のサイトをリニューアルした・2024年春'
 description: '自分のポータルサイトやブログや日報などを一つにまとめてリニューアルした話。'
-date: '2024-04-30'
+date: '2024-04-29'
 category: 'diary'
 tags: ['react', 'next']
 image: ''
