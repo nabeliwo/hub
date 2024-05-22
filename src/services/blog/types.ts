@@ -30,6 +30,7 @@ export const tagMap = {
   seikendensetsu: '聖剣伝説',
   pokemon: 'ポケモン',
   'blue-protocol': 'BLUE PROTOCOL',
+  ff: 'ファイナルファンタジー',
 
   // gadget
   iphone: 'iPhone',
