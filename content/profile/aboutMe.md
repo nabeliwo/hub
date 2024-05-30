@@ -66,7 +66,7 @@ Here is a list of the games I played.
 
 #### Filmarks
 
-[nabeliwoさん / Filmarks](https://filmarks.com/users/nabeliwo)  
+[nabeliwo / Filmarks](https://filmarks.com/users/nabeliwo)  
 Here is a list of the movies I seen.
 
 #### Annict
