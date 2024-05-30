@@ -57,9 +57,19 @@ From now on, I will post on this platform.
 #### booklog
 
 [nabeliwo / Booklog](https://booklog.jp/users/nabeliwo)  
-Here is a summary of the books I read.
+Here is a list of the books I read.
+
+#### GAMEMO
+
+[nabeliwo / GAMEMO](https://gamemo.app/@nabeliwo?tab=played)  
+Here is a list of the games I played.
+
+#### Filmarks
+
+[nabeliwoさん / Filmarks](https://filmarks.com/users/nabeliwo)  
+Here is a list of the movies I seen.
 
 #### Annict
 
 [nabeliwo / Annict](https://annict.com/@nabeliwo)  
-Here is a summary of the anime I watched.
+Here is a list of the anime I watched.
