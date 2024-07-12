@@ -1,7 +1,7 @@
 ---
 title: '『百英雄伝』をやった'
 description: '百英雄伝をクリアしたので感想です。'
-date: '2024-06-30'
+date: '2024-06-29'
 category: 'game'
 tags: ['ps5']
 image: '/images/blog/2024/06/eiyuden-chronicle-hundred-heroes/thumbnail.jpg'
