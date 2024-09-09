@@ -12,7 +12,7 @@ alt: ''
 
 ### 初めての自作キーボード 7sPro を組んだ
 
-![7sPro というセパレート型自作キーボード](/images/blog/2023/10/look-back-202310./build-7spro/03.jpg '7sPro というセパレート型自作キーボード')
+![7sPro というセパレート型自作キーボード](/images/blog/2023/10/build-7spro/thumbnail.jpg '7sPro というセパレート型自作キーボード')
 
 詳細はこちら。  
 [7sPro という自作キーボードを組んだ | ナベリヲログ](https://blog.nabeliwo.com/2023/10/build-7spro/)

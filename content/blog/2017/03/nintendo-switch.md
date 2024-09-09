@@ -19,7 +19,7 @@ alt: ''
 今回買ったのはこの3点。  
 本体とProコントローラーとゼルダ。
 
-![switch の画像01](/images/blog/2017/03/nintendo-switch/01.png 'switch の画像01')
+![switch の画像01](/images/blog/2017/03/nintendo-switch/01.png)
 
 Joyコンだと多分細かい操作大変だろうなって予想したのでProコンも一緒に買いました。  
 多分アクションゲームやるのにはProコンの方が圧倒的にやりやすそう。  
@@ -27,38 +27,38 @@ Joyコンだと多分細かい操作大変だろうなって予想したのでPr
 
 本体の箱開くとこんな感じ。
 
-![switch の画像02](/images/blog/2017/03/nintendo-switch/02.png 'switch の画像02')
+![switch の画像02](/images/blog/2017/03/nintendo-switch/02.png)
 
 パネルがとっても良い感じだ。
 
 中身取り出してパシャパシャやってみた。  
 まずJoyコン。
 
-![switch の画像03](/images/blog/2017/03/nintendo-switch/03.png 'switch の画像03')
+![switch の画像03](/images/blog/2017/03/nintendo-switch/03.png)
 
 横の黒いのはJoyコン単体で使う場合つけるらしい。  
 なんかこれ向きだかなんだか間違えてつけると取るのくそ大変になるらしいから付けるときは気をつけると良いらしい。
 
 パネルとJoyコンくっつけるとこうなる。
 
-![switch の画像04](/images/blog/2017/03/nintendo-switch/04.png 'switch の画像04')
+![switch の画像04](/images/blog/2017/03/nintendo-switch/04.png)
 
 電車で端っこの席に座ってるときだったらカバンから出してやれそう。ぎり許容できるレベル。  
 ちなみに僕の許容できるレベルは大分広いから参考にはならないと思われます。
 
 本体の箱に入ってたの全部並べるとこんな感じ。
 
-![switch の画像05](/images/blog/2017/03/nintendo-switch/05.png 'switch の画像05')
+![switch の画像05](/images/blog/2017/03/nintendo-switch/05.png)
 
 スタンドにぶっさすとこうなる。
 
-![switch の画像06](/images/blog/2017/03/nintendo-switch/06.png 'switch の画像06')
+![switch の画像06](/images/blog/2017/03/nintendo-switch/06.png)
 
 ちなみにスタンドにぶっさすときは横のJoyコンは外すものです。
 
 次にProコンはこんなん。
 
-![switch の画像07](/images/blog/2017/03/nintendo-switch/07.png 'switch の画像07')
+![switch の画像07](/images/blog/2017/03/nintendo-switch/07.png)
 
 半透明で仲が透けててかわいい。
 
@@ -66,7 +66,7 @@ Joyコンだと多分細かい操作大変だろうなって予想したのでPr
 僕はなんか色々入ってるよ的なエディションを買ったのでamiiboとかサントラとか入ってる。  
 地図が素晴らしかった。
 
-![switch の画像08](/images/blog/2017/03/nintendo-switch/08.png 'switch の画像08')
+![switch の画像08](/images/blog/2017/03/nintendo-switch/08.png)
 
 ゼルダに関して言うと、買ってすぐ開始したのだけれど一緒に録画もしときました。  
 なのでただの垂れ流しのプレイ動画だけれど「ゼルダ自分でやる気はないけれどなんとなく見てみたいなあ。でも実況プレイとかうざいからプレイ動画だけ見たいわあー」って人いたらどうぞ。

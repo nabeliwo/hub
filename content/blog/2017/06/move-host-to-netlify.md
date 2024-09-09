@@ -43,7 +43,7 @@ GUIでポチポチで全部いける。ぐぐればいっぱい出てくるの�
 「ドメイン設定 > ネームサーバーの設定 > ネームサーバーの変更 > 他のネームサーバーを利用」まで進んでお名前の独自設定用のネームサーバーを入れる。  
 この値はお名前.com使ってたらみんな一緒。
 
-![お名前.comのキャプチャ](/images/blog/2017/06/move-host-to-netlify/01.png 'お名前.comのキャプチャ')
+![お名前.comのキャプチャ](/images/blog/2017/06/move-host-to-netlify/01.png)
 
 ### DNSレコード設定を変更する
 
@@ -51,7 +51,7 @@ GUIでポチポチで全部いける。ぐぐればいっぱい出てくるの�
 Aに入れるIPはnetlifyの共通のもの。  
 CNAMEに入れるものは[your-site-name].netlify.comの形式。
 
-![DNSレコード設定のキャプチャ](/images/blog/2017/06/move-host-to-netlify/02.png 'DNSレコード設定のキャプチャ')
+![DNSレコード設定のキャプチャ](/images/blog/2017/06/move-host-to-netlify/02.png)
 
 以上でDNSの設定は終わり。  
 nslookup叩きまくって「まだ来ない…まだ来ない…きた！」とかやってたけど本当にこういうのってどうやってやるものなんだろう…。
