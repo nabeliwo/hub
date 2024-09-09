@@ -42,6 +42,10 @@
     &:not(:first-child) {
       margin-top: 2rem;
     }
+  }
+
+  & figure {
+    margin-top: 2rem;
 
     &:has(> img) {
       margin-left: -1rem;
@@ -53,6 +57,14 @@
           margin-right: 0;
         }
       }
+    }
+
+    & figcaption {
+      margin-top: 0.5rem;
+      color: #706d65;
+      font-size: 0.875rem;
+      line-height: 1.2;
+      text-align: center;
     }
   }
 
