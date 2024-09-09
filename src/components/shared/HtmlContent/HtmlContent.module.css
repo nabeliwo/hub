@@ -87,4 +87,10 @@
       }
     }
   }
+
+  & details,
+  & hr,
+  & iframe {
+    margin-top: 2rem;
+  }
 }

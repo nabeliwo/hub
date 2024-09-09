@@ -15,10 +15,10 @@ export async function getMdContent(file: string) {
 
   const processedContent = await unified()
     .use(remarkParse) // markdown テキストを mdast に変換する
-    .use(remarkRehype) // mdast を hast に変換する
+    .use(remarkRehype, { allowDangerousHtml: true }) // mdast を hast に変換する
     .use(rehypeExternalLinks, { target: '_blank', rel: ['nofollow', 'noreferrer'] }) // 外部サイトへのリンクを別タブリンクにする
     .use(rehypeImageFigure) // 画像を figure でラップして画像タイトルを figcaption にする
-    .use(rehypeStringify) // hast を html に変換する
+    .use(rehypeStringify, { allowDangerousHtml: true }) // hast を html に変換する
     .process(content) // 実行
   const contentHtml = processedContent.toString()
 
