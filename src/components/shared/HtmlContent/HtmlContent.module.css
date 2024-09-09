@@ -59,6 +59,10 @@
       }
     }
 
+    & img {
+      margin: 0 auto;
+    }
+
     & figcaption {
       margin-top: 0.5rem;
       color: #706d65;
