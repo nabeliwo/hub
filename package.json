@@ -21,6 +21,7 @@
     "date-fns": "^3.6.0",
     "feed": "^4.2.2",
     "gray-matter": "^4.0.3",
+    "hastscript": "^9.0.0",
     "next": "14.2.1",
     "react": "^18",
     "react-dom": "^18",
@@ -29,10 +30,12 @@
     "remark": "^15.0.1",
     "remark-parse": "^11.0.0",
     "remark-rehype": "^11.1.0",
-    "unified": "^11.0.4"
+    "unified": "^11.0.4",
+    "unist-util-visit": "^5.0.0"
   },
   "devDependencies": {
     "@types/gtag.js": "^0.0.19",
+    "@types/hast": "^3.0.4",
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",
@@ -50,5 +53,6 @@
     "tailwindcss": "^3.4.1",
     "ts-node": "^10.9.2",
     "typescript": "^5"
-  }
+  },
+  "packageManager": "pnpm@8.15.4+sha1.c85a4305534f76d461407b59277b954bac97b5c4"
 }
