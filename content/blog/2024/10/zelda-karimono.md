@@ -8,7 +8,7 @@ image: '/images/blog/2024/10/zelda-karimono/thumbnail.jpg'
 alt: 'ゲーム『ゼルダの伝説 知恵のかりもの』のゲーム画面のキャプチャ。おもちゃっぽいグラフィックで描かれたフィールド。'
 ---
 
-[ゼルダの伝説 知恵のかりもの](https://www.jp.square-enix.com/seiken_vom/)というゲームをクリアしたので感想を書きます。  
+[ゼルダの伝説 知恵のかりもの](https://www.nintendo.com/jp/switch/bdgea/index.html)というゲームをクリアしたので感想を書きます。  
 特にネタバレはありませんが、やる前に何も情報を入れたくない！という方は読まない方が良いかもです。
 
 ## ざっと感想
