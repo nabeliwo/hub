@@ -58,6 +58,7 @@ export const categoryMap = {
   book: '読書',
   vr: 'VR',
   tech: '技術',
+  'hair-removal': '脱毛',
 }
 
 type BlogFrontMatter = {
