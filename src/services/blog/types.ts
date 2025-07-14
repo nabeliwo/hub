@@ -44,6 +44,9 @@ export const tagMap = {
 
   // anime
   sao: 'ソードアート・オンライン',
+
+  // others
+  'input-routine': 'インプット・ルーティン',
 }
 
 export const categoryMap = {
