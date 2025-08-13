@@ -59,9 +59,9 @@ From now on, I will post on this platform.
 [nabeliwo / Booklog](https://booklog.jp/users/nabeliwo)  
 Here is a list of the books I read.
 
-#### GAMEMO
+#### PULSE
 
-[nabeliwo / GAMEMO](https://gamemo.app/@nabeliwo?tab=played)  
+[nabeliwo / PULSE](https://plsdb.com/profile/nabeliwo)  
 Here is a list of the games I played.
 
 #### Filmarks

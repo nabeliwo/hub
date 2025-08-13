@@ -60,7 +60,7 @@ LT でプロポーザルを出していて、嬉しいことに採択された�
 - 本
   - [読んだ (nabeliwo) - ブクログ](https://booklog.jp/users/nabeliwo)
 - ゲーム
-  - [nabeliwo（@nabeliwo）が遊び終わったゲーム - GAMEMO](https://gamemo.app/@nabeliwo?tab=played)
+  - [nabeliwo(@nabeliwo)のゲームライブラリ | PULSE](https://plsdb.com/profile/nabeliwo?tab=library)
 
 こういうサービス、ちゃんとそれぞれのジャンルで存在していて素晴らしい。感謝。
 
