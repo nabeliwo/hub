@@ -1,6 +1,6 @@
 ---
 title: '『魚が存在しない理由 世界一空恐ろしい生物分類の話』を読んだ'
-description: ''
+description: 'ジャケ買いした本が内容もめっちゃ良かった話。'
 date: '2025-08-16'
 category: 'book'
 tags: []
