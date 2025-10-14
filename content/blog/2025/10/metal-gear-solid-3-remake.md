@@ -8,7 +8,7 @@ image: '/images/blog/2025/10/metal-gear-solid-3-remake/thumbnail.jpg'
 alt: 'ゲーム『METAL GEAR SOLID Δ: SNAKE EATER』のタイトル画面のキャプチャ。白い花畑を背景にゲームのロゴが表示されている。'
 ---
 
-[METAL GEAR SOLID Δ: SNAKE EATER](https://umdc.shueisha-games.com)というゲームをクリアしたので感想を書きます。ネタバレなしです。
+[METAL GEAR SOLID Δ: SNAKE EATER](https://www.konami.com/mg/mgs3r/asia/ja/)というゲームをクリアしたので感想を書きます。ネタバレなしです。
 
 ## ざっと感想
 
@@ -27,7 +27,7 @@ alt: 'ゲーム『METAL GEAR SOLID Δ: SNAKE EATER』のタイトル画面のキ
 今回、音声を新たに録らずに既存のものを使うという判断をしたことで、ストーリーはもちろんカットシーンにいたるまで、一切の変更がなくグラフィックが美麗になっただけというところで、UI や操作性が進化したということはありつつももはやリマスターなのでは？というのは思ってしまった。  
 ゲームシステムに関しても、リメイクではあれば色々変更を加えても良いのではないかとは思うけれど、既存の音声の中でやらなければならないということでゲーム説明の音声も使うことになるわけで、それによって大きな変更は何も入れれないんだろうなと察した。
 
-IGN Japan がレビュー記事を投稿していて僕もクリア後に読んだのだけれど、めちゃくちゃわかるってなったので貼っておく。  
+IGN Japanがレビュー記事を投稿していて僕もクリア後に読んだのだけれど、めちゃくちゃわかるってなったので貼っておく。  
 [『METAL GEAR SOLID Δ: SNAKE EATER』レビュー 今プレイするには最良のMGS3ではある、あるのだが……](https://jp.ign.com/metal-gear-solid-delta-snake-eater/81202/review/metal-gear-solid-snake-eater-mgs3)
 
 ## まとめ
