@@ -3,7 +3,6 @@
     "next/core-web-vitals",
     "plugin:@typescript-eslint/recommended",
     "plugin:jsx-a11y/recommended",
-    "plugin:tailwindcss/recommended",
     "prettier"
   ],
   "parser": "@typescript-eslint/parser",
@@ -53,7 +52,6 @@
         "component": true,
         "html": false
       }
-    ],
-    "tailwindcss/no-custom-classname": "off"
+    ]
   }
 }

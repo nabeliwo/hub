@@ -1,6 +1,27 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
+
+@theme {
+  /* Custom colors */
+  --color-transparent: transparent;
+  --color-white: #fff;
+  --color-grey-text: #706d65;
+  --color-grey-border: #d6d3d0;
+  --color-grey-bg: #edebe8;
+  --color-grey-disabled: #c1bdb7;
+  --color-grey-bestbuy: #f2f5f7;
+  --color-black: #222;
+  --color-blue: #2286ff;
+  --color-blue-light: #64aaff;
+
+  /* Custom font family */
+  --font-family-body: Inter, "M PLUS 1p", system-ui, sans-serif;
+
+  /* Custom widths */
+  --width-best-buy-half: calc(50% - 0.5rem);
+
+  /* Custom max heights */
+  --max-height-best-buy-max: calc(100% - 2rem);
+}
 
 @font-face {
   font-family: Inter;
