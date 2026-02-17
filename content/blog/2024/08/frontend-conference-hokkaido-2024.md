@@ -105,7 +105,7 @@ LT の中では一部しか触れられていなかったのですが、それ�
 
 ### スクリーンリーダーを使ったアクセシビリティ検証のすすめ
 
-[himi_himi_](https://x.com/himi_himi_) san の発表です。  
+[himi*himi*](https://x.com/himi_himi_) san の発表です。  
 [スクリーンリーダーを使ったアクセシビリティ検証のすすめ - Speaker Deck](https://speakerdeck.com/himi/recommendation-screen-reader-test)
 
 同僚の himi san です！社内でもアクセシビリティ改善がっつり進められているのを観測していてその成果の一旦が見れる！と楽しみにしていたやつです。

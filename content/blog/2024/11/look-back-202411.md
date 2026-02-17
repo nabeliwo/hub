@@ -74,7 +74,7 @@ alt: ''
 - ゲーム
   - [メタファー：リファンタジオ](https://rpg.jp/)
     - 詳しいことは別記事に書いた
-      -  [『メタファー：リファンタジオ』をやった | nabeliwo blog](https://www.nabeliwo.blue/blog/2024/11/metaphor-re-fantazio)
+      - [『メタファー：リファンタジオ』をやった | nabeliwo blog](https://www.nabeliwo.blue/blog/2024/11/metaphor-re-fantazio)
 - 本
   - [誰が勇者を殺したか 預言の章](https://www.amazon.co.jp/dp/4041152305)
     - 前作の方が驚きとしては多くて面白かった

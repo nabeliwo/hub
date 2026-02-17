@@ -11,7 +11,6 @@ alt: 'ゲーム『FINAL FANTASY VII REBIRTH』のゲーム画面のキャプチ�
 [FINAL FANTASY VII REBIRTH](https://www.jp.square-enix.com/ffvii_rebirth/) というゲームをクリアしたので感想を書きます。  
 ネタバレを含みますのでまだプレイしておらずネタバレが嫌な方は読まないことをおすすめします。
 
-
 ## プレイ記録
 
 1週目クリアまでのプレイ時間としては111時間でした。  
