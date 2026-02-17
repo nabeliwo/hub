@@ -19,10 +19,11 @@ export async function generateStaticParams() {
 }
 
 type Props = {
-  params: { page: string }
+  params: Promise<{ page: string }>
 }
 
-export async function generateMetadata({ params }: Props, parent: ResolvingMetadata): Promise<Metadata> {
+export async function generateMetadata(props: Props, parent: ResolvingMetadata): Promise<Metadata> {
+  const params = await props.params
   const parentMetadata = await parent
   const url = `${weekly.url}/${params.page}`
 
@@ -40,7 +41,8 @@ export async function generateMetadata({ params }: Props, parent: ResolvingMetad
   }
 }
 
-export default async function Weekly({ params }: Props) {
+export default async function Weekly(props: Props) {
+  const params = await props.params
   const weeklies = await getWeeklies()
   const { items, totalPages, currentPage, error } = paginate(weeklies, params.page)
 

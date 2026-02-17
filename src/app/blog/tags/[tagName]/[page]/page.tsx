@@ -25,13 +25,14 @@ export async function generateStaticParams() {
 }
 
 type Props = {
-  params: {
+  params: Promise<{
     tagName: keyof typeof tagMap
     page: string
-  }
+  }>
 }
 
-export async function generateMetadata({ params }: Props, parent: ResolvingMetadata): Promise<Metadata> {
+export async function generateMetadata(props: Props, parent: ResolvingMetadata): Promise<Metadata> {
+  const params = await props.params
   const parentMetadata = await parent
   const url = `${profile.url}${path.blogTagItem(params.tagName)}`
 
@@ -51,7 +52,8 @@ export async function generateMetadata({ params }: Props, parent: ResolvingMetad
   }
 }
 
-export default async function TagBlogs({ params }: Props) {
+export default async function TagBlogs(props: Props) {
+  const params = await props.params
   const blogs = await getBlogs()
   const tagBlogs = blogs.filter((item) => item.tags.includes(params.tagName))
   const count = tagBlogs.length

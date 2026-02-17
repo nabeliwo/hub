@@ -11,12 +11,13 @@ export async function generateStaticParams() {
 }
 
 type Props = {
-  params: {
+  params: Promise<{
     categoryName: keyof typeof categoryMap
-  }
+  }>
 }
 
-export default async function CategoryBlogs({ params }: Props) {
+export default async function CategoryBlogs(props: Props) {
+  const params = await props.params
   const blogs = await getBlogs()
   const categoryBlogs = blogs.filter((item) => item.category === params.categoryName)
   const count = categoryBlogs.length

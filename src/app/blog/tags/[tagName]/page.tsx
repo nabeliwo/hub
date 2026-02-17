@@ -11,12 +11,13 @@ export async function generateStaticParams() {
 }
 
 type Props = {
-  params: {
+  params: Promise<{
     tagName: keyof typeof tagMap
-  }
+  }>
 }
 
-export default async function TagBlogs({ params }: Props) {
+export default async function TagBlogs(props: Props) {
+  const params = await props.params
   const blogs = await getBlogs()
   const tagBlogs = blogs.filter((item) => item.tags.includes(params.tagName))
   const count = tagBlogs.length
