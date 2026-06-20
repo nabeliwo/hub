@@ -102,4 +102,30 @@
   & iframe {
     margin-top: 2rem;
   }
+
+  /* インラインコード(pre 直下ではない code) */
+  & :not(pre) > code {
+    padding: 0.1em 0.4em;
+    border-radius: 0.25rem;
+    background-color: #edebe8;
+    color: #222;
+    font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+    font-size: 0.875em;
+    word-break: break-word;
+  }
+
+  /* コードブロック(Shiki が出力する pre.shiki) */
+  & pre {
+    margin-top: 2rem;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    overflow-x: auto;
+    font-size: 0.875rem;
+    line-height: 1.6;
+    tab-size: 2;
+
+    & code {
+      font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+    }
+  }
 }
