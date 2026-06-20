@@ -117,7 +117,8 @@
   /* コードブロック(Shiki が出力する pre.shiki) */
   & pre {
     margin-top: 2rem;
-    padding: 1rem;
+    /* 横 padding は行番号と各行に持たせ、行番号を左端に sticky させる */
+    padding: 1rem 0;
     border-radius: 0.5rem;
     overflow-x: auto;
     font-size: 0.875rem;
@@ -125,7 +126,35 @@
     tab-size: 2;
 
     & code {
+      counter-reset: line;
       font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+    }
+
+    /* 各行(末尾の余白)。.line は Shiki が出力する素のクラスなので :global で囲う */
+    & code :global(.line) {
+      padding-right: 1rem;
+    }
+
+    /* 行番号 */
+    & code :global(.line)::before {
+      counter-increment: line;
+      content: counter(line);
+      position: sticky;
+      left: 0;
+      z-index: 1;
+      display: inline-block;
+      width: 1.5rem;
+      /* 右側を広めにとって行番号とコードがくっつかないようにする(背景が伸びて sticky のマスクも保たれる) */
+      padding: 0 1.5rem 0 1rem;
+      background-color: #24292e; /* github-dark の背景に合わせる */
+      color: #6e7681;
+      text-align: right;
+      user-select: none; /* コピー時に行番号を含めない */
+    }
+
+    /* 末尾の空行に余計な番号を出さない */
+    & code :global(.line):last-child:empty::before {
+      content: none;
     }
   }
 }
