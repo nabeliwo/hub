@@ -145,7 +145,7 @@ declare global {
 ```
 
 U が T の上位型であれば、`searchElement` として受け取ることができる、というものです。  
-例えば、`"hoge" | "fuga" | "piyo"` に対して `string` はより広い型であり、上位型です。同じように `400 | 401 | 404` 型に対して `number` はより広い型であり、上位型です。  
+例えば、`"hoge" | "fuga" | "piyo"` に対して `string` はより広い型であり、上位型です。同じように `1 | 2 | 3` 型に対して `number` はより広い型であり、上位型です。  
 これが成り立つ場合、以下のような挙動を担保できるはずです。
 
 ```ts
@@ -242,45 +242,47 @@ includes<U super T>(searchElement: U, fromIndex?: number): searchElement is T
 
 2つ目は [#15048](https://github.com/microsoft/TypeScript/issues/15048)、片側(one-sided)あるいは細粒度(fine-grained)な型ガードの話です。こちらは引数ではなく、戻り値、つまり絞り込みの側の課題です。
 
-そもそも TypeScript の型ガード( `x is T` )は、true 側と false 側の両方で型を絞ります。
+そもそも TypeScript の型ガード( `x is T` )は、true 側と false 側の両方で型を絞ります。[#15048](https://github.com/microsoft/TypeScript/issues/15048) で例として挙げられているのが `Number.isInteger` です。
 
 ```ts
-const isString = (x: unknown): x is string => typeof x === 'string'
+const isInteger = (value: number | string): value is number => {
+  return typeof value === 'number' && Number.isInteger(value)
+}
 
-declare const x: string | number
+declare const x: number | string
 
-if (isString(x)) {
-  console.log(x) // string
+if (isInteger(x)) {
+  console.log(x) // x: number
 } else {
-  console.log(x) // number ← false 側も絞られる
+  console.log(x) // x: string ← でも本当は3.5のような number かもしれない
 }
 ```
 
-テストを通った値はすべて T、落ちた値はすべて T ではない、と解釈されます。  
-ところが `includes` は、この「落ちた値はすべて T ではない」が成り立ちません。`includes` が見ているのは、その配列に実際に入っているかであって、型として T か、ではないからです。
+型ガードは、テストを通った値はすべて T、落ちた値はすべて T ではない、と解釈されます。  
+ところが `isInteger` が `false` を返しても、`x` は3.5のような「整数ではない `number`」かもしれません。なのに TypeScript は「落ちた → `number` ではない → `string`」と誤って絞ってしまいます。`isInteger` が見ているのは「整数かどうか」であって「`number` かどうか」ではないのに、型ガードの粒度がそこに追いついていないわけです。
+
+そしてこれはまさに `Array#includes` でも起きる問題です。例えば以下のような配列を考えてみます。
 
 ```ts
-// includes が `searchElement is T` を返す(両側型ガードになる)と仮定する
-declare global {
-  interface Array<T> {
-    includes(searchElement: T, fromIndex?: number): searchElement is T
-  }
-}
-
-const arr: ('a' | 'b' | 'c')[] = ['a', 'b'] // 型は3つだが、中身は2つ
+const arr: ('a' | 'b' | 'c')[] = ['a', 'b']
 declare const x: 'a' | 'b' | 'c'
-
-if (arr.includes(x)) {
-  console.log(x) // 'a' | 'b' | 'c'
-} else {
-  console.log(x) // never ← 両側ガードだと never に絞られてしまう
-}
-
-export {}
 ```
 
-`'c'` は型としては正しいのに、配列に入っていないので `includes` は `false` を返します。それを「`x` は `never`」と絞るのは間違いです。  
-なので `includes` に欲しいのは、true 側だけ絞り false 側は何も絞らない、という片側の型ガードです。これがあれば `includes` を安全に型ガードとして振る舞わせることができます。`Number.isInteger` のように、落ちても型は確定しない関数は他にもあり、[#15048](https://github.com/microsoft/TypeScript/issues/15048) はそれらをまとめて扱える構文を入れようという提案ですが、これもまだ議論の途中です。
+ここで `arr.includes(x)` が `false` を返したとしても、それは `x` が `'a' | 'b' | 'c'` ではない、という意味ではありません。  
+単に、今回の配列にその値が入っていなかっただけかもしれません。つまり `includes` が見ているのは「その配列に実際に入っているか」であって、「型として T か」ではないわけです。
+なので、`includes` を単純に `searchElement is T` という型ガードにしてしまうと、`false` 側で誤った絞り込みが起きてしまいます。
+
+これらを解決するために [#15048](https://github.com/microsoft/TypeScript/issues/15048) が提案しているのが、true 側だけ絞り false 側は何も絞らない、片側(one-sided)、あるいは true / false を個別に指定する細粒度(fine-grained)な型ガードです。
+
+```ts
+// 片側: true 側だけ絞る
+function isInteger(value: number | string): value as number { /* ... */ }
+
+// 細粒度: true / false を個別に指定する
+function isInteger(value: number | string): value is number else false { /* ... */ }
+```
+
+これがあれば、`if (isInteger(x))` の else 側は `number | string` のまま保たれ、`Array#includes` も安全に型ガードとして振る舞わせることができます。ただ、これもまだ議論の途中です。
 
 ## おわりに
 
@@ -291,10 +293,10 @@ export {}
 - 引数側: supertype を受け取れるようにする下限境界構文
 - 戻り値側: false 側を絞らない片側型ガード
 
-という、まだ TypeScript に存在しない言語機能が必要だ、というところに行き着きました。  
+という、まだ TypeScript に存在しない言語機能が必要そうだ、というところに行き着きました。  
 `Array#includes` だけのためにその場しのぎを足すのではなく、汎用的な機能として正しく入れようとするから何年も議論が続いていると考えると、現状に対する納得感が出てきます。
 
-そして前半で書いた `arrayIncludes` を改めて見ると、これは [#14520](https://github.com/microsoft/TypeScript/issues/14520) の回避策( `<T extends U, U>` )をそのまま使ったものでした。`as const` を前提にする限り「配列の中身 = 要素型」なので、戻り値の型ガードもちゃんと機能します。標準の `Array#includes` がここまで踏み込めないのは、`as const` ではない一般の配列まで安全に面倒を見ようとすると、[#15048](https://github.com/microsoft/TypeScript/issues/15048) の片側ガードが要るからなのでしょう。
+そして前半で書いた `arrayIncludes` を改めて見ると、これは [#14520](https://github.com/microsoft/TypeScript/issues/14520) の回避策( `<T extends U, U>` )をそのまま使ったものでした。`as const` を前提にする限り「配列の中身 = 要素型」なので、戻り値の型ガードもちゃんと機能します。標準の `Array#includes` がここまで踏み込めていない理由の一つには、一般の配列を考慮した場合に [#15048](https://github.com/microsoft/TypeScript/issues/15048) のような片側ガードが必要になることも関係していそうです。
 
 実際まだこれらが実装されていないのが本当に話が大きいからなのか、優先度が低いだけなのか、そのあたりのところまでは踏み込んで調べ切れてはいないのですが、個人的にはいつか `super` と片側ガードが入って、`arrayIncludes` 関数が要らなくなる日が来ると嬉しいな、と思いました！  
 おわり。
