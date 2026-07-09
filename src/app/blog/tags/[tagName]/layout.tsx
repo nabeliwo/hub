@@ -6,12 +6,13 @@ import type { Metadata, ResolvingMetadata } from 'next'
 import type { PropsWithChildren } from 'react'
 
 type Props = {
-  params: {
+  params: Promise<{
     tagName: keyof typeof tagMap
-  }
+  }>
 }
 
-export async function generateMetadata({ params }: Props, parent: ResolvingMetadata): Promise<Metadata> {
+export async function generateMetadata(props: Props, parent: ResolvingMetadata): Promise<Metadata> {
+  const params = await props.params
   const parentMetadata = await parent
   const url = `${profile.url}${path.blogTagItem(params.tagName)}`
 
