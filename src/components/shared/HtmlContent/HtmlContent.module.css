@@ -44,6 +44,22 @@
     }
   }
 
+  & blockquote {
+    margin-top: 2rem;
+    padding: 0.25rem 0 0.25rem 1rem;
+    border-left: 4px solid #d6d3d0;
+    color: #706d65;
+
+    & p:not(:first-child) {
+      margin-top: 1rem;
+    }
+  }
+
+  /* リストの中の引用はリストの行頭に揃える */
+  & li > blockquote:first-child {
+    margin-top: 0;
+  }
+
   & figure {
     margin-top: 2rem;
 
