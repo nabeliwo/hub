@@ -1,7 +1,7 @@
 ---
 title: 'ロン・ミュエク展に行った'
-description: '記憶が汚染されました。'
-date: '2026-08-16'
+description: '真正面から素敵でかっこいい作品でした。'
+date: '2026-08-15'
 category: 'diary'
 tags: []
 image: '/images/blog/2026/08/ronmueck-exhibition-visit/01.jpg'
