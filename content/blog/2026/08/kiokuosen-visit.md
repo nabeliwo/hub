@@ -1,7 +1,7 @@
 ---
 title: '記憶汚染展に行った'
 description: '記憶が汚染されました。'
-date: '2026-08-15'
+date: '2026-08-16'
 category: 'diary'
 tags: []
 image: '/images/blog/2026/08/kiokuosen-visit/01.jpg'
