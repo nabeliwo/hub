@@ -1,5 +1,5 @@
 ---
-title: '喫茶サテラのプリンがおいしい'
+title: '『喫茶サテラ』のプリンがおいしい'
 description: '固いプリンが好きです。'
 date: '2026-08-15'
 category: 'food'
