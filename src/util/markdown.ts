@@ -2,11 +2,12 @@ import rehypeShiki from '@shikijs/rehype'
 import matter from 'gray-matter'
 import rehypeExternalLinks from 'rehype-external-links'
 import rehypeStringify from 'rehype-stringify'
+import remarkGfm from 'remark-gfm'
 import remarkParse from 'remark-parse'
 import remarkRehype from 'remark-rehype'
 import { unified } from 'unified'
 
-import { rehypeImageFigure } from '@/lib/rehype'
+import { rehypeImageFigure, rehypeTableScroll } from '@/lib/rehype'
 
 // file: md ファイルの中身の文字列
 export async function getMdContent(file: string) {
@@ -16,9 +17,11 @@ export async function getMdContent(file: string) {
 
   const processedContent = await unified()
     .use(remarkParse) // markdown テキストを mdast に変換する
+    .use(remarkGfm) // テーブルや打ち消し線などの GitHub Flavored Markdown を有効にする
     .use(remarkRehype, { allowDangerousHtml: true }) // mdast を hast に変換する
     .use(rehypeExternalLinks, { target: '_blank', rel: ['nofollow', 'noreferrer'] }) // 外部サイトへのリンクを別タブリンクにする
     .use(rehypeImageFigure) // 画像を figure でラップして画像タイトルを figcaption にする
+    .use(rehypeTableScroll) // テーブルを横スクロールできる div でラップする
     .use(rehypeShiki, { theme: 'github-dark' }) // コードブロックをシンタックスハイライトする
     .use(rehypeStringify, { allowDangerousHtml: true }) // hast を html に変換する
     .process(content) // 実行

@@ -1,5 +1,5 @@
 import { h } from 'hastscript'
-import { visit } from 'unist-util-visit'
+import { visit, SKIP } from 'unist-util-visit'
 
 import type { Root, ElementContent, Element } from 'hast'
 
@@ -38,6 +38,24 @@ export const rehypeImageFigure = () => {
 
       el.tagName = 'div'
       el.children = figures
+    })
+
+    return tree
+  }
+}
+
+/** テーブルを div でラップして、狭い画面では横スクロールできるようにする */
+export const rehypeTableScroll = () => {
+  return (tree: Root) => {
+    visit(tree, { tagName: 'table' }, (el, index, parent) => {
+      if (parent?.type !== 'root' || index === undefined) {
+        return
+      }
+
+      parent.children[index] = h('div', { class: 'tableScroll' }, [el])
+
+      // ラップした div の中の table を再訪問して無限にラップしないようにする
+      return [SKIP, index + 1]
     })
 
     return tree

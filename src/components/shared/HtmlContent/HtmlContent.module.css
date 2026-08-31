@@ -119,6 +119,43 @@
     margin-top: 2rem;
   }
 
+  /* テーブル(rehypeTableScroll が出力する div でラップされている) */
+  & :global(.tableScroll) {
+    margin-top: 2rem;
+    /* 狭い画面では画面幅いっぱいまで使ってスクロールさせる */
+    margin-left: -1rem;
+    margin-right: -1rem;
+    padding: 0 1rem;
+    overflow-x: auto;
+
+    @media (min-width: 768px) {
+      & {
+        margin-left: 0;
+        margin-right: 0;
+        padding: 0;
+      }
+    }
+  }
+
+  & table {
+    border-collapse: collapse;
+    font-size: 0.875rem;
+    line-height: 1.5;
+    white-space: nowrap;
+
+    & th,
+    & td {
+      padding: 0.5rem 1rem;
+      border: 1px solid #d6d3d0;
+      text-align: left;
+    }
+
+    & th {
+      background-color: #edebe8;
+      font-weight: bold;
+    }
+  }
+
   /* インラインコード(pre 直下ではない code) */
   & :not(pre) > code {
     padding: 0.1em 0.4em;
