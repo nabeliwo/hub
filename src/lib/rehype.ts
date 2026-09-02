@@ -10,7 +10,8 @@ const isImgElement = (el: ElementContent): el is Element => {
 const buildFigure = (el: Element) => {
   const title = el.properties.title
 
-  if (typeof title === 'string') {
+  // 画像タグの雛形で title が空文字のまま残っていても空の figcaption を作らない
+  if (typeof title === 'string' && title !== '') {
     return h('figure', [h('img', { ...el.properties }), h('figcaption', title)])
   } else {
     return h('figure', [h('img', { ...el.properties })])

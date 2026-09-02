@@ -15,6 +15,7 @@
     "format": "run-s format:prettier format:eslint",
     "format:eslint": "npm run lint:eslint -- --fix",
     "format:prettier": "npm run lint:prettier -- --write",
+    "images": "npm run ts-node -- ./scripts/optimizeBlogImages.ts",
     "ts-node": "ts-node --project ./script.tsconfig.json"
   },
   "dependencies": {
@@ -62,6 +63,7 @@
     "npm-run-all": "^4.1.5",
     "postcss": "^8.5.6",
     "prettier": "^3.8.1",
+    "sharp": "^0.35.4",
     "tailwindcss": "^4.1.18",
     "ts-node": "^10.9.2",
     "typescript": "^5.9.3",
