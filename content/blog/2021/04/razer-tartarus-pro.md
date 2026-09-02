@@ -34,7 +34,7 @@ alt: 'Razer の『Tartarus Pro Mercury White』の写真。通常の半分のキ
 
 現在はこんな感じになっています。
 
-![最近のデスク](/images/blog/2021/04/razyer-tartarus-pro/02.jpg '最近のデスク')
+![最近のデスク](/images/blog/2021/04/razer-tartarus-pro/02.jpg '最近のデスク')
 
 やっぱりデバイスを白で統一するのがこだわりですね…美しい…。  
 上でも言いましたが、キーボードは今後もっとコーディングしやすさを意識して分割キーボードとかにする予定。
