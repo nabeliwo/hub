@@ -64,6 +64,7 @@ export const categoryMap = {
   'hair-removal': '脱毛',
   food: '食事録',
   health: '健康',
+  shopping: '買い物',
 }
 
 type BlogFrontMatter = {
