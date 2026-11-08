@@ -51,7 +51,9 @@ export default function RootLayout({ dialog, children }: PropsWithChildren<Props
         <div className="px-4 pb-16 pt-8 md:p-12 md:pb-20">
           <div className="mx-auto max-w-4xl md:flex md:gap-16">
             <Nav />
-            <main className="flex-1">{children}</main>
+            {/* min-w-0 がないと flex item が中身より小さくなれず、
+                長いコードブロックなどがレイアウトごと横に押し広げてしまう */}
+            <main className="min-w-0 flex-1">{children}</main>
           </div>
         </div>
 
